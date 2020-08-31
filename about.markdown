@@ -135,16 +135,16 @@ You can find the source code for Jekyll at GitHub:
 | To-Hit Check: +8 ||| Range: Projectile 4          |||
 | **Arc Shot** ||| Damage: 7, Water                 |||
 | 4 Stamina ||| Range: Projectile 12-16             |||
-| You may ignore allies, enemies and any obstacles  \
-| that do not reach higher than 6 squares above you,\
+| You may ignore allies, enemies and any obstacles  |||||\
+| that do not reach higher than 6 squares above you,|||||\
 | for determining line of sight for this attack.    ||||||
 | **Jump Attack** ||| Damage: 10                    |||
 | 6 Stamina ||| Range: Jump 4, Melee                |||
-| You jump towards your target in a straight line,  \
-| landing next to them, even if you have already    \
-| reached your maximum Movement for the turn. You   \
-| are Off-Balance until the start of your next turn.\
-| This attack cannot be performed if you are Halted \
+| You jump towards your target in a straight line,  |||||\
+| landing next to them, even if you have already    |||||\
+| reached your maximum Movement for the turn. You   |||||\
+| are Off-Balance until the start of your next turn.|||||\
+| This attack cannot be performed if you are Halted |||||\
 | or Slowed.                                        ||||||
 | **Default Weapon**: Cheep Water Spurt             ||||||
 | (Rank 1 Natural Rod, Water)                       ||||||
@@ -162,7 +162,7 @@ You can find the source code for Jekyll at GitHub:
 | Intimidate | 1 | Discipline | 1 | Insight | 1     |
 | Mechanics | 0 | Perform | 0 | Guile | 1           |
 | Smithing | 0 | Enchanting | 0 | Cooking | 0       |
-| **Drops**: | 5x Cheep Cheep Meat (Rank 1 Food     \
+| **Drops**: | 5x Cheep Cheep Meat (Rank 1 Food     ||||\
 |            | Ingredient)                          |||||
-|^^          | 2x Cheep Cheep Fin (Rank 1 Critter,  \
+|^^          | 2x Cheep Cheep Fin (Rank 1 Critter,  ||||\
 |            | Spongy)                              |||||
