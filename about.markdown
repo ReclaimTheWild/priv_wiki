@@ -115,10 +115,10 @@ You can find the source code for Jekyll at GitHub:
 | ^^                 |          2 FADH |      3 ATP |
 |                               30--32 ATP        |||
 
-{:c-name: .fs-6 .bg-green-300 .text-grey-lt-000 }
-{:c-type: .fs-5 .bg-green-300 .text-grey-lt-000 }
-{:c-lt-bg: .bg-green-000 }
-{:c-dk-bg: .bg-green-100 }
+{:c-name: .fs-6 style="background: #538135;" .text-grey-lt-000 }
+{:c-type: .fs-5 style="background: #538135;" .text-grey-lt-000 }
+{:c-lt-bg: style="background: #E2EFD9;" }
+{:c-dk-bg: style="background: #C5E0B3;" }
 
 
 | Cheep Cheep, Common{: c-name }                     ||||||
