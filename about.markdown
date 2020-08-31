@@ -117,7 +117,7 @@ You can find the source code for Jekyll at GitHub:
 
 | Cheep Cheep, Common{: .fs-6}                      ||||||
 | Rank 1 Natural Hunter{: .fs-5}                    ||||||
-| ------------------------------------------------: ||||||
+| ------------------------------------------------- |
 | **HP**: 12 || **MP**: 0 || **SP**: 12             ||
 | Defense: 2 (Civilian) ||| Concentration: 11       |||
 | Initiative: +4 ||| Evasion: 14                    |||
