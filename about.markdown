@@ -115,28 +115,34 @@ You can find the source code for Jekyll at GitHub:
 | ^^                 |          2 FADH |      3 ATP |
 |                               30--32 ATP        |||
 
-| Cheep Cheep, Common{: .fs-6}                      ||||||
-| Rank 1 Natural Hunter{: .fs-5}                    ||||||
+{:c-name: .fs-6 .bg-green-300 .text-grey-lt-000 }
+{:c-type: .fs-5 .bg-green-300 .text-grey-lt-000 }
+{:c-lt-bg: .bg-green-000 }
+{:c-dk-bg: .bg-green-100 }
+
+
+| Cheep Cheep, Common{:c-name:}                     ||||||
+| Rank 1 Natural Hunter{:c-type:}                   ||||||
 | ------------------------------------------------- |
-| **HP**: 12 || **MP**: 0 || **SP**: 12             ||
+| **HP**: 12 {:c-dk-bg:} || **MP**: 0 {:c-dk-bg:} || **SP**: 12 {:c-dk-bg:}             ||
 | Defense: 2 (Civilian) ||| Concentration: 11       |||
 | Initiative: +4 ||| Evasion: 14                    |||
 | Size: Small ||| Vitality: 13                      |||
 | Movement: 6 (Swimming), 1 (Walking)               ||||||
-| **Spurt Water** ||| Damage: 7                     |||
-| To-Hit Check: +8 ||| Range: Projectile 4          |||
+| **Spurt Water** {:c-dk-bg:} ||| Damage: 7 {:c-dk-bg:}                     |||
+| To-Hit Check: +8 {:c-dk-bg:} ||| Range: Projectile 4 {:c-dk-bg:}          |||
 | **Arc Shot** ||| Damage: 7, Water                 |||
 | 4 Stamina ||| Range: Projectile 12-16             |||
 | You may ignore allies, enemies and any obstacles that do not reach higher than 6 squares above you, for determining line of sight for this attack. ||||||
 | **Jump Attack** ||| Damage: 10                    |||
 | 6 Stamina ||| Range: Jump 4, Melee                |||
 | You jump towards your target in a straight line, landing next to them, even if you have already reached your maximum Movement for the turn. You are Off-Balance until the start of your next turn. This attack cannot be performed if you are Halted or Slowed. ||||||
-| **Default Weapon**: Cheep Water Spurt             ||||||
-| (Rank 1 Natural Rod, Water)                       ||||||
+| **Default Weapon**: Cheep Water Spurt {:c-dk-bg:}             ||||||
+| (Rank 1 Natural Rod, Water) {:c-dk-bg:}                       ||||||
 | Accuracy: 4 || Attack: 5 || Durability: 6         ||
 | **Flying Fish** (Passive)                         ||||||
 | While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3) ||||||
-| Limited Intelligence                              ||||||
+| Limited Intelligence {:c-dk-bg:}                              ||||||
 | Combat | : 2 : | Willpower | : 2 : | Accuracy | : 4 : |
 | Hearts | : 3 : | Magic | : 0 : | Stamina | : 3 : |
 | Athletics | : 3 : | Arcana | : 1 : | Nature | : 2 : |
@@ -145,7 +151,5 @@ You can find the source code for Jekyll at GitHub:
 | Intimidate | : 1 : | Discipline | : 1 : | Insight | : 1 : |
 | Mechanics | : 0 : | Perform | : 0 : | Guile | : 1 : |
 | Smithing | : 0 : | Enchanting | : 0 : | Cooking | : 0 : |
-| **Drops**: | 5x Cheep Cheep Meat (Rank 1 Food     |||||\
-|^^          | Ingredient)                          |||||
-|^^          | 2x Cheep Cheep Fin (Rank 1 Critter,  |||||\
-|^^          | Spongy)                              |||||
+| **Drops**: | 5x Cheep Cheep Meat (Rank 1 Food Ingredient)|||||
+|^^          | 2x Cheep Cheep Fin (Rank 1 Critter, Spongy) |||||
