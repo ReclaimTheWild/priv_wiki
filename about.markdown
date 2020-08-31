@@ -93,9 +93,6 @@ You can find the source code for Jekyll at GitHub:
 
 ![](//www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3?autoplay=1&loop=1)
 
-<script type="text/markdown">
-# Hybrid HTML with Markdown is a not bad choice ^\_^
-
 ## Table Usage
 
 | :        Fruits \|\| Food       : |||
@@ -107,11 +104,6 @@ You can find the source code for Jekyll at GitHub:
 |^^    A. Peach         ||   1. Fine :|
 |^^    B. Orange        ||^^ 2. Bad   |
 |^^    C. Banana        ||  It's OK!  |
-
-## Video Usage
-
-![](https://www.youtube.com/watch?v=Ptk_1Dc2iPY)
-</script>
 
 |              Stage | Direct Products | ATP Yields |
 | -----------------: | --------------: | ---------: |
@@ -135,24 +127,15 @@ You can find the source code for Jekyll at GitHub:
 | To-Hit Check: +8 ||| Range: Projectile 4          |||
 | **Arc Shot** ||| Damage: 7, Water                 |||
 | 4 Stamina ||| Range: Projectile 12-16             |||
-| You may ignore allies, enemies and any obstacles  ||||| \
-| that do not reach higher than 6 squares above you,||||| \
-| for determining line of sight for this attack.    ||||||
+| You may ignore allies, enemies and any obstacles that do not reach higher than 6 squares above you, for determining line of sight for this attack. ||||||
 | **Jump Attack** ||| Damage: 10                    |||
 | 6 Stamina ||| Range: Jump 4, Melee                |||
-| You jump towards your target in a straight line,  ||||| \
-| landing next to them, even if you have already    ||||| \
-| reached your maximum Movement for the turn. You   ||||| \
-| are Off-Balance until the start of your next turn.||||| \
-| This attack cannot be performed if you are Halted ||||| \
-| or Slowed.                                        ||||||
+| You jump towards your target in a straight line, landing next to them, even if you have already reached your maximum Movement for the turn. You are Off-Balance until the start of your next turn. This attack cannot be performed if you are Halted or Slowed. ||||||
 | **Default Weapon**: Cheep Water Spurt             ||||||
 | (Rank 1 Natural Rod, Water)                       ||||||
 | Accuracy: 4 || Attack: 5 || Durability: 6         ||
 | **Flying Fish** (Passive)                         ||||||
-| While on the surface of the water, this creature  ||||| \
-| can jump as if its Athletics were 5 points higher.||||| \
-| (Horiz. 4; Vert. 3)                               ||||||
+| While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3) ||||||
 | Limited Intelligence                              ||||||
 | Combat | : 2 : | Willpower | : 2 : | Accuracy | : 4 : |
 | Hearts | : 3 : | Magic | : 0 : | Stamina | : 3 : |
