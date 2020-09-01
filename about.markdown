@@ -123,9 +123,10 @@ You can find the source code for Jekyll at GitHub:
 
 <details markdown="block">
   <summary>
-
+**Testing Purposes**
 | Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
 | Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
+{: .creature-table }
 
   </summary>
 
