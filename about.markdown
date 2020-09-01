@@ -121,6 +121,11 @@ You can find the source code for Jekyll at GitHub:
 {:c-dk-bg: style="background: #C5E0B3;" .text-grey-dk-300 }
 {:c-dk-bg-sm: c-dk-bg .fs-2}
 
+<details markdown="block">
+  <summary>
+| Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
+| Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
+  </summary>
 | Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
 | Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -154,3 +159,4 @@ You can find the source code for Jekyll at GitHub:
 | **Drops**: {: c-lt-bg }   | 5x Cheep Cheep Meat (Rank 1 Food Ingredient) {: c-lt-bg }                                                             |||||
 |^^                         | 2x Cheep Cheep Fin (Rank 1 Critter, Spongy) {: c-lt-bg }                                                              |||||
 {: .creature-table }
+</details>

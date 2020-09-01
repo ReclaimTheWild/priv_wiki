@@ -7,9 +7,9 @@
     th,
     td {
         min-width: 120px;
-        padding-top: $sp-1;
+        padding-top: $sp-0;
         padding-right: $sp-3;
-        padding-bottom: $sp-1;
+        padding-bottom: $sp-0;
         padding-left: $sp-3;
         background-color: #E2EFD9;
 //        border-bottom: $border #538135;
@@ -17,7 +17,7 @@
 //        border-right: $border #538135;
 
         &:first-of-type {
-            border-left: $border #538135;
+//            border-left: $border #538135;
         }
     }
 
