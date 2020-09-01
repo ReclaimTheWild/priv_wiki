@@ -122,9 +122,9 @@ You can find the source code for Jekyll at GitHub:
 {:c-dk-bg-sm: c-dk-bg .fs-2}
 
 <details markdown="block">
-  <summary>| Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
-| Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
-{: .creature-table }</summary>
+  <summary>
+    <div class="table-wrapper"><table class="creature-table"> <thead> <tr> <th colspan="6" class="fs-6 text-grey-lt-000" style="background: #538135;">Cheep Cheep, Common</th></tr><tr><th colspan="6" class="fs-5 text-grey-lt-000" style="background: #538135;">Rank 1 Natural Hunter</th></tr></thead></table></div>
+  </summary>
 
 | Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
 | Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
