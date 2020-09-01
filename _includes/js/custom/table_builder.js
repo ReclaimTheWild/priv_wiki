@@ -112,25 +112,25 @@ function generateTableHead(table) {
     th_name.colSpan = "6";
     th_name.appendChild(text_name);
     row_name.appendChild(th_name);
-    row_name.classList.addClass("fs-6");
-    row_name.classList.addClass("text-grey-lt-000");
-    row_name.classList.addClass("creature-title-bg");
+    row_name.classList.add("fs-6");
+    row_name.classList.add("text-grey-lt-000");
+    row_name.classList.add("creature-title-bg");
     let row_rank = thead.insertRow();
     let th_rank = document.createElement("th");
     let text_rank = document.createTextNode(example.head.rank);
     th_rank.colSpan = "6";
     th_rank.appendChild(text_rank);
     row_rank.appendChild(th_rank);
-    row_name.classList.addClass("fs-5");
-    row_name.classList.addClass("text-grey-lt-000");
-    row_name.classList.addClass("creature-title-bg");
+    row_name.classList.add("fs-5");
+    row_name.classList.add("text-grey-lt-000");
+    row_name.classList.add("creature-title-bg");
 }
 
 function generateTableBodyStats(table) {
 
     let row_p = table.insertRow();
-    row_p.classList.addClass("text-grey-dk-300");
-    row_p.classList.addClass("creature-content-bg-dark");
+    row_p.classList.add("text-grey-dk-300");
+    row_p.classList.add("creature-content-bg-dark");
     let cell_hp = row_p.insertCell();
     cell_hp.colSpan = "2";
     cell_hp.appendChild(document.createTextNode("HP: " + example.hp));
@@ -142,8 +142,8 @@ function generateTableBodyStats(table) {
     cell_sp.appendChild(document.createTextNode("SP: " + example.sp));
 
     let row_s1 = table.insertRow();
-    row_s1.classList.addClass("text-grey-dk-300");
-    row_s1.classList.addClass("creature-content-bg-light");
+    row_s1.classList.add("text-grey-dk-300");
+    row_s1.classList.add("creature-content-bg-light");
     let cell_def = row_s1.insertCell();
     cell_def.colSpan = "3";
     cell_def.appendChild(document.createTextNode("Defense: " + 
@@ -155,8 +155,8 @@ function generateTableBodyStats(table) {
                                                 example.concentration));
     
     let row_s2 = table.insertRow();
-    row_s2.classList.addClass("text-grey-dk-300");
-    row_s2.classList.addClass("creature-content-bg-light");
+    row_s2.classList.add("text-grey-dk-300");
+    row_s2.classList.add("creature-content-bg-light");
     let cell_ini = row_s2.insertCell();
     cell_ini.colSpan = "3";
     cell_ini.appendChild(document.createTextNode("Initiative: " + 
@@ -167,8 +167,8 @@ function generateTableBodyStats(table) {
                                                 example.evasion));
 
     let row_s3 = table.insertRow();
-    row_s3.classList.addClass("text-grey-dk-300");
-    row_s3.classList.addClass("creature-content-bg-light");
+    row_s3.classList.add("text-grey-dk-300");
+    row_s3.classList.add("creature-content-bg-light");
     let cell_size = row_s3.insertCell();
     cell_size.colSpan = "3";
     cell_size.appendChild(document.createTextNode("Size: " + 
@@ -179,8 +179,8 @@ function generateTableBodyStats(table) {
                                                 example.vitality));
 
     let row_s4 = table.insertRow();
-    row_s4.classList.addClass("text-grey-dk-300");
-    row_s4.classList.addClass("creature-content-bg-light");
+    row_s4.classList.add("text-grey-dk-300");
+    row_s4.classList.add("creature-content-bg-light");
     let cell_mov = row_s4.insertCell();
     cell_mov.colSpan = "6";
     cell_mov.appendChild(document.createTextNode("Movement: " + 
@@ -189,8 +189,8 @@ function generateTableBodyStats(table) {
 
 function generateTableNormalAttack(table) {
     let row_1 = table.insertRow();
-    row_1.classList.addClass("text-grey-dk-300");
-    row_1.classList.addClass("creature-content-bg-dark");
+    row_1.classList.add("text-grey-dk-300");
+    row_1.classList.add("creature-content-bg-dark");
     let cell_name = row_1.insertCell();
     cell_name.colSpan = "3";
     cell_name.appendChild(document.createTextNode(example.main_attack.name));
@@ -200,8 +200,8 @@ function generateTableNormalAttack(table) {
                                                 example.main_attack.damage));
 
     let row_2 = table.insertRow();
-    row_2.classList.addClass("text-grey-dk-300");
-    row_2.classList.addClass("creature-content-bg-dark");
+    row_2.classList.add("text-grey-dk-300");
+    row_2.classList.add("creature-content-bg-dark");
     let cell_hit = row_2.insertCell();
     cell_hit.colSpan = "3";
     cell_hit.appendChild(document.createTextNode("To-Hit Check: " +
@@ -215,8 +215,8 @@ function generateTableNormalAttack(table) {
 function generateTableAbilities(table) {
     for (let element of example.abilities) {
         let row_1 = table.insertRow();
-        row_1.classList.addClass("text-grey-dk-300");
-        row_1.classList.addClass("creature-content-bg-light");
+        row_1.classList.add("text-grey-dk-300");
+        row_1.classList.add("creature-content-bg-light");
         let cell_name = row_1.insertCell();
         cell_name.colSpan = "3";
         cell_name.appendChild(document.createTextNode(element.name));
@@ -226,8 +226,8 @@ function generateTableAbilities(table) {
                                                     element.damage));
     
         let row_2 = table.insertRow();
-        row_2.classList.addClass("text-grey-dk-300");
-        row_2.classList.addClass("creature-content-bg-light");
+        row_2.classList.add("text-grey-dk-300");
+        row_2.classList.add("creature-content-bg-light");
         let cell_cost = row_2.insertCell();
         cell_cost.colSpan = "3";
         cell_cost.appendChild(document.createTextNode(element.cost));
@@ -237,9 +237,9 @@ function generateTableAbilities(table) {
                                                     element.range));
 
         let row_3 = table.insertRow();
-        row_3.classList.addClass("text-grey-dk-300");
-        row_3.classList.addClass("creature-content-bg-light");
-        row_3.classList.addClass("fs-2");
+        row_3.classList.add("text-grey-dk-300");
+        row_3.classList.add("creature-content-bg-light");
+        row_3.classList.add("fs-2");
         let cell_desc = row_3.insertCell();
         cell_desc.colSpan = "6";
         cell_desc.appendChild(document.createTextNode(element.description));
@@ -248,22 +248,22 @@ function generateTableAbilities(table) {
 
 function generateTableDefaultWeapon(table) {
     let row_1 = table.insertRow();
-    row_1.classList.addClass("text-grey-dk-300");
-    row_1.classList.addClass("creature-content-bg-dark");
+    row_1.classList.add("text-grey-dk-300");
+    row_1.classList.add("creature-content-bg-dark");
     let cell_name = row_1.insertCell();
     cell_name.colSpan = "6";
     cell_name.appendChild(document.createTextNode("Default Weapon: " + example.weapon.name));
 
     let row_2 = table.insertRow();
-    row_2.classList.addClass("text-grey-dk-300");
-    row_2.classList.addClass("creature-content-bg-dark");
+    row_2.classList.add("text-grey-dk-300");
+    row_2.classList.add("creature-content-bg-dark");
     let cell_rank = row_2.insertCell();
     cell_rank.colSpan = "6";
     cell_rank.appendChild(document.createTextNode("(" + example.weapon.rank + ")"));
 
     let row_3 = table.insertRow();
-    row_3.classList.addClass("text-grey-dk-300");
-    row_3.classList.addClass("creature-content-bg-dark");
+    row_3.classList.add("text-grey-dk-300");
+    row_3.classList.add("creature-content-bg-dark");
     let cell_acc = row_3.insertCell();
     cell_acc.colSpan = "2";
     cell_acc.appendChild(document.createTextNode("Accuracy: " + example.weapon.accuracy));
@@ -278,16 +278,16 @@ function generateTableDefaultWeapon(table) {
 function generateTablePassives(table) {
     for (let element of example.passives) {
         let row_1 = table.insertRow();
-        row_1.classList.addClass("text-grey-dk-300");
-        row_1.classList.addClass("creature-content-bg-light");
+        row_1.classList.add("text-grey-dk-300");
+        row_1.classList.add("creature-content-bg-light");
         let cell_name = row_1.insertCell();
         cell_name.colSpan = "6";
         cell_name.appendChild(document.createTextNode(element.name + " (Passive)"));
 
         let row_2 = table.insertRow();
-        row_2.classList.addClass("text-grey-dk-300");
-        row_2.classList.addClass("creature-content-bg-light");
-        row_2.classList.addClass("fs-2");
+        row_2.classList.add("text-grey-dk-300");
+        row_2.classList.add("creature-content-bg-light");
+        row_2.classList.add("fs-2");
         let cell_desc = row_2.insertCell();
         cell_desc.colSpan = "6";
         cell_desc.appendChild(document.createTextNode(element.description));
@@ -298,25 +298,25 @@ function generateTableTraits(table) {
     let infos_str = example.traits.informations.join(", ");
     let traits = example.traits;
     let row_inf = table.insertRow();
-    row_inf.classList.addClass("text-grey-dk-300");
-    row_inf.classList.addClass("creature-content-bg-dark");
-    row_inf.classList.addClass("fs-4");
+    row_inf.classList.add("text-grey-dk-300");
+    row_inf.classList.add("creature-content-bg-dark");
+    row_inf.classList.add("fs-4");
     let cell_name = row_inf.insertCell();
     cell_name.colSpan = "6";
     cell_name.appendChild(document.createTextNode(infos_str));
 
     let row_vuln = table.insertRow();
-    row_vuln.classList.addClass("text-grey-dk-300");
-    row_vuln.classList.addClass("creature-content-bg-dark");
-    row_vuln.classList.addClass("fs-4");
+    row_vuln.classList.add("text-grey-dk-300");
+    row_vuln.classList.add("creature-content-bg-dark");
+    row_vuln.classList.add("fs-4");
     let cell_vuln = row_vuln.insertCell();
     cell_vuln.colSpan = "6";
     cell_vuln.appendChild(document.createTextNode("Vulnerability: " + traits.vulnerability));
 
     let row_1 = table.insertRow();
-    row_1.classList.addClass("text-grey-dk-300");
-    row_1.classList.addClass("creature-content-bg-dark");
-    row_1.classList.addClass("fs-2");
+    row_1.classList.add("text-grey-dk-300");
+    row_1.classList.add("creature-content-bg-dark");
+    row_1.classList.add("fs-2");
     let cell_1_1 = row_1.insertCell();
     cell_1_1.appendChild(document.createTextNode("Combat"));
     let cell_1_2 = row_1.insertCell();
@@ -331,9 +331,9 @@ function generateTableTraits(table) {
     cell_1_6.appendChild(document.createTextNode(traits.courage.accuracy));
 
     let row_2 = table.insertRow();
-    row_2.classList.addClass("text-grey-dk-300");
-    row_2.classList.addClass("creature-content-bg-dark");
-    row_2.classList.addClass("fs-2");
+    row_2.classList.add("text-grey-dk-300");
+    row_2.classList.add("creature-content-bg-dark");
+    row_2.classList.add("fs-2");
     let cell_2_1 = row_2.insertCell();
     cell_2_1.appendChild(document.createTextNode("Hearts"));
     let cell_2_2 = row_2.insertCell();
@@ -348,9 +348,9 @@ function generateTableTraits(table) {
     cell_2_6.appendChild(document.createTextNode(traits.courage.stamina));
 
     let row_3 = table.insertRow();
-    row_3.classList.addClass("text-grey-dk-300");
-    row_3.classList.addClass("creature-content-bg-dark");
-    row_3.classList.addClass("fs-2");
+    row_3.classList.add("text-grey-dk-300");
+    row_3.classList.add("creature-content-bg-dark");
+    row_3.classList.add("fs-2");
     let cell_3_1 = row_3.insertCell();
     cell_3_1.appendChild(document.createTextNode("Athletics"));
     let cell_3_2 = row_3.insertCell();
@@ -365,9 +365,9 @@ function generateTableTraits(table) {
     cell_3_6.appendChild(document.createTextNode(traits.courage.nature));
 
     let row_4 = table.insertRow();
-    row_4.classList.addClass("text-grey-dk-300");
-    row_4.classList.addClass("creature-content-bg-dark");
-    row_4.classList.addClass("fs-2");
+    row_4.classList.add("text-grey-dk-300");
+    row_4.classList.add("creature-content-bg-dark");
+    row_4.classList.add("fs-2");
     let cell_4_1 = row_4.insertCell();
     cell_4_1.appendChild(document.createTextNode("Civilization"));
     let cell_4_2 = row_4.insertCell();
@@ -382,9 +382,9 @@ function generateTableTraits(table) {
     cell_4_6.appendChild(document.createTextNode(traits.courage.agility));
 
     let row_5 = table.insertRow();
-    row_5.classList.addClass("text-grey-dk-300");
-    row_5.classList.addClass("creature-content-bg-dark");
-    row_5.classList.addClass("fs-2");
+    row_5.classList.add("text-grey-dk-300");
+    row_5.classList.add("creature-content-bg-dark");
+    row_5.classList.add("fs-2");
     let cell_5_1 = row_5.insertCell();
     cell_5_1.appendChild(document.createTextNode("Fortitude"));
     let cell_5_2 = row_5.insertCell();
@@ -399,9 +399,9 @@ function generateTableTraits(table) {
     cell_5_6.appendChild(document.createTextNode(traits.courage.command));
 
     let row_6 = table.insertRow();
-    row_6.classList.addClass("text-grey-dk-300");
-    row_6.classList.addClass("creature-content-bg-dark");
-    row_6.classList.addClass("fs-2");
+    row_6.classList.add("text-grey-dk-300");
+    row_6.classList.add("creature-content-bg-dark");
+    row_6.classList.add("fs-2");
     let cell_6_1 = row_6.insertCell();
     cell_6_1.appendChild(document.createTextNode("Intimidate"));
     let cell_6_2 = row_6.insertCell();
@@ -416,9 +416,9 @@ function generateTableTraits(table) {
     cell_6_6.appendChild(document.createTextNode(traits.courage.insight));
 
     let row_7 = table.insertRow();
-    row_7.classList.addClass("text-grey-dk-300");
-    row_7.classList.addClass("creature-content-bg-dark");
-    row_7.classList.addClass("fs-2");
+    row_7.classList.add("text-grey-dk-300");
+    row_7.classList.add("creature-content-bg-dark");
+    row_7.classList.add("fs-2");
     let cell_7_1 = row_7.insertCell();
     cell_7_1.appendChild(document.createTextNode("Mechanics"));
     let cell_7_2 = row_7.insertCell();
@@ -433,9 +433,9 @@ function generateTableTraits(table) {
     cell_7_6.appendChild(document.createTextNode(traits.courage.guile));
 
     let row_8 = table.insertRow();
-    row_8.classList.addClass("text-grey-dk-300");
-    row_8.classList.addClass("creature-content-bg-dark");
-    row_8.classList.addClass("fs-2");
+    row_8.classList.add("text-grey-dk-300");
+    row_8.classList.add("creature-content-bg-dark");
+    row_8.classList.add("fs-2");
     let cell_8_1 = row_8.insertCell();
     cell_8_1.appendChild(document.createTextNode("Smithing"));
     let cell_8_2 = row_8.insertCell();
@@ -453,8 +453,8 @@ function generateTableTraits(table) {
 
 function generateTableDrops(table) {
     let row_1 = table.insertRow();
-    row_1.classList.addClass("text-grey-dk-300");
-    row_1.classList.addClass("creature-content-bg-light");
+    row_1.classList.add("text-grey-dk-300");
+    row_1.classList.add("creature-content-bg-light");
     let cell_drop = row_1.insertCell();
     cell_drop.rowSpan = example.drops.length.toString();
     cell_drop.appendChild(document.createTextNode("Drops:"));
