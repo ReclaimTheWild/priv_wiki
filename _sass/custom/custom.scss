@@ -3,4 +3,42 @@
         border-collapse: collapse !important;
         border: 1px solid #538135 !important;
     }
+
+    th,
+    td {
+        @include fs-3;
+        min-width: 120px;
+        padding-top: $sp-1;
+        padding-right: $sp-3;
+        padding-bottom: $sp-1;
+        padding-left: $sp-3;
+        background-color: #E2EFD9;
+        border-bottom: $border #538135;
+        border-left: $border #538135;
+
+        &:first-of-type {
+            border-left: $border #538135;
+        }
+    }
+
+    tbody {
+        tr {
+          &:last-of-type {
+            th,
+            td {
+              border-bottom: $border #538135;
+            }
+      
+            td {
+              padding-bottom: $sp-3;
+            }
+          }
+        }
+      }
+      
+      thead {
+        th {
+          border-bottom: $border #538135;
+        }
+      }
 }
