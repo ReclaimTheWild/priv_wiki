@@ -117,9 +117,9 @@ You can find the source code for Jekyll at GitHub:
 
 {:c-name: .fs-6 style="background: #538135;" .text-grey-lt-000 }
 {:c-type: .fs-5 style="background: #538135;" .text-grey-lt-000 }
-{:c-lt-bg: style="background: #E2EFD9;" }
-{:c-dk-bg: style="background: #C5E0B3;" }
-{:c-dk-bg-sm: c-dk-bg .fs-3}
+{:c-lt-bg: style="background: #E2EFD9;" .text-grey-dk-300 }
+{:c-dk-bg: style="background: #C5E0B3;" .text-grey-dk-300 }
+{:c-dk-bg-sm: c-dk-bg .fs-2}
 
 | Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
 | Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
@@ -143,14 +143,14 @@ You can find the source code for Jekyll at GitHub:
 | **Flying Fish** (Passive) {: c-lt-bg }                                                                                                            ||||||
 | While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3) {: c-lt-bg .fs-2 } ||||||
 | Limited Intelligence {: c-dk-bg .fs-4 }                                                                                                           ||||||
-| Combat {: c-dk-bg-sm }       | : 2 : {: c-dk-bg-sm } | Willpower {: c-dk-bg-sm }   | : 2 {: c-dk-bg-sm } : | Accuracy {: c-dk-bg-sm }    | : 4 {: c-dk-bg-sm } :    |
-| Hearts {: c-dk-bg-sm }       | : 3 {: c-dk-bg-sm } : | Magic {: c-dk-bg-sm }       | : 0 {: c-dk-bg-sm } : | Stamina {: c-dk-bg-sm }     | : 3 {: c-dk-bg-sm } :    |
-| Athletics {: c-dk-bg-sm }    | : 3 {: c-dk-bg-sm } : | Arcana {: c-dk-bg-sm }      | : 1 {: c-dk-bg-sm } : | Nature {: c-dk-bg-sm }      | : 2 {: c-dk-bg-sm } :    |
-| Civilization {: c-dk-bg-sm } | : 0 {: c-dk-bg-sm } : | Perception {: c-dk-bg-sm }  | : 1 {: c-dk-bg-sm } : | Agility {: c-dk-bg-sm }     | : 4 {: c-dk-bg-sm } :    |
-| Fortitude {: c-dk-bg-sm }    | : 3 {: c-dk-bg-sm } : | Influence {: c-dk-bg-sm }   | : 1 {: c-dk-bg-sm } : | Command {: c-dk-bg-sm }     | : 0 {: c-dk-bg-sm } :    |
-| Intimidate {: c-dk-bg-sm }   | : 1 {: c-dk-bg-sm } : | Discipline {: c-dk-bg-sm }  | : 1 {: c-dk-bg-sm } : | Insight {: c-dk-bg-sm }     | : 1 {: c-dk-bg-sm } :    |
-| Mechanics {: c-dk-bg-sm }    | : 0 {: c-dk-bg-sm } : | Perform {: c-dk-bg-sm }     | : 0 {: c-dk-bg-sm } : | Guile {: c-dk-bg-sm }       | : 1 {: c-dk-bg-sm } :    |
-| Smithing {: c-dk-bg-sm }     | : 0 {: c-dk-bg-sm } : | Enchanting {: c-dk-bg-sm }  | : 0 {: c-dk-bg-sm } : | Cooking {: c-dk-bg-sm }     | : 0 {: c-dk-bg-sm } :    |
+| Combat {: c-dk-bg-sm }       | 2 {: c-dk-bg-sm } | Willpower {: c-dk-bg-sm }   | 2 {: c-dk-bg-sm } | Accuracy {: c-dk-bg-sm }    | 4 {: c-dk-bg-sm }    |
+| Hearts {: c-dk-bg-sm }       | 3 {: c-dk-bg-sm } | Magic {: c-dk-bg-sm }       | 0 {: c-dk-bg-sm } | Stamina {: c-dk-bg-sm }     | 3 {: c-dk-bg-sm }    |
+| Athletics {: c-dk-bg-sm }    | 3 {: c-dk-bg-sm } | Arcana {: c-dk-bg-sm }      | 1 {: c-dk-bg-sm } | Nature {: c-dk-bg-sm }      | 2 {: c-dk-bg-sm }    |
+| Civilization {: c-dk-bg-sm } | 0 {: c-dk-bg-sm } | Perception {: c-dk-bg-sm }  | 1 {: c-dk-bg-sm } | Agility {: c-dk-bg-sm }     | 4 {: c-dk-bg-sm }    |
+| Fortitude {: c-dk-bg-sm }    | 3 {: c-dk-bg-sm } | Influence {: c-dk-bg-sm }   | 1 {: c-dk-bg-sm } | Command {: c-dk-bg-sm }     | 0 {: c-dk-bg-sm }    |
+| Intimidate {: c-dk-bg-sm }   | 1 {: c-dk-bg-sm } | Discipline {: c-dk-bg-sm }  | 1 {: c-dk-bg-sm } | Insight {: c-dk-bg-sm }     | 1 {: c-dk-bg-sm }    |
+| Mechanics {: c-dk-bg-sm }    | 0 {: c-dk-bg-sm } | Perform {: c-dk-bg-sm }     | 0 {: c-dk-bg-sm } | Guile {: c-dk-bg-sm }       | 1 {: c-dk-bg-sm }    |
+| Smithing {: c-dk-bg-sm }     | 0 {: c-dk-bg-sm } | Enchanting {: c-dk-bg-sm }  | 0 {: c-dk-bg-sm } | Cooking {: c-dk-bg-sm }     | 0 {: c-dk-bg-sm }    |
 | **Drops**: {: c-lt-bg }   | 5x Cheep Cheep Meat (Rank 1 Food Ingredient) {: c-lt-bg }                                                             |||||
 |^^                         | 2x Cheep Cheep Fin (Rank 1 Critter, Spongy) {: c-lt-bg }                                                              |||||
 {: .creature-table }
