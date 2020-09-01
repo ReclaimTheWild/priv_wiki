@@ -133,17 +133,23 @@ function generateTableBodyStats(table) {
     cell_hp.classList.add("text-grey-dk-300");
     cell_hp.classList.add("creature-content-bg-dark");
     cell_hp.colSpan = "2";
-    cell_hp.appendChild(document.createTextNode("HP: " + example.stats.hp));
+    let hp_strong = document.createElement("strong");
+    hp_strong.appendChild(document.createTextNode("HP"));
+    cell_hp.appendChild(document.createTextNode(hp_strong.outerHTML + ": " + example.stats.hp));
     let cell_mp = row_p.insertCell();
     cell_mp.classList.add("text-grey-dk-300");
     cell_mp.classList.add("creature-content-bg-dark");
     cell_mp.colSpan = "2";
-    cell_mp.appendChild(document.createTextNode("MP: " + example.stats.mp));
+    let mp_strong = document.createElement("strong");
+    mp_strong.appendChild(document.createTextNode("MP"));
+    cell_mp.appendChild(document.createTextNode(mp_strong.outerHTML + ": " + example.stats.mp));
     let cell_sp = row_p.insertCell();
     cell_sp.classList.add("text-grey-dk-300");
     cell_sp.classList.add("creature-content-bg-dark");
     cell_sp.colSpan = "2";
-    cell_sp.appendChild(document.createTextNode("SP: " + example.stats.sp));
+    let sp_strong = document.createElement("strong");
+    sp_strong.appendChild(document.createTextNode("SP"));
+    cell_sp.appendChild(document.createTextNode(sp_strong.outerHTML + ": " + example.stats.sp));
 
     let row_s1 = table.insertRow();
     let cell_def = row_s1.insertCell();
@@ -203,7 +209,9 @@ function generateTableNormalAttack(table) {
     cell_name.classList.add("text-grey-dk-300");
     cell_name.classList.add("creature-content-bg-dark");
     cell_name.colSpan = "3";
-    cell_name.appendChild(document.createTextNode(example.main_attack.name));
+    let cell_name_strong = document.createElement("strong");
+    cell_name_strong.appendChild(document.createTextNode(example.main_attack.name));
+    cell_name.appendChild(cell_name_strong);
     let cell_dmg = row_1.insertCell();
     cell_dmg.classList.add("text-grey-dk-300");
     cell_dmg.classList.add("creature-content-bg-dark");
@@ -233,7 +241,9 @@ function generateTableAbilities(table) {
         cell_name.classList.add("text-grey-dk-300");
         cell_name.classList.add("creature-content-bg-light");
         cell_name.colSpan = "3";
-        cell_name.appendChild(document.createTextNode(element.name));
+        let cell_name_strong = document.createElement("strong");
+        cell_name_strong.appendChild(document.createTextNode(element.name));
+        cell_name.appendChild(cell_name_strong);
         let cell_dmg = row_1.insertCell();
         cell_dmg.classList.add("text-grey-dk-300");
         cell_dmg.classList.add("creature-content-bg-light");
@@ -272,7 +282,9 @@ function generateTableDefaultWeapon(table) {
     cell_name.classList.add("text-grey-dk-300");
     cell_name.classList.add("creature-content-bg-dark");
     cell_name.colSpan = "6";
-    cell_name.appendChild(document.createTextNode("Default Weapon: " + example.weapon.name));
+    let weap_strong = document.createElement("strong");
+    weap_strong.appendChild(document.createTextNode("Default Weapon"));
+    cell_name.appendChild(document.createTextNode(weap_strong.outerHTML + ": " + example.weapon.name));
 
     let row_2 = table.insertRow();
     let cell_rank = row_2.insertCell();
@@ -306,7 +318,9 @@ function generateTablePassives(table) {
         cell_name.classList.add("text-grey-dk-300");
         cell_name.classList.add("creature-content-bg-light");
         cell_name.colSpan = "6";
-        cell_name.appendChild(document.createTextNode(element.name + " (Passive)"));
+        let pas_strong = document.createElement("strong");
+        pas_strong.appendChild(document.createTextNode(element.name));
+        cell_hp.appendChild(document.createTextNode(pas_strong.outerHTML + " (Passive)"));
 
         let row_2 = table.insertRow();
         let cell_desc = row_2.insertCell();
@@ -669,7 +683,9 @@ function generateTableDrops(table) {
     cell_drop.classList.add("text-grey-dk-300");
     cell_drop.classList.add("creature-content-bg-light");
     cell_drop.rowSpan = example.drops.length.toString();
-    cell_drop.appendChild(document.createTextNode("Drops:"));
+    let drop_strong = document.createElement("strong");
+    drop_strong.appendChild(document.createTextNode("Drops"));
+    cell_drop.appendChild(document.createTextNode(drop_strong.outerHTML + ":"));
     let cell_d1 = row_1.insertCell();
     cell_d1.classList.add("text-grey-dk-300");
     cell_d1.classList.add("creature-content-bg-light");
