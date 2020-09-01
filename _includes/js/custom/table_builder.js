@@ -133,13 +133,13 @@ function generateTableBodyStats(table) {
     row_p.classList.add("creature-content-bg-dark");
     let cell_hp = row_p.insertCell();
     cell_hp.colSpan = "2";
-    cell_hp.appendChild(document.createTextNode("HP: " + example.hp));
+    cell_hp.appendChild(document.createTextNode("HP: " + example.stats.hp));
     let cell_mp = row_p.insertCell();
     cell_mp.colSpan = "2";
-    cell_mp.appendChild(document.createTextNode("MP: " + example.mp));
+    cell_mp.appendChild(document.createTextNode("MP: " + example.stats.mp));
     let cell_sp = row_p.insertCell();
     cell_sp.colSpan = "2";
-    cell_sp.appendChild(document.createTextNode("SP: " + example.sp));
+    cell_sp.appendChild(document.createTextNode("SP: " + example.stats.sp));
 
     let row_s1 = table.insertRow();
     row_s1.classList.add("text-grey-dk-300");
@@ -147,12 +147,12 @@ function generateTableBodyStats(table) {
     let cell_def = row_s1.insertCell();
     cell_def.colSpan = "3";
     cell_def.appendChild(document.createTextNode("Defense: " + 
-                                                example.defense + 
-                                                " (" + example.defense_type + ")"));
+                                                example.stats.defense + 
+                                                " (" + example.stats.defense_type + ")"));
     let cell_con = row_s1.insertCell();
     cell_con.colSpan = "3";
     cell_con.appendChild(document.createTextNode("Concentration: " +
-                                                example.concentration));
+                                                example.stats.concentration));
     
     let row_s2 = table.insertRow();
     row_s2.classList.add("text-grey-dk-300");
@@ -160,11 +160,11 @@ function generateTableBodyStats(table) {
     let cell_ini = row_s2.insertCell();
     cell_ini.colSpan = "3";
     cell_ini.appendChild(document.createTextNode("Initiative: " + 
-                                                example.initiative));
+                                                example.stats.initiative));
     let cell_eva = row_s2.insertCell();
     cell_eva.colSpan = "3";
     cell_eva.appendChild(document.createTextNode("Evasion: " +
-                                                example.evasion));
+                                                example.stats.evasion));
 
     let row_s3 = table.insertRow();
     row_s3.classList.add("text-grey-dk-300");
@@ -172,11 +172,11 @@ function generateTableBodyStats(table) {
     let cell_size = row_s3.insertCell();
     cell_size.colSpan = "3";
     cell_size.appendChild(document.createTextNode("Size: " + 
-                                                example.size));
+                                                example.stats.size));
     let cell_vit = row_s3.insertCell();
     cell_vit.colSpan = "3";
     cell_vit.appendChild(document.createTextNode("Vitality: " +
-                                                example.vitality));
+                                                example.stats.vitality));
 
     let row_s4 = table.insertRow();
     row_s4.classList.add("text-grey-dk-300");
@@ -184,7 +184,7 @@ function generateTableBodyStats(table) {
     let cell_mov = row_s4.insertCell();
     cell_mov.colSpan = "6";
     cell_mov.appendChild(document.createTextNode("Movement: " + 
-                                                example.movement));
+                                                example.stats.movement));
 }
 
 function generateTableNormalAttack(table) {
