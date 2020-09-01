@@ -121,14 +121,15 @@ You can find the source code for Jekyll at GitHub:
 {:c-dk-bg: style="background: #C5E0B3;" .text-grey-dk-300 }
 {:c-dk-bg-sm: c-dk-bg .fs-2}
 
-<details markdown="block">
-  <summary>
-    <div class="table-wrapper"><table class="creature-table"> <thead> <tr> <th colspan="6" class="fs-6 text-grey-lt-000" style="background: #538135;">Cheep Cheep, Common</th></tr><tr><th colspan="6" class="fs-5 text-grey-lt-000" style="background: #538135;">Rank 1 Natural Hunter</th></tr></thead></table></div>
-  </summary>
-
 | Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
 | Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+<details markdown="block">
+  <summary>
+    <div class="table-wrapper"><table class="creature-table"> <tbody> <tr> <th colspan="6" class="fs-6 text-grey-lt-000" style="background: #538135;">Cheep Cheep, Common</th></tr><tr><th colspan="6" class="fs-5 text-grey-lt-000" style="background: #538135;">Rank 1 Natural Hunter</th></tr></tbody></table></div>
+  </summary>
+
 | **HP**: 12 {: c-dk-bg } || **MP**: 0 {: c-dk-bg } || **SP**: 12 {: c-dk-bg }                                                                      ||
 | Defense: 2 (Civilian) {: c-lt-bg } ||| Concentration: 11 {: c-lt-bg }                                                                             |||
 | Initiative: +4 {: c-lt-bg } ||| Evasion: 14 {: c-lt-bg }                                                                                          |||
