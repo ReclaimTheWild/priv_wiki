@@ -477,7 +477,7 @@ function generateTableDrops(table) {
 function buildTable() {
     div_table = document.querySelector("#built-table");
     newTable = document.createElement("table");
-    div_table.replaceChild(table);
+    div_table.replaceChild(newTable);
     let table = div_table.querySelector("table");
     generateTableHead(table);
     generateTableBodyStats(table);
