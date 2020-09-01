@@ -665,9 +665,9 @@ function generateTableTraits(table) {
 
 function generateTableDrops(table) {
     let row_1 = table.insertRow();
-    row_1.classList.add("text-grey-dk-300");
-    row_1.classList.add("creature-content-bg-light");
     let cell_drop = row_1.insertCell();
+    cell_drop.classList.add("text-grey-dk-300");
+    cell_drop.classList.add("creature-content-bg-light");
     cell_drop.rowSpan = example.drops.length.toString();
     cell_drop.appendChild(document.createTextNode("Drops:"));
     let cell_d1 = row_1.insertCell();
@@ -695,6 +695,7 @@ function generateTableDrops(table) {
 function buildTable() {
     div_table = document.querySelector("#built-table");
     newTable = document.createElement("table");
+    newTable.classList.add("creature-table");
     div_table.appendChild(newTable);
     let table = div_table.querySelector("table");
     generateTableHead(table);
