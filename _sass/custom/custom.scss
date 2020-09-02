@@ -36,18 +36,6 @@ form {
       flex-grow: 3;
     }
 
-    &.subflex {
-      flex-direction: row;
-    }
-
-    &.subflex > div {
-      display:flex;
-      flex-direction:column;
-      margin-left: .5rem;
-      margin-right: .5rem;
-      flex: 1 1 5ch;
-    }
-
     &.traits > div {
       flex: 1 1 5ch;
       // margin-left: .5rem;
