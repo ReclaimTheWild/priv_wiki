@@ -717,8 +717,8 @@ function generateTableDrops(table) {
 }
 
 function buildTable() {
-    div_table = document.querySelector("#built-table");
-    newTable = document.createElement("table");
+    let div_table = document.querySelector("#built-table");
+    let newTable = document.createElement("table");
     newTable.classList.add("creature-table");
     div_table.appendChild(newTable);
     let table = div_table.querySelector("table");
@@ -731,4 +731,38 @@ function buildTable() {
     generateTableTraits(table);
     if (example.drops != null)
         generateTableDrops(table);
+    
+    let div_code = document.querySelector("#built-table-code");
+    let code = div_code.querySelector("code");
+    code.innerHTML = process(table.outerHTML);
+}
+
+function process(str) {
+
+    var div = document.createElement('div');
+    div.innerHTML = str.trim();
+
+    return format(div, 0).innerHTML;
+}
+
+function format(node, level) {
+
+    var indentBefore = new Array(level++ + 1).join('  '),
+        indentAfter  = new Array(level - 1).join('  '),
+        textNode;
+
+    for (var i = 0; i < node.children.length; i++) {
+
+        textNode = document.createTextNode('\n' + indentBefore);
+        node.insertBefore(textNode, node.children[i]);
+
+        format(node.children[i], level);
+
+        if (node.lastElementChild == node.children[i]) {
+            textNode = document.createTextNode('\n' + indentAfter);
+            node.appendChild(textNode);
+        }
+    }
+
+    return node;
 }
