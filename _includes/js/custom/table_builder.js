@@ -55,9 +55,7 @@ let example = {
         },
     ],
     traits: {
-        informations: [
-            "Limited Intelligence",
-        ],
+        informations: "Limited Intelligence, Undead",
         vulnerability : "",
         power: {
             combat: 2,
@@ -338,7 +336,6 @@ function generateTablePassives(table) {
 }
 
 function generateTableTraits(table) {
-    let infos_str = example.traits.informations.join(", ");
     let traits = example.traits;
     let row_inf = table.insertRow();
     let cell_name = row_inf.insertCell();
@@ -346,7 +343,7 @@ function generateTableTraits(table) {
     cell_name.classList.add("creature-content-bg-dark");
     cell_name.classList.add("fs-4");
     cell_name.colSpan = "6";
-    cell_name.appendChild(document.createTextNode(infos_str));
+    cell_name.appendChild(document.createTextNode(traits.informations));
 
     if (traits.vulnerability || 0 !== traits.vulnerability.length) {
         let row_vuln = table.insertRow();

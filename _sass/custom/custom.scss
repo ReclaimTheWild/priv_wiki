@@ -32,6 +32,13 @@ form {
     &.flex-grow-3 {
       flex-grow: 3;
     }
+
+    &.traits-title {
+      & > span {
+        font-size: 1.4em;
+        text-align: center;
+      }
+    }
   }
 }
 

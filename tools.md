@@ -90,10 +90,85 @@ permalink: /tools
         <input id="id_attack_hit" type="text" placeholder="8">
     </div>
     <div class="large-input flex-grow-2">
-        <label for="id_attack_damage">Range:</label>
-        <input id="id_attack_damage" type="text" placeholder="42">
+        <label for="id_attack_range">Range:</label>
+        <input id="id_attack_range" type="text" placeholder="Projectile 12-16">
     </div>
 </form>
+
+#### Abilities:
+
+(A ajouter through JS)
+
+#### Default Weapon:
+
+<form>
+    <div class="large-input">
+        <label for="id_weapon_name">Name:</label>
+        <input id="id_weapon_name" type="text" placeholder="Holy Rod of Wisdom">
+    </div>
+    <div class="large-input">
+        <label for="id_weapon_rank">Rank:</label>
+        <input id="id_weapon_rank" type="text" placeholder="Rank 1 Natural Rod">
+    </div>
+</form>
+<form>
+    <div>
+        <label for="id_weapon_accuracy">Accuracy:</label>
+        <input id="id_weapon_accuracy" type="text" placeholder="0">
+    </div>
+    <div>
+        <label for="id_weapon_attack">Attack:</label>
+        <input id="id_weapon_attack" type="text" placeholder="0">
+    </div>
+    <div>
+        <label for="id_weapon_durability">Durability:</label>
+        <input id="id_weapon_durability" type="text" placeholder="0">
+    </div>
+</form>
+
+#### Passives:
+
+(A ajouter through JS)
+
+#### Traits:
+
+<form>
+    <div class="large-input flex-grow-3">
+        <label for="id_traits_infos">Intelligence & Infos:</label>
+        <input id="id_traits_infos" type="text" placeholder="Limited Intelligence, Undead">
+    </div>
+    <div class="large-input">
+        <label for="id_traits_vulnerability">Vulnerability:</label>
+        <input id="id_traits_vulnerability" type="text" placeholder="Light (Leave empty for none)">
+    </div>
+</form>
+<form>
+    <div class="traits-title">
+        <span>Power</span>
+    </div>
+    <div class="traits-title">
+        <span>Wisdom</span>
+    </div>
+    <div class="traits-title">
+        <span>Courage</span>
+    </div>
+</form>
+<form>
+    <div>
+        <label for="id_traits_combat">Combat:</label>
+        <input id="id_traits_combat" type="text" placeholder="0">
+    </div>
+    <div>
+        <label for="id_traits_willpower">Wisdom:</label>
+        <input id="id_traits_willpower" type="text" placeholder="0">
+    </div>
+    <div>
+        <label for="id_traits_accuracy">Accuracy:</label>
+        <input id="id_traits_accuracy" type="text" placeholder="0">
+    </div>
+</form>
+
+#### Drops:
 
 ```js
 let example = {
@@ -133,9 +208,7 @@ let example = {
         },
     ],
     traits: {
-        informations: [
-            "Limited Intelligence",
-        ],
+        informations: "Limited Intelligence, Undead",
         vulnerability : "",
         power: {
             combat: 2,
