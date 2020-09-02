@@ -324,7 +324,7 @@ function generateTablePassives(table) {
         cell_name.colSpan = "6";
         let pas_strong = document.createElement("strong");
         pas_strong.appendChild(document.createTextNode(element.name));
-        cell_name.appendChild(pas_strong.outerHTML);
+        cell_name.appendChild(pas_strong);
         cell_name.appendChild(document.createTextNode(" (Passive)"));
 
         let row_2 = table.insertRow();
