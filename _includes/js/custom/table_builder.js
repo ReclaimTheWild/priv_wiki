@@ -135,21 +135,24 @@ function generateTableBodyStats(table) {
     cell_hp.colSpan = "2";
     let hp_strong = document.createElement("strong");
     hp_strong.appendChild(document.createTextNode("HP"));
-    cell_hp.appendChild(document.createTextNode(hp_strong.outerHTML + ": " + example.stats.hp));
+    cell_hp.appendChild(hp_strong);
+    cell_hp.appendChild(document.createTextNode(": " + example.stats.hp));
     let cell_mp = row_p.insertCell();
     cell_mp.classList.add("text-grey-dk-300");
     cell_mp.classList.add("creature-content-bg-dark");
     cell_mp.colSpan = "2";
     let mp_strong = document.createElement("strong");
     mp_strong.appendChild(document.createTextNode("MP"));
-    cell_mp.appendChild(document.createTextNode(mp_strong.outerHTML + ": " + example.stats.mp));
+    cell_mp.appendChild(mp_strong);
+    cell_mp.appendChild(document.createTextNode(": " + example.stats.mp));
     let cell_sp = row_p.insertCell();
     cell_sp.classList.add("text-grey-dk-300");
     cell_sp.classList.add("creature-content-bg-dark");
     cell_sp.colSpan = "2";
     let sp_strong = document.createElement("strong");
     sp_strong.appendChild(document.createTextNode("SP"));
-    cell_sp.appendChild(document.createTextNode(sp_strong.outerHTML + ": " + example.stats.sp));
+    cell_sp.appendChild(sp_strong);
+    cell_sp.appendChild(document.createTextNode(": " + example.stats.sp));
 
     let row_s1 = table.insertRow();
     let cell_def = row_s1.insertCell();
@@ -284,7 +287,8 @@ function generateTableDefaultWeapon(table) {
     cell_name.colSpan = "6";
     let weap_strong = document.createElement("strong");
     weap_strong.appendChild(document.createTextNode("Default Weapon"));
-    cell_name.appendChild(document.createTextNode(weap_strong.outerHTML + ": " + example.weapon.name));
+    cell_name.appendChild(weap_strong);
+    cell_name.appendChild(document.createTextNode(": " + example.weapon.name));
 
     let row_2 = table.insertRow();
     let cell_rank = row_2.insertCell();
@@ -320,7 +324,8 @@ function generateTablePassives(table) {
         cell_name.colSpan = "6";
         let pas_strong = document.createElement("strong");
         pas_strong.appendChild(document.createTextNode(element.name));
-        cell_hp.appendChild(document.createTextNode(pas_strong.outerHTML + " (Passive)"));
+        cell_name.appendChild(pas_strong.outerHTML);
+        cell_name.appendChild(document.createTextNode(" (Passive)"));
 
         let row_2 = table.insertRow();
         let cell_desc = row_2.insertCell();
