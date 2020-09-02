@@ -43,6 +43,7 @@ form {
     &.subflex > div {
       display:flex;
       flex-direction:column;
+      flex: 1 1 5ch;
     }
 
     &.traits > div {
