@@ -4,6 +4,8 @@ title: Tools
 permalink: /tools
 ---
 
+#### Head:
+
 <form style="display:flex;">
     <div class="large-input">
         <label for="id_name">Name:</label>
@@ -14,6 +16,9 @@ permalink: /tools
         <input id="id_rank" type="text" placeholder="Rank 1 Natural Template">
     </div>
 </form>
+
+#### Stats:
+
 <form>
     <div>
         <label for="id_hp">HP:</label>
@@ -29,15 +34,15 @@ permalink: /tools
     </div>
 </form>
 <form>
-    <div id="div_defense">
+    <div class="flex-shrink-0">
         <label for="id_defense">Defense:</label>
         <input id="id_defense" type="text" placeholder="0">
     </div>
-    <div id="div_defense_type" class="large-input">
+    <div class="large-input flex-grow-2">
         <label for="id_defense_type">Def. Type:</label>
         <input id="id_defense_type" type="text" placeholder="Civilian">
     </div>
-    <div id="div_concentration">
+    <div class="flex-shrink-0">
         <label for="id_concentration">Concentration:</label>
         <input id="id_concentration" type="text" placeholder="0">
     </div>
@@ -45,7 +50,7 @@ permalink: /tools
 <form>
     <div>
         <label for="id_initiative">Initiative:</label>
-        <input id="id_initiative" type="text" placeholder="0">
+        <input id="id_initiative" type="text" placeholder="+1">
     </div>
     <div>
         <label for="id_evasion">Evasion:</label>
@@ -61,30 +66,37 @@ permalink: /tools
         <label for="id_size">Size:</label>
         <input id="id_size" type="text" placeholder="Small">
     </div>
-    <div id="div_movement" class="large-input">
+    <div class="large-input flex-grow-3">
         <label for="id_movement">Movement:</label>
         <input id="id_movement" type="text" placeholder="6 (Walking), 2 (Swimming)">
     </div>
 </form>
 
+#### Main Attack:
+
+<form>
+    <div class="large-input flex-grow-2">
+        <label for="id_attack_name">Name:</label>
+        <input id="id_attack_name" type="text" placeholder="Sword strike">
+    </div>
+    <div>
+        <label for="id_attack_damage">Damage:</label>
+        <input id="id_attack_damage" type="text" placeholder="42">
+    </div>
+</form>
+<form>
+    <div>
+        <label for="id_attack_hit">To-Hit Check:</label>
+        <input id="id_attack_hit" type="text" placeholder="8">
+    </div>
+    <div class="large-input flex-grow-2">
+        <label for="id_attack_damage">Range:</label>
+        <input id="id_attack_damage" type="text" placeholder="42">
+    </div>
+</form>
+
 ```js
 let example = {
-    head: {
-        name: "Cheep Cheep, Common",
-        rank: "Rank 1 Natural Hunter",
-    },
-    stats: {
-        hp: "12",
-        mp: "0",
-        sp: "12",
-        defense: "2", defense_type: "Civilian",
-        concentration: "11",
-        initiative: "+4",
-        evasion: "14",
-        size: "Small",
-        vitality: "13",
-        movement: "6 (Swimming), 1 (Walking)",
-    },
     main_attack: {
         name: "Spurt Water",
         damage: "7",

@@ -18,20 +18,19 @@ form {
     flex-direction:column;
 
     &.large-input {
-      flex: 1 1 15ch;
-    }
-    &[id="div_defense_type"] {
-      flex: 2 1 15ch;
-    }
-    &[id="div_defense"] {
-      flex: 1 0 5ch;
-    }
-    &[id="div_concentration"] {
-      flex: 1 0 5ch;
+      flex-basis: 15ch;
     }
 
-    &[id="div_movement"] {
-      flex: 3 1 20ch;
+    &.flex-shrink-0 {
+      flex-shrink: 0;
+    }
+
+    &.flex-grow-2 {
+      flex-grow: 2;
+    }
+
+    &.flex-grow-3 {
+      flex-grow: 3;
     }
   }
 }
