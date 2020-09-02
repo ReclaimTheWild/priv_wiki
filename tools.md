@@ -97,7 +97,36 @@ permalink: /tools
 
 #### Abilities:
 
-(A ajouter through JS)
+<div id="abilities_1">
+    <form>
+        <div class="large-input flex-grow-2">
+            <label for="id_abilities_name_1">Name:</label>
+            <input id="id_abilities_name_1" type="text" placeholder="Arc Shot">
+        </div>
+        <div>
+            <label for="id_abilities_damage_1">Damage:</label>
+            <input id="id_abilities_damage_1" type="text" placeholder="42">
+        </div>
+    </form>
+    <form>
+        <div>
+            <label for="id_abilities_hit_1">To-Hit Check:</label>
+            <input id="id_abilities_hit_1" type="text" placeholder="8">
+        </div>
+        <div class="large-input flex-grow-2">
+            <label for="id_abilities_range_1">Range:</label>
+            <input id="id_abilities_range_1" type="text" placeholder="Projectile 12-16">
+        </div>
+    </form>
+    <form>
+        <div class="large-input">
+            <label for="id_abilities_description_1">Description:</label>
+            <textarea id="id_abilities_description_1" rows="3" placeholder="Description..."></textarea>
+        </div>
+    </form>
+</div>
+
+(Add more through JS)
 
 #### Default Weapon:
 
@@ -128,7 +157,22 @@ permalink: /tools
 
 #### Passives:
 
-(A ajouter through JS)
+<div id="passives_1">
+    <form>
+        <div class="large-input">
+            <label for="id_passives_name_1">Name:</label>
+            <input id="id_passives_name_1" type="text" placeholder="Flying Fish">
+        </div>
+    </form>
+    <form>
+        <div class="large-input">
+            <label for="id_passives_description_1">Description:</label>
+            <textarea id="id_passives_description_1" rows="3" placeholder="Description..."></textarea>
+        </div>
+    </form>    
+</div>
+
+(Add more through JS)
 
 #### Traits:
 
@@ -155,6 +199,30 @@ permalink: /tools
             <label for="id_traits_hearts">Hearts:</label>
             <input id="id_traits_hearts" type="text" placeholder="0">
         </div>
+        <div>
+            <label for="id_traits_athletics">Athletics:</label>
+            <input id="id_traits_athletics" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_civilization">Civilization:</label>
+            <input id="id_traits_civilization" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_fortitude">Fortitude:</label>
+            <input id="id_traits_fortitude" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_intimidate">Intimidate:</label>
+            <input id="id_traits_intimidate" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_mechanics">Mechanics:</label>
+            <input id="id_traits_mechanics" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_smithing">Smithing:</label>
+            <input id="id_traits_smithing" type="text" placeholder="0">
+        </div>
     </div>
     <div class="traits">
         <div class="traits-title">
@@ -167,6 +235,30 @@ permalink: /tools
         <div>
             <label for="id_traits_magic">Magic:</label>
             <input id="id_traits_magic" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_arcana">Arcana:</label>
+            <input id="id_traits_arcana" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_perception">Perception:</label>
+            <input id="id_traits_perception" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_influence">Influence:</label>
+            <input id="id_traits_influence" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_discipline">Discipline:</label>
+            <input id="id_traits_discipline" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_perform">Perform:</label>
+            <input id="id_traits_perform" type="text" placeholder="0">
+        </div>        
+        <div>
+            <label for="id_traits_enchanting">Enchanting:</label>
+            <input id="id_traits_enchanting" type="text" placeholder="0">
         </div>
     </div>
     <div class="traits">
@@ -181,49 +273,56 @@ permalink: /tools
             <label for="id_traits_stamina">Stamina:</label>
             <input id="id_traits_stamina" type="text" placeholder="0">
         </div>
+        <div>
+            <label for="id_traits_nature">Nature:</label>
+            <input id="id_traits_nature" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_agility">Agility:</label>
+            <input id="id_traits_agility" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_command">Command:</label>
+            <input id="id_traits_command" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_insight">Insight:</label>
+            <input id="id_traits_insight" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_guile">Guile:</label>
+            <input id="id_traits_guile" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_cooking">Cooking:</label>
+            <input id="id_traits_cooking" type="text" placeholder="0">
+        </div>
     </div>
-</form>
-<form>
 </form>
 
 #### Drops:
 
+<div id="drops_1">
+    <form>
+        <div>
+            <label for="id_drops_quantity_1">x</label>
+            <input id="id_drops_quantity_1" type="text" placeholder="5">
+        </div>
+        <div class="large-input flex-grow-2">
+            <label for="id_drops_name_1">Name:</label>
+            <input id="id_drops_name_1" type="text" placeholder="Cheep Cheep Meat">
+        </div>
+        <div class="large-input flex-grow-2">
+            <label for="id_drops_rank_1">Rank:</label>
+            <input id="id_drops_rank_1" type="text" placeholder="Cheep Cheep Meat">
+        </div>
+    </form>
+</div>
+
+(Add more through JS)
+
 ```js
 let example = {
-        traits: {
-        informations: "Limited Intelligence, Undead",
-        vulnerability : "",
-        power: {
-            combat: 2,
-            hearts: 3,
-            athletics: 3,
-            civilization: 0,
-            fortitude: 3,
-            intimidate: 1,
-            mechanics: 0,
-            smithing: 0,
-        },
-        wisdom: {
-            willpower: 2,
-            magic: 0,
-            arcana: 1,
-            perception: 1,
-            influence: 1,
-            discipline: 1,
-            perform: 0,
-            enchanting: 0,
-        },
-        courage: {
-            accuracy: 4,
-            stamina: 3,
-            nature: 2,
-            agility: 4,
-            command: 0,
-            insight: 1,
-            guile: 1,
-            cooking: 0,
-        },
-    },
     abilities: [
         {
             name: "Arc Shot",
