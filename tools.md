@@ -29,20 +29,20 @@ permalink: /tools
     </div>
 </form>
 <form>
-    <div>
+    <div id="div_defense">
         <label for="id_defense">Defense:</label>
         <input id="id_defense" type="text" placeholder="0">
     </div>
-    <div>
+    <div id="div_defense_type">
         <label for="id_defense_type">Def. Type:</label>
         <input id="id_defense_type" type="text" placeholder="Civilian">
     </div>
-</form>
-<form>
-    <div>
+    <div id="div_concentration">
         <label for="id_concentration">Concentration:</label>
         <input id="id_concentration" type="text" placeholder="0">
     </div>
+</form>
+<form>
     <div>
         <label for="id_initiative">Initiative:</label>
         <input id="id_initiative" type="text" placeholder="0">
@@ -60,12 +60,12 @@ permalink: /tools
 </form>
 <form>
     <div>
-    <label for="id_size">Size:</label>
-    <input id="id_size" type="text" placeholder="Small">
+        <label for="id_size">Size:</label>
+        <input id="id_size" type="text" placeholder="Small">
     </div>
-    <div>
-    <label for="id_movement">Movement:</label>
-    <input id="id_movement" type="text" placeholder="6 (Walking), 2 (Swimming)">
+    <div id="div_movement">
+        <label for="id_movement">Movement:</label>
+        <input id="id_movement" type="text" placeholder="6 (Walking), 2 (Swimming)">
     </div>
 </form>
 

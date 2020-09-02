@@ -17,8 +17,18 @@ form {
     display:flex;
     flex-direction:column;
 
-    &[id="id_movement"] {
-      flex: 4 1 30ch;
+    &[id="div_defense_type"] {
+      flex: 3 1 30ch;
+    }
+    &[id="div_defense"] {
+      flex: 2 1 30ch;
+    }
+    &[id="div_concentration"] {
+      flex: 2 1 30ch;
+    }
+
+    &[id="div_movement"] {
+      flex: 3 1 30ch;
     }
   }
 }
