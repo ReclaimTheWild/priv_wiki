@@ -305,14 +305,14 @@ permalink: /tools
 <div id="drops_1">
     <form>
         <div>
-            <label for="id_drops_quantity_1">x</label>
+            <label for="id_drops_quantity_1">Quantity:</label>
             <input id="id_drops_quantity_1" type="text" placeholder="5">
         </div>
-        <div class="large-input flex-grow-2">
+        <div class="large-input flex-grow-5">
             <label for="id_drops_name_1">Name:</label>
             <input id="id_drops_name_1" type="text" placeholder="Cheep Cheep Meat">
         </div>
-        <div class="large-input flex-grow-2">
+        <div class="large-input flex-grow-5">
             <label for="id_drops_rank_1">Rank:</label>
             <input id="id_drops_rank_1" type="text" placeholder="Cheep Cheep Meat">
         </div>
