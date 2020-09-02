@@ -734,7 +734,7 @@ function buildTable() {
     
     let div_code = document.querySelector("#built-table-code");
     let code = div_code.querySelector("code");
-    code.innerHTML = process(table.outerHTML);
+    code.appendChild(document.createTextNode(process(table.outerHTML)));
 }
 
 function process(str) {
