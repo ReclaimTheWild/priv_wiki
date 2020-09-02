@@ -740,10 +740,28 @@ function buildTable() {
 function copyTableToClipboard() {
     let div_code = document.querySelector("#built-table-code");
     let copyText = div_code.querySelector("code");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-  }
+
+    var textArea = document.createElement("textarea");
+    textArea.value = copyText.innerText;
+
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    try {
+        var successful = document.execCommand('copy');
+    } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+    }
+
+    document.body.removeChild(textArea);
+}
 
 function process(str) {
 
