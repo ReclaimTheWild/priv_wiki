@@ -348,13 +348,15 @@ function generateTableTraits(table) {
     cell_name.colSpan = "6";
     cell_name.appendChild(document.createTextNode(infos_str));
 
-    let row_vuln = table.insertRow();
-    let cell_vuln = row_vuln.insertCell();
-    cell_vuln.classList.add("text-grey-dk-300");
-    cell_vuln.classList.add("creature-content-bg-dark");
-    cell_vuln.classList.add("fs-4");
-    cell_vuln.colSpan = "6";
-    cell_vuln.appendChild(document.createTextNode("Vulnerability: " + traits.vulnerability));
+    if (traits.vulnerability || 0 !== traits.vulnerability.length) {
+        let row_vuln = table.insertRow();
+        let cell_vuln = row_vuln.insertCell();
+        cell_vuln.classList.add("text-grey-dk-300");
+        cell_vuln.classList.add("creature-content-bg-dark");
+        cell_vuln.classList.add("fs-4");
+        cell_vuln.colSpan = "6";
+        cell_vuln.appendChild(document.createTextNode("Vulnerability: " + traits.vulnerability));
+    }
 
     let row_1 = table.insertRow();
     let cell_1_1 = row_1.insertCell();
@@ -690,7 +692,8 @@ function generateTableDrops(table) {
     cell_drop.rowSpan = example.drops.length.toString();
     let drop_strong = document.createElement("strong");
     drop_strong.appendChild(document.createTextNode("Drops"));
-    cell_drop.appendChild(document.createTextNode(drop_strong.outerHTML + ":"));
+    cell_drop.appendChild(drop_strong);
+    cell_drop.appendChild(document.createTextNode(":"));
     let cell_d1 = row_1.insertCell();
     cell_d1.classList.add("text-grey-dk-300");
     cell_d1.classList.add("creature-content-bg-light");
