@@ -33,6 +33,11 @@ input {
   }
 }
 
+label {
+  align-self: center;
+  font-size: 1.75em;
+}
+
 .creature-table {
   table {
       border-collapse: collapse !important;
