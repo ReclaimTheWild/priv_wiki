@@ -143,71 +143,54 @@ permalink: /tools
     </div>
 </form>
 <form>
-    <div class="traits-title">
-        <span>Power</span>
+    <div>
+        <div class="traits-title">
+            <span>Power</span>
+        </div>
+        <div>
+            <label for="id_traits_combat">Combat:</label>
+            <input id="id_traits_combat" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_hearts">Hearts:</label>
+            <input id="id_traits_hearts" type="text" placeholder="0">
+        </div>
     </div>
-    <div class="traits-title">
-        <span>Wisdom</span>
+    <div>
+        <div class="traits-title">
+            <span>Wisdom</span>
+        </div>
+        <div>
+            <label for="id_traits_willpower">Willpower:</label>
+            <input id="id_traits_willpower" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_magic">Magic:</label>
+            <input id="id_traits_magic" type="text" placeholder="0">
+        </div>
     </div>
-    <div class="traits-title">
-        <span>Courage</span>
+    <div>
+        <div class="traits-title">
+            <span>Courage</span>
+        </div>
+        <div>
+            <label for="id_traits_accuracy">Accuracy:</label>
+            <input id="id_traits_accuracy" type="text" placeholder="0">
+        </div>
+        <div>
+            <label for="id_traits_stamina">Stamina:</label>
+            <input id="id_traits_stamina" type="text" placeholder="0">
+        </div>
     </div>
 </form>
 <form>
-    <div>
-        <label for="id_traits_combat">Combat:</label>
-        <input id="id_traits_combat" type="text" placeholder="0">
-    </div>
-    <div>
-        <label for="id_traits_willpower">Wisdom:</label>
-        <input id="id_traits_willpower" type="text" placeholder="0">
-    </div>
-    <div>
-        <label for="id_traits_accuracy">Accuracy:</label>
-        <input id="id_traits_accuracy" type="text" placeholder="0">
-    </div>
 </form>
 
 #### Drops:
 
 ```js
 let example = {
-    main_attack: {
-        name: "Spurt Water",
-        damage: "7",
-        hit: +8,
-        range: "Projectile 4",
-    },
-    abilities: [
-        {
-            name: "Arc Shot",
-            damage: "7, Water",
-            cost: "4 Stamina",
-            range: "Projectile 12-16",
-            description: "You may ignore allies, enemies and any obstacles that do not reach higher than 6 squares above you, for determining line of sight for this attack.",
-        },
-        {
-            name: "Jump Attack",
-            damage: "10",
-            cost: "6 Stamina",
-            range: "Jump 4, Melee",
-            description : "You jump towards your target in a straight line, landing next to them, even if you have already reached your maximum Movement for the turn. You are Off-Balance until the start of your next turn. This attack cannot be performed if you are Halted or Slowed.",
-        },
-    ],
-    weapon: {
-        name: "Cheep Water Spurt",
-        rank: "Rank 1 Natural Rod, Water",
-        accuracy: "1",
-        attack: "5",
-        durability: "6",
-    },
-    passives: [
-        {
-            name: "Flying Fish",
-            description: "While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3)",
-        },
-    ],
-    traits: {
+        traits: {
         informations: "Limited Intelligence, Undead",
         vulnerability : "",
         power: {
@@ -241,6 +224,28 @@ let example = {
             cooking: 0,
         },
     },
+    abilities: [
+        {
+            name: "Arc Shot",
+            damage: "7, Water",
+            cost: "4 Stamina",
+            range: "Projectile 12-16",
+            description: "You may ignore allies, enemies and any obstacles that do not reach higher than 6 squares above you, for determining line of sight for this attack.",
+        },
+        {
+            name: "Jump Attack",
+            damage: "10",
+            cost: "6 Stamina",
+            range: "Jump 4, Melee",
+            description : "You jump towards your target in a straight line, landing next to them, even if you have already reached your maximum Movement for the turn. You are Off-Balance until the start of your next turn. This attack cannot be performed if you are Halted or Slowed.",
+        },
+    ],
+    passives: [
+        {
+            name: "Flying Fish",
+            description: "While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3)",
+        },
+    ],
     drops: [
         {
             name: "Cheep Cheep Meat",

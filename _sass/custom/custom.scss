@@ -13,7 +13,10 @@ form {
   
   & > div {
     flex: 1 1 5ch;
-    margin: .5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
     display:flex;
     flex-direction:column;
 
