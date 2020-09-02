@@ -5,8 +5,18 @@ permalink: /tools
 ---
 
 <form>
-  <input type="text" placeholder="Name">
-  <input type="text" placeholder="Rank">
+    <label for="id_username">Name:</label>
+    <input type="text" placeholder="Name, Common">
+    <label for="id_username">Rank:</label>    
+    <input type="text" placeholder="Rank 1 Natural Template">
+</form>
+<form>
+    <label for="id_username">HP:</label>
+    <input type="text" placeholder="0">
+    <label for="id_username">SP:</label>
+    <input type="text" placeholder="0">
+    <label for="id_username">SP:</label>
+    <input type="text" placeholder="0">
 </form>
 
 <div class="field required">
