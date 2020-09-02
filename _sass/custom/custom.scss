@@ -36,7 +36,17 @@ form {
       flex-grow: 3;
     }
 
-    &.traits-title {
+    &.traits > div {
+      flex: 1 1 5ch;
+      // margin-left: .5rem;
+      // margin-right: .5rem;
+      margin-top: .2rem;
+      margin-bottom: .2rem;
+      display:flex;
+      flex-direction:column;
+    }
+
+    & > div.traits-title {
       & > span {
         font-size: 1.4em;
         text-align: center;

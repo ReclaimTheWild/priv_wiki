@@ -143,7 +143,7 @@ permalink: /tools
     </div>
 </form>
 <form>
-    <div>
+    <div class="traits">
         <div class="traits-title">
             <span>Power</span>
         </div>
@@ -156,7 +156,7 @@ permalink: /tools
             <input id="id_traits_hearts" type="text" placeholder="0">
         </div>
     </div>
-    <div>
+    <div class="traits">
         <div class="traits-title">
             <span>Wisdom</span>
         </div>
@@ -169,7 +169,7 @@ permalink: /tools
             <input id="id_traits_magic" type="text" placeholder="0">
         </div>
     </div>
-    <div>
+    <div class="traits">
         <div class="traits-title">
             <span>Courage</span>
         </div>
