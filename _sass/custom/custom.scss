@@ -36,8 +36,9 @@ form {
       flex-grow: 3;
     }
 
-    &.flex-grow-5 {
-      flex-grow: 5;
+    &.subflex > div {
+      display:flex;
+      flex-direction:column;
     }
 
     &.traits > div {
