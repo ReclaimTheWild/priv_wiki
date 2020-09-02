@@ -8,6 +8,7 @@
 
 form {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   
   & > input {
@@ -31,11 +32,6 @@ input {
     color: white;
     box-shadow: 0 .75rem .5rem -.5rem hsl(0, 50%, 80%);
   }
-}
-
-label {
-  align-self: center;
-  font-size: 1.75em;
 }
 
 .creature-table {
