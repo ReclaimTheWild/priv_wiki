@@ -5,11 +5,11 @@ permalink: /tools
 ---
 
 <form style="display:flex;">
-    <div>
+    <div class="large-input">
         <label for="id_name">Name:</label>
         <input id="id_name" type="text" placeholder="Name, Common">
     </div>
-    <div>
+    <div class="large-input">
         <label for="id_rank">Rank:</label>
         <input id="id_rank" type="text" placeholder="Rank 1 Natural Template">
     </div>
@@ -33,7 +33,7 @@ permalink: /tools
         <label for="id_defense">Defense:</label>
         <input id="id_defense" type="text" placeholder="0">
     </div>
-    <div id="div_defense_type">
+    <div id="div_defense_type" class="large-input">
         <label for="id_defense_type">Def. Type:</label>
         <input id="id_defense_type" type="text" placeholder="Civilian">
     </div>
@@ -57,11 +57,11 @@ permalink: /tools
     </div>
 </form>
 <form>
-    <div>
+    <div class="large-input">
         <label for="id_size">Size:</label>
         <input id="id_size" type="text" placeholder="Small">
     </div>
-    <div id="div_movement">
+    <div id="div_movement" class="large-input">
         <label for="id_movement">Movement:</label>
         <input id="id_movement" type="text" placeholder="6 (Walking), 2 (Swimming)">
     </div>
