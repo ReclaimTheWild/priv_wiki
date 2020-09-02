@@ -12,11 +12,14 @@ form {
   flex-wrap: wrap;
   
   & > div {
-    flex: 1 1 10ch;
+    flex: 1 1 5ch;
     margin: .5rem;
     display:flex;
     flex-direction:column;
 
+    &.large-input {
+      flex: 1 1 15ch;
+    }
     &[id="div_defense_type"] {
       flex: 2 1 30ch;
     }
