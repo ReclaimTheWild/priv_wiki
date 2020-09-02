@@ -11,12 +11,12 @@ form {
   align-items: center;
   flex-wrap: wrap;
   
-  & > input {
+  & > div > input {
     flex: 1 1 10ch;
     margin: .5rem;
     
     &[id="id_movement"] {
-      flex: 3 1 30ch;
+      flex: 4 1 30ch;
     }
   }
 }

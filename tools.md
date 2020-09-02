@@ -5,40 +5,68 @@ permalink: /tools
 ---
 
 <form>
-    <label for="id_name">Name:</label>
-    <input id="id_name" type="text" placeholder="Name, Common">
-    <label for="id_rank">Rank:</label>    
-    <input id="id_rank" type="text" placeholder="Rank 1 Natural Template">
+    <span>
+        <label for="id_name">Name:</label>
+        <input id="id_name" type="text" placeholder="Name, Common">
+    </span>
+    <span>
+        <label for="id_rank">Rank:</label>    
+        <input id="id_rank" type="text" placeholder="Rank 1 Natural Template">
+    </span>
 </form>
 <form>
-    <label for="id_hp">HP:</label>
-    <input id="id_hp" type="text" placeholder="0">
-    <label for="id_mp">MP:</label>
-    <input id="id_mp" type="text" placeholder="0">
-    <label for="id_sp">SP:</label>
-    <input id="id_sp" type="text" placeholder="0">
+    <span>
+        <label for="id_hp">HP:</label>
+        <input id="id_hp" type="text" placeholder="0">
+    </span>
+    <span>
+        <label for="id_mp">MP:</label>
+        <input id="id_mp" type="text" placeholder="0">
+    </span>
+    <span>
+        <label for="id_sp">SP:</label>
+        <input id="id_sp" type="text" placeholder="0">
+    </span>
 </form>
 <form>
-    <label for="id_defense">Defense:</label>
-    <input id="id_defense" type="text" placeholder="0">
-    <label for="id_defense_type">Def. Type:</label>
-    <input id="id_defense_type" type="text" placeholder="Civilian">
-    <label for="id_concentration">Concentration:</label>
-    <input id="id_concentration" type="text" placeholder="0">
+    <span>
+        <label for="id_defense">Defense:</label>
+        <input id="id_defense" type="text" placeholder="0">
+    </span>
+    <span>
+        <label for="id_defense_type">Def. Type:</label>
+        <input id="id_defense_type" type="text" placeholder="Civilian">
+    </span>
 </form>
 <form>
-    <label for="id_initiative">Initiative:</label>
-    <input id="id_initiative" type="text" placeholder="0">
-    <label for="id_evasion">Evasion:</label>
-    <input id="id_evasion" type="text" placeholder="0">
-    <label for="id_vitality">Vitality:</label>
-    <input id="id_vitality" type="text" placeholder="0">
+    <span>
+        <label for="id_concentration">Concentration:</label>
+        <input id="id_concentration" type="text" placeholder="0">
+    </span>
+    <span>
+        <label for="id_initiative">Initiative:</label>
+        <input id="id_initiative" type="text" placeholder="0">
+    </span>
 </form>
 <form>
+    <span>
+        <label for="id_evasion">Evasion:</label>
+        <input id="id_evasion" type="text" placeholder="0">
+    </span>
+    <span>
+        <label for="id_vitality">Vitality:</label>
+        <input id="id_vitality" type="text" placeholder="0">
+    </span>
+</form>
+<form>
+    <span>
     <label for="id_size">Size:</label>
     <input id="id_size" type="text" placeholder="Small">
+    </span>
+    <span>
     <label for="id_movement">Movement:</label>
     <input id="id_movement" type="text" placeholder="6 (Walking), 2 (Swimming)">
+    </span>
 </form>
 
 ```js
