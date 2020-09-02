@@ -734,7 +734,7 @@ function buildTable() {
     
     let div_code = document.querySelector("#built-table-code");
     let code = div_code.querySelector("code");
-    code.appendChild(document.createTextNode(process(table.outerHTML)));
+    code.appendChild(document.createTextNode(process(table.outerHTML.slice(1))));
 }
 
 function copyTableToClipboard() {
