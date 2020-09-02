@@ -4,6 +4,11 @@ title: Tools
 permalink: /tools
 ---
 
+<form>
+  <input type="text" placeholder="Name">
+  <input type="text" placeholder="Rank">
+</form>
+
 <div class="field required">
     <label for="id_username">Username</label>
     <input type="text" name="username" id="id_username" value="test" />
