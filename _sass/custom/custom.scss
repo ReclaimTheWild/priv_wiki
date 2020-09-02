@@ -18,13 +18,13 @@ form {
     flex-direction:column;
 
     &[id="div_defense_type"] {
-      flex: 3 1 30ch;
+      flex: 2 1 30ch;
     }
     &[id="div_defense"] {
-      flex: 2 1 30ch;
+      flex: 1 0 30ch;
     }
     &[id="div_concentration"] {
-      flex: 2 1 30ch;
+      flex: 1 0 30ch;
     }
 
     &[id="div_movement"] {

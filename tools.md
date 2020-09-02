@@ -47,8 +47,6 @@ permalink: /tools
         <label for="id_initiative">Initiative:</label>
         <input id="id_initiative" type="text" placeholder="0">
     </div>
-</form>
-<form>
     <div>
         <label for="id_evasion">Evasion:</label>
         <input id="id_evasion" type="text" placeholder="0">
