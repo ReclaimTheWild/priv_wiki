@@ -737,6 +737,14 @@ function buildTable() {
     code.appendChild(document.createTextNode(process(table.outerHTML)));
 }
 
+function copyTableToClipboard() {
+    let div_code = document.querySelector("#built-table-code");
+    let code = div_code.querySelector("code");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+  }
+
 function process(str) {
 
     var div = document.createElement('div');
