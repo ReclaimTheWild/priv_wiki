@@ -43,6 +43,8 @@ form {
     &.subflex > div {
       display:flex;
       flex-direction:column;
+      margin-left: .5rem;
+      margin-right: .5rem;
       flex: 1 1 5ch;
     }
 
