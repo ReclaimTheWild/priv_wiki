@@ -24,6 +24,14 @@ form {
       flex-basis: 15ch;
     }
 
+    &.small-input {
+        min-width: 10ch;
+    }
+
+    &.small-input-max {
+        max-width: 15ch;
+    }
+
     &.flex-shrink-0 {
       flex-shrink: 0;
     }
