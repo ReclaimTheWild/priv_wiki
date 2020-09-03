@@ -193,113 +193,113 @@ permalink: /tools
     </div>
 </form>
 <form>
-    <div class="traits">
+    <div class="traits small-input">
         <div class="traits-title">
             <span>Power</span>
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_combat">Combat:</label>
             <input id="id_traits_combat" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_hearts">Hearts:</label>
             <input id="id_traits_hearts" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_athletics">Athletics:</label>
             <input id="id_traits_athletics" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_civilization">Civilization:</label>
             <input id="id_traits_civilization" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_fortitude">Fortitude:</label>
             <input id="id_traits_fortitude" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_intimidate">Intimidate:</label>
             <input id="id_traits_intimidate" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_mechanics">Mechanics:</label>
             <input id="id_traits_mechanics" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_smithing">Smithing:</label>
             <input id="id_traits_smithing" type="text" placeholder="0">
         </div>
     </div>
-    <div class="traits">
+    <div class="traits small-input">
         <div class="traits-title">
             <span>Wisdom</span>
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_willpower">Willpower:</label>
             <input id="id_traits_willpower" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_magic">Magic:</label>
             <input id="id_traits_magic" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_arcana">Arcana:</label>
             <input id="id_traits_arcana" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_perception">Perception:</label>
             <input id="id_traits_perception" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_influence">Influence:</label>
             <input id="id_traits_influence" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_discipline">Discipline:</label>
             <input id="id_traits_discipline" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_perform">Perform:</label>
             <input id="id_traits_perform" type="text" placeholder="0">
         </div>        
-        <div class="small-input">
+        <div>
             <label for="id_traits_enchanting">Enchanting:</label>
             <input id="id_traits_enchanting" type="text" placeholder="0">
         </div>
     </div>
-    <div class="traits">
+    <div class="traits small-input">
         <div class="traits-title">
             <span>Courage</span>
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_accuracy">Accuracy:</label>
             <input id="id_traits_accuracy" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_stamina">Stamina:</label>
             <input id="id_traits_stamina" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_nature">Nature:</label>
             <input id="id_traits_nature" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_agility">Agility:</label>
             <input id="id_traits_agility" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_command">Command:</label>
             <input id="id_traits_command" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_insight">Insight:</label>
             <input id="id_traits_insight" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_guile">Guile:</label>
             <input id="id_traits_guile" type="text" placeholder="0">
         </div>
-        <div class="small-input">
+        <div>
             <label for="id_traits_cooking">Cooking:</label>
             <input id="id_traits_cooking" type="text" placeholder="0">
         </div>
