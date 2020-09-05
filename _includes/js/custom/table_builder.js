@@ -157,7 +157,7 @@ function builderAddMainAttack(removeLast = false) {
     builderAddMainAttack.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "main_attack_" + builderAddMainAttack.counter;
-    main_el.classList.add(".downwards-margin");
+    main_el.classList.add("downwards-margin");
 
     let form_name_dmg = document.createElement("form");
     form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_name_" + builderAddMainAttack.counter, "Name*:", "Sword strike"));
@@ -197,7 +197,7 @@ function builderAddAbility(removeLast = false) {
     builderAddAbility.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "ability_" + builderAddAbility.counter;
-    main_el.classList.add(".downwards-margin");
+    main_el.classList.add("downwards-margin");
 
     let form_name_dmg = document.createElement("form");
     form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_ability_name_" + builderAddAbility.counter, "Name*:", "Arc Shot"));
@@ -242,7 +242,7 @@ function builderAddWeapon(removeLast = false) {
     builderAddWeapon.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "weapon_" + builderAddWeapon.counter;
-    main_el.classList.add(".downwards-margin");
+    main_el.classList.add("downwards-margin");
 
     let form_name_dmg = document.createElement("form");
     form_name_dmg.appendChild(createDivInput(["large-input"], "id_weapon_name_" + builderAddWeapon.counter, "Name*:", "Holy Rod of Wisdom"));
@@ -284,7 +284,7 @@ function builderAddPassive(removeLast = false) {
     builderAddPassive.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "passive_" + builderAddPassive.counter;
-    main_el.classList.add(".downwards-margin");
+    main_el.classList.add("downwards-margin");
 
     let form_name_dmg = document.createElement("form");
     form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_passive_name_" + builderAddPassive.counter, "Name*:", "Flying Fish"));
@@ -319,7 +319,7 @@ function builderAddDrop(removeLast = false) {
     builderAddDrop.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "drop_" + builderAddDrop.counter;
-    main_el.classList.add(".downwards-margin");
+    main_el.classList.add("downwards-margin");
 
     let form = document.createElement("form");
     form.appendChild(createDivInput(["small-input"], "id_drop_quantity_" + builderAddDrop.counter, "Quantity:", "5"));
