@@ -8,11 +8,11 @@ permalink: /tools
 
 <form style="display:flex;">
     <div class="large-input">
-        <label for="id_name">Name:</label>
+        <label for="id_name">Name*:</label>
         <input id="id_name" type="text" placeholder="Name, Common">
     </div>
     <div class="large-input">
-        <label for="id_rank">Rank:</label>
+        <label for="id_rank">Rank*:</label>
         <input id="id_rank" type="text" placeholder="Rank 1 Natural Template">
     </div>
 </form>
@@ -21,53 +21,53 @@ permalink: /tools
 
 <form>
     <div class="small-input">
-        <label for="id_hp">HP:</label>
+        <label for="id_hp">HP*:</label>
         <input id="id_hp" type="text" placeholder="0">
     </div>
     <div class="small-input">
-        <label for="id_mp">MP:</label>
+        <label for="id_mp">MP*:</label>
         <input id="id_mp" type="text" placeholder="0">
     </div>
     <div class="small-input">
-        <label for="id_sp">SP:</label>
+        <label for="id_sp">SP*:</label>
         <input id="id_sp" type="text" placeholder="0">
     </div>
 </form>
 <form>
     <div class="flex-shrink-0 small-input">
-        <label for="id_defense">Defense:</label>
+        <label for="id_defense">Defense*:</label>
         <input id="id_defense" type="text" placeholder="0">
     </div>
     <div class="large-input flex-grow-2 small-input">
-        <label for="id_defense_type">Def. Type:</label>
+        <label for="id_defense_type">Def. Type*:</label>
         <input id="id_defense_type" type="text" placeholder="Civilian">
     </div>
     <div class="flex-shrink-0 small-input">
-        <label for="id_concentration">Concentration:</label>
+        <label for="id_concentration">Concentration*:</label>
         <input id="id_concentration" type="text" placeholder="0">
     </div>
 </form>
 <form>
     <div class="small-input">
-        <label for="id_initiative">Initiative:</label>
+        <label for="id_initiative">Initiative*:</label>
         <input id="id_initiative" type="text" placeholder="+1">
     </div>
     <div class="small-input">
-        <label for="id_evasion">Evasion:</label>
+        <label for="id_evasion">Evasion*:</label>
         <input id="id_evasion" type="text" placeholder="0">
     </div>
     <div class="small-input">
-        <label for="id_vitality">Vitality:</label>
+        <label for="id_vitality">Vitality*:</label>
         <input id="id_vitality" type="text" placeholder="0">
     </div>
 </form>
 <form>
     <div class="large-input">
-        <label for="id_size">Size:</label>
+        <label for="id_size">Size*:</label>
         <input id="id_size" type="text" placeholder="Small">
     </div>
     <div class="large-input flex-grow-3">
-        <label for="id_movement">Movement:</label>
+        <label for="id_movement">Movement*:</label>
         <input id="id_movement" type="text" placeholder="6 (Walking), 2 (Swimming)">
     </div>
 </form>
@@ -76,51 +76,57 @@ permalink: /tools
 
 <form>
     <div class="large-input flex-grow-2">
-        <label for="id_attack_name">Name:</label>
+        <label for="id_attack_name">Name*:</label>
         <input id="id_attack_name" type="text" placeholder="Sword strike">
     </div>
     <div class="small-input">
-        <label for="id_attack_damage">Damage:</label>
+        <label for="id_attack_damage">Damage*:</label>
         <input id="id_attack_damage" type="text" placeholder="42">
     </div>
 </form>
 <form>
     <div class="small-input">
-        <label for="id_attack_hit">To-Hit Check:</label>
+        <label for="id_attack_hit">To-Hit Check*:</label>
         <input id="id_attack_hit" type="text" placeholder="8">
     </div>
     <div class="large-input flex-grow-2">
-        <label for="id_attack_range">Range:</label>
+        <label for="id_attack_range">Range*:</label>
         <input id="id_attack_range" type="text" placeholder="Projectile 12-16">
     </div>
 </form>
+
+(Add more through JS)
 
 #### Abilities:
 
 <div id="abilities_1">
     <form>
         <div class="large-input flex-grow-2">
-            <label for="id_abilities_name_1">Name:</label>
+            <label for="id_abilities_name_1">Name*:</label>
             <input id="id_abilities_name_1" type="text" placeholder="Arc Shot">
         </div>
+        <div class="large-input">
+            <label for="id_abilities_name_1">Type:</label>
+            <input id="id_abilities_name_1" type="text" placeholder="Reaction (empty for Standard)">
+        </div>
         <div class="small-input">
-            <label for="id_abilities_damage_1">Damage:</label>
+            <label for="id_abilities_damage_1">Damage*:</label>
             <input id="id_abilities_damage_1" type="text" placeholder="42">
         </div>
     </form>
     <form>
         <div class="small-input">
-            <label for="id_abilities_hit_1">To-Hit Check:</label>
-            <input id="id_abilities_hit_1" type="text" placeholder="8">
+            <label for="id_abilities_hit_1">Cost*:</label>
+            <input id="id_abilities_hit_1" type="text" placeholder="10 Stamina">
         </div>
         <div class="large-input flex-grow-2">
-            <label for="id_abilities_range_1">Range:</label>
+            <label for="id_abilities_range_1">Range*:</label>
             <input id="id_abilities_range_1" type="text" placeholder="Projectile 12-16">
         </div>
     </form>
     <form>
         <div class="large-input">
-            <label for="id_abilities_description_1">Description:</label>
+            <label for="id_abilities_description_1">Description*:</label>
             <textarea id="id_abilities_description_1" rows="3" placeholder="Description..."></textarea>
         </div>
     </form>
@@ -132,44 +138,60 @@ permalink: /tools
 
 <form>
     <div class="large-input">
-        <label for="id_weapon_name">Name:</label>
+        <label for="id_weapon_name">Name*:</label>
         <input id="id_weapon_name" type="text" placeholder="Holy Rod of Wisdom">
     </div>
     <div class="large-input">
-        <label for="id_weapon_rank">Rank:</label>
+        <label for="id_weapon_rank">Rank*:</label>
         <input id="id_weapon_rank" type="text" placeholder="Rank 1 Natural Rod">
     </div>
 </form>
 <form>
+    <div class="large-input">
+        <label for="id_weapon_name">Ammunition:</label>
+        <input id="id_weapon_name" type="text" placeholder="4x Bombs, 2x Bomb Arrows">
+    </div>
+    <div class="large-input">
+        <label for="id_weapon_rank">Enchantment:</label>
+        <input id="id_weapon_rank" type="text" placeholder="Perfectly Balanced, Rank 2 (+1 Crit)">
+    </div>
+</form>
+<form>
     <div class="small-input">
-        <label for="id_weapon_accuracy">Accuracy:</label>
+        <label for="id_weapon_accuracy">Accuracy*:</label>
         <input id="id_weapon_accuracy" type="text" placeholder="0">
     </div>
     <div class="small-input">
-        <label for="id_weapon_attack">Attack:</label>
+        <label for="id_weapon_attack">Attack*:</label>
         <input id="id_weapon_attack" type="text" placeholder="0">
     </div>
     <div class="small-input">
-        <label for="id_weapon_durability">Durability:</label>
+        <label for="id_weapon_durability">Durability*:</label>
         <input id="id_weapon_durability" type="text" placeholder="0">
     </div>
 </form>
 
-#### Passives:
+(Add more through JS)
+
+#### Passives & Weak Points:
 
 <div id="passives_1">
     <form>
-        <div class="large-input">
-            <label for="id_passives_name_1">Name:</label>
+        <div class="large-input flex-grow-2">
+            <label for="id_passives_name_1">Name*:</label>
             <input id="id_passives_name_1" type="text" placeholder="Flying Fish">
         </div>
+        <div class="small-input">
+            <label for="id_passives_type_1">Type*:</label>
+            <input id="id_passives_type_1" type="text" placeholder="Passive/Weak Point...">
+        </div>        
     </form>
     <form>
         <div class="large-input">
-            <label for="id_passives_description_1">Description:</label>
+            <label for="id_passives_description_1">Description*:</label>
             <textarea id="id_passives_description_1" rows="3" placeholder="Description..."></textarea>
         </div>
-    </form>    
+    </form>
 </div>
 
 (Add more through JS)
@@ -177,9 +199,13 @@ permalink: /tools
 #### Traits:
 
 <form>
-    <div class="large-input flex-grow-3">
-        <label for="id_traits_infos">Intelligence & Infos:</label>
+    <div class="large-input">
+        <label for="id_traits_infos">Intelligence & Infos*:</label>
         <input id="id_traits_infos" type="text" placeholder="Limited Intelligence, Undead">
+    </div>
+    <div class="large-input">
+        <label for="id_traits_infos">Resistance:</label>
+        <input id="id_traits_infos" type="text" placeholder="Fire damage (Rank 5)">
     </div>
 </form>
 <form>
@@ -198,35 +224,35 @@ permalink: /tools
             <span>Power</span>
         </div>
         <div>
-            <label for="id_traits_combat">Combat:</label>
+            <label for="id_traits_combat">Combat*:</label>
             <input id="id_traits_combat" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_hearts">Hearts:</label>
+            <label for="id_traits_hearts">Hearts*:</label>
             <input id="id_traits_hearts" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_athletics">Athletics:</label>
+            <label for="id_traits_athletics">Athletics*:</label>
             <input id="id_traits_athletics" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_civilization">Civilization:</label>
+            <label for="id_traits_civilization">Civilization*:</label>
             <input id="id_traits_civilization" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_fortitude">Fortitude:</label>
+            <label for="id_traits_fortitude">Fortitude*:</label>
             <input id="id_traits_fortitude" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_intimidate">Intimidate:</label>
+            <label for="id_traits_intimidate">Intimidate*:</label>
             <input id="id_traits_intimidate" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_mechanics">Mechanics:</label>
+            <label for="id_traits_mechanics">Mechanics*:</label>
             <input id="id_traits_mechanics" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_smithing">Smithing:</label>
+            <label for="id_traits_smithing">Smithing*:</label>
             <input id="id_traits_smithing" type="text" placeholder="0">
         </div>
     </div>
@@ -235,35 +261,35 @@ permalink: /tools
             <span>Wisdom</span>
         </div>
         <div>
-            <label for="id_traits_willpower">Willpower:</label>
+            <label for="id_traits_willpower">Willpower*:</label>
             <input id="id_traits_willpower" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_magic">Magic:</label>
+            <label for="id_traits_magic">Magic*:</label>
             <input id="id_traits_magic" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_arcana">Arcana:</label>
+            <label for="id_traits_arcana">Arcana*:</label>
             <input id="id_traits_arcana" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_perception">Perception:</label>
+            <label for="id_traits_perception">Perception*:</label>
             <input id="id_traits_perception" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_influence">Influence:</label>
+            <label for="id_traits_influence">Influence*:</label>
             <input id="id_traits_influence" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_discipline">Discipline:</label>
+            <label for="id_traits_discipline">Discipline*:</label>
             <input id="id_traits_discipline" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_perform">Perform:</label>
+            <label for="id_traits_perform">Perform*:</label>
             <input id="id_traits_perform" type="text" placeholder="0">
         </div>        
         <div>
-            <label for="id_traits_enchanting">Enchanting:</label>
+            <label for="id_traits_enchanting">Enchanting*:</label>
             <input id="id_traits_enchanting" type="text" placeholder="0">
         </div>
     </div>
@@ -272,35 +298,35 @@ permalink: /tools
             <span>Courage</span>
         </div>
         <div>
-            <label for="id_traits_accuracy">Accuracy:</label>
+            <label for="id_traits_accuracy">Accuracy*:</label>
             <input id="id_traits_accuracy" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_stamina">Stamina:</label>
+            <label for="id_traits_stamina">Stamina*:</label>
             <input id="id_traits_stamina" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_nature">Nature:</label>
+            <label for="id_traits_nature">Nature*:</label>
             <input id="id_traits_nature" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_agility">Agility:</label>
+            <label for="id_traits_agility">Agility*:</label>
             <input id="id_traits_agility" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_command">Command:</label>
+            <label for="id_traits_command">Command*:</label>
             <input id="id_traits_command" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_insight">Insight:</label>
+            <label for="id_traits_insight">Insight*:</label>
             <input id="id_traits_insight" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_guile">Guile:</label>
+            <label for="id_traits_guile">Guile*:</label>
             <input id="id_traits_guile" type="text" placeholder="0">
         </div>
         <div>
-            <label for="id_traits_cooking">Cooking:</label>
+            <label for="id_traits_cooking">Cooking*:</label>
             <input id="id_traits_cooking" type="text" placeholder="0">
         </div>
     </div>
@@ -310,16 +336,16 @@ permalink: /tools
 
 <div id="drops_1">
     <form>
-        <div class="small-input small-input-max">
+        <div class="small-input">
             <label for="id_drops_quantity_1">Quantity:</label>
             <input id="id_drops_quantity_1" type="text" placeholder="5">
         </div>
         <div class="large-input flex-grow-3">
-            <label for="id_drops_name_1">Name:</label>
+            <label for="id_drops_name_1">Name*:</label>
             <input id="id_drops_name_1" type="text" placeholder="Cheep Cheep Meat">
         </div>
         <div class="large-input flex-grow-3">
-            <label for="id_drops_rank_1">Rank:</label>
+            <label for="id_drops_rank_1">Rank/Details:</label>
             <input id="id_drops_rank_1" type="text" placeholder="Cheep Cheep Meat">
         </div>
     </form>
