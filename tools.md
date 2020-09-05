@@ -82,7 +82,7 @@ permalink: /tools
 
 <button type="button" name="button_add_ability" class="btn btn-purple" onclick="builderAddAbility()">+</button> <button type="button" name="button_remove_ability" class="btn btn-purple" onclick="builderAddAbility(true)">-</button>
 
-<div id="abilities"></div>
+<div id="abilities_container"></div>
 
 #### Default Weapon:
 
@@ -236,7 +236,7 @@ permalink: /tools
 
 <button type="button" name="button_add_drop" class="btn btn-purple" onclick="builderAddDrop()">+</button> <button type="button" name="button_remove_drop" class="btn btn-purple" onclick="builderAddDrop(true)">-</button>
 
-<div id="drops"></div>
+<div id="drops_container"></div>
 
 <div id="result_infos"></div>
 

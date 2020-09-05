@@ -188,7 +188,7 @@ function builderAddAbility(removeLast = false) {
     if (removeLast === true) {
         if (builderAddAbility.counter === 0)
             return;
-        let container = document.querySelector("#abilities");
+        let container = document.querySelector("#abilities_container");
         let elem_rem = container.querySelector("#ability_" + builderAddAbility.counter);
         elem_rem.remove();
         builderAddAbility.counter -= 1;
@@ -219,7 +219,7 @@ function builderAddAbility(removeLast = false) {
     main_el.appendChild(form_requirement);
     main_el.appendChild(form_details);
 
-    let container = document.querySelector("#abilities");
+    let container = document.querySelector("#abilities_container");
     container.appendChild(main_el);
 }
 
@@ -310,7 +310,7 @@ function builderAddDrop(removeLast = false) {
     if (removeLast === true) {
         if (builderAddDrop.counter === 0)
             return;
-        let container = document.querySelector("#drops");
+        let container = document.querySelector("#drops_container");
         let elem_rem = container.querySelector("#drop_" + builderAddDrop.counter);
         elem_rem.remove();
         builderAddDrop.counter -= 1;
@@ -328,7 +328,7 @@ function builderAddDrop(removeLast = false) {
 
     main_el.appendChild(form);
 
-    let container = document.querySelector("#drops");
+    let container = document.querySelector("#drops_container");
     container.appendChild(main_el);
 }
 
