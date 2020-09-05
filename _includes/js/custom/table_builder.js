@@ -319,7 +319,6 @@ function builderAddDrop(removeLast = false) {
     builderAddDrop.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "drop_" + builderAddDrop.counter;
-    main_el.classList.add("downwards-margin");
 
     let form = document.createElement("form");
     form.appendChild(createDivInput(["small-input"], "id_drop_quantity_" + builderAddDrop.counter, "Quantity:", "5"));
@@ -335,6 +334,14 @@ function builderAddDrop(removeLast = false) {
 /*
 ** ----------------------------------------
 */
+
+function testDisplay() {
+    console.log("Drops: " + builderAddDrop.counter);
+    console.log("Passives: " + builderAddPassive.counter);
+    console.log("Weapons: " + builderAddWeapon.counter);
+    console.log("Abilities: " + builderAddAbility.counter);
+    console.log("Attacks: " + builderAddMainAttack.counter);
+}
 
 function generateTableHead(table) {
     let thead = table.createTHead();
