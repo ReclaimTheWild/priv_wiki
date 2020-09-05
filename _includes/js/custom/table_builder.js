@@ -157,31 +157,33 @@ function createDivTextarea(classes, used_id, label_text, input_placeholder, rows
 </div>
 */
 
-var mainAttackCounter = 0;
-
 function builderAddMainAttack(removeLast = false) {
+    if (typeof builderAddMainAttack.counter === 'undefined')
+        builderAddMainAttack.counter = 0;
+    console.log("Counter: " + builderAddMainAttack.counter);
     if (removeLast === true) {
-        if (mainAttackCounter === 0)
+        if (builderAddMainAttack.counter === 0)
             return;
         let container = document.querySelector("#main_attacks");
-        let elem_rem = container.querySelector("#main_attack_" + mainAttackCounter);
-        elem_rem.parentNode.removeChild(elem_rem);
-        mainAttackCounter -= 1;
+        let elem_rem = container.querySelector("#main_attack_" + builderAddMainAttack.counter);
+        elem_rem.remove();
+        builderAddMainAttack.counter -= 1;
+        return;
     }
-    mainAttackCounter += 1;
+    builderAddMainAttack.counter += 1;
     let main_el = document.createElement("div");
-    main_el.id = "main_attack_" + mainAttackcounter;
+    main_el.id = "main_attack_" + builderAddMainAttack.counter;
 
     let form_name_dmg = document.createElement("form");
-    form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_name_" + mainAttackCounter, "Name*:", "Sword strike"));
-    form_name_dmg.appendChild(createDivInput(["small-input"], "id_attack_damage_" + mainAttackCounter, "Damage*:", "42"));
+    form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_name_" + builderAddMainAttack.counter, "Name*:", "Sword strike"));
+    form_name_dmg.appendChild(createDivInput(["small-input"], "id_attack_damage_" + builderAddMainAttack.counter, "Damage*:", "42"));
 
     let form_hit_range = document.createElement("form");
-    form_hit_range.appendChild(createDivInput(["small-input"], "id_attack_hit_" + mainAttackCounter, "To-Hit Check*:", "+8"));
-    form_hit_range.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_hit_" + mainAttackCounter, "Range*:", "Projectile 12-16"));
+    form_hit_range.appendChild(createDivInput(["small-input"], "id_attack_hit_" + builderAddMainAttack.counter, "To-Hit Check*:", "+8"));
+    form_hit_range.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_hit_" + builderAddMainAttack.counter, "Range*:", "Projectile 12-16"));
     
     let form_details = document.createElement("form");
-    form_details.appendChild(createDivTextarea(["large-input"], "id_attack_details_" + mainAttackCounter, "Description/Side Effect*:", "Description..."));
+    form_details.appendChild(createDivTextarea(["large-input"], "id_attack_details_" + builderAddMainAttack.counter, "Description/Side Effect*:", "Description..."));
 
     main_el.appendChild(form_name_dmg);
     main_el.appendChild(form_hit_range);
