@@ -72,33 +72,45 @@ permalink: /tools
     </div>
 </form>
 
-#### Main Attack:
+#### Main Attack(s): 
 
-<form>
-    <div class="large-input flex-grow-2">
-        <label for="id_attack_name">Name*:</label>
-        <input id="id_attack_name" type="text" placeholder="Sword strike">
-    </div>
-    <div class="small-input">
-        <label for="id_attack_damage">Damage*:</label>
-        <input id="id_attack_damage" type="text" placeholder="42">
-    </div>
-</form>
-<form>
-    <div class="small-input">
-        <label for="id_attack_hit">To-Hit Check*:</label>
-        <input id="id_attack_hit" type="text" placeholder="8">
-    </div>
-    <div class="large-input flex-grow-2">
-        <label for="id_attack_range">Range*:</label>
-        <input id="id_attack_range" type="text" placeholder="Projectile 12-16">
-    </div>
-</form>
+<button type="button" name="button_add_main_attack" class="btn btn-purple" onclick="builderAddMainAttack()">+</button> <button type="button" name="button_remove_main_attack" class="btn btn-purple" onclick="builderAddMainAttack(true)">-</button>
+
+<div id="main_attacks"></div>
+<!-- <div id="main_attack_1">
+    <form>
+        <div class="large-input flex-grow-2">
+            <label for="id_attack_name">Name*:</label>
+            <input id="id_attack_name" type="text" placeholder="Sword strike">
+        </div>
+        <div class="small-input">
+            <label for="id_attack_damage">Damage*:</label>
+            <input id="id_attack_damage" type="text" placeholder="42">
+        </div>
+    </form>
+    <form>
+        <div class="small-input">
+            <label for="id_attack_hit">To-Hit Check*:</label>
+            <input id="id_attack_hit" type="text" placeholder="8">
+        </div>
+        <div class="large-input flex-grow-2">
+            <label for="id_attack_range">Range*:</label>
+            <input id="id_attack_range" type="text" placeholder="Projectile 12-16">
+        </div>
+    </form>
+    <form>
+        <div class="large-input">
+            <label for="id_abilities_description_1">Description/Side Effect*:</label>
+            <textarea id="id_abilities_description_1" rows="2" placeholder="Description..."></textarea>
+        </div>
+    </form>
+</div> -->
 
 (Add more through JS)
 
 #### Abilities:
 
+<div id="abilities"></div>
 <div id="abilities_1">
     <form>
         <div class="large-input flex-grow-2">
@@ -136,45 +148,49 @@ permalink: /tools
 
 #### Default Weapon:
 
-<form>
-    <div class="large-input">
-        <label for="id_weapon_name">Name*:</label>
-        <input id="id_weapon_name" type="text" placeholder="Holy Rod of Wisdom">
-    </div>
-    <div class="large-input">
-        <label for="id_weapon_rank">Rank*:</label>
-        <input id="id_weapon_rank" type="text" placeholder="Rank 1 Natural Rod">
-    </div>
-</form>
-<form>
-    <div class="large-input">
-        <label for="id_weapon_name">Ammunition:</label>
-        <input id="id_weapon_name" type="text" placeholder="4x Bombs, 2x Bomb Arrows">
-    </div>
-    <div class="large-input">
-        <label for="id_weapon_rank">Enchantment:</label>
-        <input id="id_weapon_rank" type="text" placeholder="Perfectly Balanced, Rank 2 (+1 Crit)">
-    </div>
-</form>
-<form>
-    <div class="small-input">
-        <label for="id_weapon_accuracy">Accuracy*:</label>
-        <input id="id_weapon_accuracy" type="text" placeholder="0">
-    </div>
-    <div class="small-input">
-        <label for="id_weapon_attack">Attack*:</label>
-        <input id="id_weapon_attack" type="text" placeholder="0">
-    </div>
-    <div class="small-input">
-        <label for="id_weapon_durability">Durability*:</label>
-        <input id="id_weapon_durability" type="text" placeholder="0">
-    </div>
-</form>
+<div id="weapons"></div>
+<div id="weapon_1">
+    <form>
+        <div class="large-input">
+            <label for="id_weapon_name">Name*:</label>
+            <input id="id_weapon_name" type="text" placeholder="Holy Rod of Wisdom">
+        </div>
+        <div class="large-input">
+            <label for="id_weapon_rank">Rank*:</label>
+            <input id="id_weapon_rank" type="text" placeholder="Rank 1 Natural Rod">
+        </div>
+    </form>
+    <form>
+        <div class="large-input">
+            <label for="id_weapon_name">Ammunition:</label>
+            <input id="id_weapon_name" type="text" placeholder="4x Bombs, 2x Bomb Arrows">
+        </div>
+        <div class="large-input">
+            <label for="id_weapon_rank">Enchantment:</label>
+            <input id="id_weapon_rank" type="text" placeholder="Perfectly Balanced, Rank 2 (+1 Crit)">
+        </div>
+    </form>
+    <form>
+        <div class="small-input">
+            <label for="id_weapon_accuracy">Accuracy*:</label>
+            <input id="id_weapon_accuracy" type="text" placeholder="0">
+        </div>
+        <div class="small-input">
+            <label for="id_weapon_attack">Attack*:</label>
+            <input id="id_weapon_attack" type="text" placeholder="0">
+        </div>
+        <div class="small-input">
+            <label for="id_weapon_durability">Durability*:</label>
+            <input id="id_weapon_durability" type="text" placeholder="0">
+        </div>
+    </form>
+</div>
 
 (Add more through JS)
 
 #### Passives & Weak Points:
 
+<div id="passives"></div>
 <div id="passives_1">
     <form>
         <div class="large-input flex-grow-2">
@@ -334,6 +350,7 @@ permalink: /tools
 
 #### Drops:
 
+<div id="drops"></div>
 <div id="drops_1">
     <form>
         <div class="small-input">
@@ -353,61 +370,7 @@ permalink: /tools
 
 (Add more through JS)
 
-```js
-let example = {
-    abilities: [
-        {
-            name: "Arc Shot",
-            damage: "7, Water",
-            cost: "4 Stamina",
-            range: "Projectile 12-16",
-            description: "You may ignore allies, enemies and any obstacles that do not reach higher than 6 squares above you, for determining line of sight for this attack.",
-        },
-        {
-            name: "Jump Attack",
-            damage: "10",
-            cost: "6 Stamina",
-            range: "Jump 4, Melee",
-            description : "You jump towards your target in a straight line, landing next to them, even if you have already reached your maximum Movement for the turn. You are Off-Balance until the start of your next turn. This attack cannot be performed if you are Halted or Slowed.",
-        },
-    ],
-    passives: [
-        {
-            name: "Flying Fish",
-            description: "While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3)",
-        },
-    ],
-    drops: [
-        {
-            name: "Cheep Cheep Meat",
-            rank: "Rank 1 Food Ingredient",
-            quantity: 5,
-        },
-        {
-            name: "Cheep Cheep Fin",
-            rank: "Rank 1 Critter, Spongy",
-            quantity: 2,
-        },
-    ],
-}
-```
-
-<div class="field required">
-    <label for="id_username">Username</label>
-    <input type="text" name="username" id="id_username" value="test" />
-</div>
-<div class="field required">
-    <label for="id_password">Password</label>
-    <input type="password" name="password" id="id_password" value="test" />
-</div>
-<div class="field required">
-    <label for="id_confirm">Confirm</label>
-    <input type="password" name="confirm" id="id_confirm" value="test" />
-</div>
-<div class="field">
-    <label for="id_email">Email</label>
-    <input type="text" name="email" id="id_email" />
-</div>
+<div id="result_infos"></div>
 
 <button type="button" name="button" class="btn" onclick="buildTable()">Generate Table</button>
 
