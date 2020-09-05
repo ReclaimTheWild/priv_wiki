@@ -137,30 +137,14 @@ function createDivTextarea(classes, used_id, label_text, input_placeholder, rows
 }
 
 /*
-<div id="main_attack_1">
-    <form>
-        <div class="small-input">
-            <label for="id_attack_hit">To-Hit Check*:</label>
-            <input id="id_attack_hit" type="text" placeholder="8">
-        </div>
-        <div class="large-input flex-grow-2">
-            <label for="id_attack_range">Range*:</label>
-            <input id="id_attack_range" type="text" placeholder="Projectile 12-16">
-        </div>
-    </form>
-    <form>
-        <div class="large-input">
-            <label for="id_abilities_description_1">Description/Side Effect*:</label>
-            <textarea id="id_abilities_description_1" rows="2" placeholder="Description..."></textarea>
-        </div>
-    </form>
-</div>
+** ----------------------------------------
+** FUNCTIONS TO ADD SECTIONS TO THE FORM --
+** ----------------------------------------
 */
 
 function builderAddMainAttack(removeLast = false) {
     if (typeof builderAddMainAttack.counter === 'undefined')
         builderAddMainAttack.counter = 0;
-    console.log("Counter: " + builderAddMainAttack.counter);
     if (removeLast === true) {
         if (builderAddMainAttack.counter === 0)
             return;
@@ -173,6 +157,7 @@ function builderAddMainAttack(removeLast = false) {
     builderAddMainAttack.counter += 1;
     let main_el = document.createElement("div");
     main_el.id = "main_attack_" + builderAddMainAttack.counter;
+    main_el.classList.add(".downwards-margin");
 
     let form_name_dmg = document.createElement("form");
     form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_name_" + builderAddMainAttack.counter, "Name*:", "Sword strike"));
@@ -180,10 +165,10 @@ function builderAddMainAttack(removeLast = false) {
 
     let form_hit_range = document.createElement("form");
     form_hit_range.appendChild(createDivInput(["small-input"], "id_attack_hit_" + builderAddMainAttack.counter, "To-Hit Check*:", "+8"));
-    form_hit_range.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_hit_" + builderAddMainAttack.counter, "Range*:", "Projectile 12-16"));
+    form_hit_range.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_attack_range_" + builderAddMainAttack.counter, "Range*:", "Projectile 12-16"));
     
     let form_details = document.createElement("form");
-    form_details.appendChild(createDivTextarea(["large-input"], "id_attack_details_" + builderAddMainAttack.counter, "Description/Side Effect*:", "Description..."));
+    form_details.appendChild(createDivTextarea(["large-input"], "id_attack_details_" + builderAddMainAttack.counter, "Description/Side Effect:", "Description...", 1));
 
     main_el.appendChild(form_name_dmg);
     main_el.appendChild(form_hit_range);
@@ -192,6 +177,164 @@ function builderAddMainAttack(removeLast = false) {
     let container = document.querySelector("#main_attacks");
     container.appendChild(main_el);
 }
+
+/*
+** ----------------------------------------
+*/
+
+function builderAddAbility(removeLast = false) {
+    if (typeof builderAddAbility.counter === 'undefined')
+        builderAddAbility.counter = 0;
+    if (removeLast === true) {
+        if (builderAddAbility.counter === 0)
+            return;
+        let container = document.querySelector("#abilities");
+        let elem_rem = container.querySelector("#ability_" + builderAddAbility.counter);
+        elem_rem.remove();
+        builderAddAbility.counter -= 1;
+        return;
+    }
+    builderAddAbility.counter += 1;
+    let main_el = document.createElement("div");
+    main_el.id = "ability_" + builderAddAbility.counter;
+    main_el.classList.add(".downwards-margin");
+
+    let form_name_dmg = document.createElement("form");
+    form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_ability_name_" + builderAddAbility.counter, "Name*:", "Arc Shot"));
+    form_name_dmg.appendChild(createDivInput(["large-input"], "id_ability_type_" + builderAddAbility.counter, "Type*:", "Reaction (empty for Standard"));
+    form_name_dmg.appendChild(createDivInput(["small-input"], "id_ability_damage_" + builderAddAbility.counter, "Damage*:", "42"));
+
+    let form_hit_range = document.createElement("form");
+    form_hit_range.appendChild(createDivInput(["small-input"], "id_ability_cost_" + builderAddAbility.counter, "Cost*:", "10 Stamina (Bind)"));
+    form_hit_range.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_ability_range_" + builderAddAbility.counter, "Range*:", "Projectile 12-16"));
+    
+    let form_requirement = document.createElement("form");
+    form_requirement.appendChild(createDivInput(["large-input"], "id_ability_requirement_" + builderAddAbility.counter, "Use Requirement:", "Something..."));
+
+    let form_details = document.createElement("form");
+    form_details.appendChild(createDivTextarea(["large-input"], "id_ability_details_" + builderAddAbility.counter, "Description*:", "Description...", 3));
+
+    main_el.appendChild(form_name_dmg);
+    main_el.appendChild(form_hit_range);
+    main_el.appendChild(form_requirement);
+    main_el.appendChild(form_details);
+
+    let container = document.querySelector("#abilities");
+    container.appendChild(main_el);
+}
+
+/*
+** ----------------------------------------
+*/
+
+function builderAddWeapon(removeLast = false) {
+    if (typeof builderAddWeapon.counter === 'undefined')
+        builderAddWeapon.counter = 0;
+    if (removeLast === true) {
+        if (builderAddWeapon.counter === 0)
+            return;
+        let container = document.querySelector("#weapons");
+        let elem_rem = container.querySelector("#weapon_" + builderAddWeapon.counter);
+        elem_rem.remove();
+        builderAddWeapon.counter -= 1;
+        return;
+    }
+    builderAddWeapon.counter += 1;
+    let main_el = document.createElement("div");
+    main_el.id = "weapon_" + builderAddWeapon.counter;
+    main_el.classList.add(".downwards-margin");
+
+    let form_name_dmg = document.createElement("form");
+    form_name_dmg.appendChild(createDivInput(["large-input"], "id_weapon_name_" + builderAddWeapon.counter, "Name*:", "Holy Rod of Wisdom"));
+    form_name_dmg.appendChild(createDivInput(["large-input"], "id_weapon_rank_" + builderAddWeapon.counter, "Rank*:", "Rank 1 Natural Rod"));
+
+    let form_ammo_ench = document.createElement("form");
+    form_ammo_ench.appendChild(createDivInput(["large-input"], "id_weapon_ammo_" + builderAddWeapon.counter, "Ammunition:", "4x Bombs, 7x Arrows"));
+    form_ammo_ench.appendChild(createDivInput(["large-input"], "id_weapon_ench_" + builderAddWeapon.counter, "Enchantment:", "Perfectly Balanced, Rank 2 (+1 Crit)"));
+
+    let form_hit_range = document.createElement("form");
+    form_hit_range.appendChild(createDivInput(["small-input"], "id_weapon_accuracy_" + builderAddWeapon.counter, "Accuracy*:", "0"));
+    form_hit_range.appendChild(createDivInput(["small-input"], "id_weapon_attack_" + builderAddWeapon.counter, "Attack*:", "0"));
+    form_hit_range.appendChild(createDivInput(["small-input"], "id_weapon_durability_" + builderAddWeapon.counter, "Durability*:", "0"));
+    
+    main_el.appendChild(form_name_dmg);
+    main_el.appendChild(form_ammo_ench);
+    main_el.appendChild(form_hit_range);
+
+    let container = document.querySelector("#weapons");
+    container.appendChild(main_el);
+}
+
+/*
+** ----------------------------------------
+*/
+
+function builderAddPassive(removeLast = false) {
+    if (typeof builderAddPassive.counter === 'undefined')
+        builderAddPassive.counter = 0;
+    if (removeLast === true) {
+        if (builderAddPassive.counter === 0)
+            return;
+        let container = document.querySelector("#passives");
+        let elem_rem = container.querySelector("#passive_" + builderAddPassive.counter);
+        elem_rem.remove();
+        builderAddPassive.counter -= 1;
+        return;
+    }
+    builderAddPassive.counter += 1;
+    let main_el = document.createElement("div");
+    main_el.id = "passive_" + builderAddPassive.counter;
+    main_el.classList.add(".downwards-margin");
+
+    let form_name_dmg = document.createElement("form");
+    form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_passive_name_" + builderAddPassive.counter, "Name*:", "Flying Fish"));
+    form_name_dmg.appendChild(createDivInput(["small-input"], "id_passive_type_" + builderAddPassive.counter, "Type*:", "Passive/Weak Point"));
+
+    let form_details = document.createElement("form");
+    form_details.appendChild(createDivTextarea(["large-input"], "id_passive_details_" + builderAddAbility.counter, "Description*:", "Description...", 3));
+    
+    main_el.appendChild(form_name_dmg);
+    main_el.appendChild(form_details);
+
+    let container = document.querySelector("#passives");
+    container.appendChild(main_el);
+}
+
+/*
+** ----------------------------------------
+*/
+
+function builderAddDrop(removeLast = false) {
+    if (typeof builderAddDrop.counter === 'undefined')
+        builderAddDrop.counter = 0;
+    if (removeLast === true) {
+        if (builderAddDrop.counter === 0)
+            return;
+        let container = document.querySelector("#drops");
+        let elem_rem = container.querySelector("#drop_" + builderAddDrop.counter);
+        elem_rem.remove();
+        builderAddDrop.counter -= 1;
+        return;
+    }
+    builderAddDrop.counter += 1;
+    let main_el = document.createElement("div");
+    main_el.id = "drop_" + builderAddDrop.counter;
+    main_el.classList.add(".downwards-margin");
+
+    let form = document.createElement("form");
+    form.appendChild(createDivInput(["small-input"], "id_drop_quantity_" + builderAddDrop.counter, "Quantity:", "5"));
+    form.appendChild(createDivInput(["large-input", "flex-grow-3"], "id_drop_name_" + builderAddDrop.counter, "Name*:", "Cheep Cheep Meat"));
+    form.appendChild(createDivInput(["large-input", "flex-grow-3"], "id_drop_rank_" + builderAddDrop.counter, "Rank/Details:", "Rank 1 Meat, Spongy"));
+
+    main_el.appendChild(form);
+
+    let container = document.querySelector("#drops");
+    container.appendChild(main_el);
+}
+
+/*
+** ----------------------------------------
+*/
 
 function generateTableHead(table) {
     let thead = table.createTHead();

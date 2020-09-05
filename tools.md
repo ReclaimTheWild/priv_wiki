@@ -72,145 +72,29 @@ permalink: /tools
     </div>
 </form>
 
-#### Main Attack(s): 
+#### Main Attack(s):
 
 <button type="button" name="button_add_main_attack" class="btn btn-purple" onclick="builderAddMainAttack()">+</button> <button type="button" name="button_remove_main_attack" class="btn btn-purple" onclick="builderAddMainAttack(true)">-</button>
 
 <div id="main_attacks"></div>
-<!-- <div id="main_attack_1">
-    <form>
-        <div class="large-input flex-grow-2">
-            <label for="id_attack_name">Name*:</label>
-            <input id="id_attack_name" type="text" placeholder="Sword strike">
-        </div>
-        <div class="small-input">
-            <label for="id_attack_damage">Damage*:</label>
-            <input id="id_attack_damage" type="text" placeholder="42">
-        </div>
-    </form>
-    <form>
-        <div class="small-input">
-            <label for="id_attack_hit">To-Hit Check*:</label>
-            <input id="id_attack_hit" type="text" placeholder="8">
-        </div>
-        <div class="large-input flex-grow-2">
-            <label for="id_attack_range">Range*:</label>
-            <input id="id_attack_range" type="text" placeholder="Projectile 12-16">
-        </div>
-    </form>
-    <form>
-        <div class="large-input">
-            <label for="id_abilities_description_1">Description/Side Effect*:</label>
-            <textarea id="id_abilities_description_1" rows="2" placeholder="Description..."></textarea>
-        </div>
-    </form>
-</div> -->
-
-(Add more through JS)
 
 #### Abilities:
 
-<div id="abilities"></div>
-<div id="abilities_1">
-    <form>
-        <div class="large-input flex-grow-2">
-            <label for="id_abilities_name_1">Name*:</label>
-            <input id="id_abilities_name_1" type="text" placeholder="Arc Shot">
-        </div>
-        <div class="large-input">
-            <label for="id_abilities_name_1">Type:</label>
-            <input id="id_abilities_name_1" type="text" placeholder="Reaction (empty for Standard)">
-        </div>
-        <div class="small-input">
-            <label for="id_abilities_damage_1">Damage*:</label>
-            <input id="id_abilities_damage_1" type="text" placeholder="42">
-        </div>
-    </form>
-    <form>
-        <div class="small-input">
-            <label for="id_abilities_hit_1">Cost*:</label>
-            <input id="id_abilities_hit_1" type="text" placeholder="10 Stamina">
-        </div>
-        <div class="large-input flex-grow-2">
-            <label for="id_abilities_range_1">Range*:</label>
-            <input id="id_abilities_range_1" type="text" placeholder="Projectile 12-16">
-        </div>
-    </form>
-    <form>
-        <div class="large-input">
-            <label for="id_abilities_description_1">Description*:</label>
-            <textarea id="id_abilities_description_1" rows="3" placeholder="Description..."></textarea>
-        </div>
-    </form>
-</div>
+<button type="button" name="button_add_ability" class="btn btn-purple" onclick="builderAddAbility()">+</button> <button type="button" name="button_remove_ability" class="btn btn-purple" onclick="builderAddAbility(true)">-</button>
 
-(Add more through JS)
+<div id="abilities"></div>
 
 #### Default Weapon:
 
-<div id="weapons"></div>
-<div id="weapon_1">
-    <form>
-        <div class="large-input">
-            <label for="id_weapon_name">Name*:</label>
-            <input id="id_weapon_name" type="text" placeholder="Holy Rod of Wisdom">
-        </div>
-        <div class="large-input">
-            <label for="id_weapon_rank">Rank*:</label>
-            <input id="id_weapon_rank" type="text" placeholder="Rank 1 Natural Rod">
-        </div>
-    </form>
-    <form>
-        <div class="large-input">
-            <label for="id_weapon_name">Ammunition:</label>
-            <input id="id_weapon_name" type="text" placeholder="4x Bombs, 2x Bomb Arrows">
-        </div>
-        <div class="large-input">
-            <label for="id_weapon_rank">Enchantment:</label>
-            <input id="id_weapon_rank" type="text" placeholder="Perfectly Balanced, Rank 2 (+1 Crit)">
-        </div>
-    </form>
-    <form>
-        <div class="small-input">
-            <label for="id_weapon_accuracy">Accuracy*:</label>
-            <input id="id_weapon_accuracy" type="text" placeholder="0">
-        </div>
-        <div class="small-input">
-            <label for="id_weapon_attack">Attack*:</label>
-            <input id="id_weapon_attack" type="text" placeholder="0">
-        </div>
-        <div class="small-input">
-            <label for="id_weapon_durability">Durability*:</label>
-            <input id="id_weapon_durability" type="text" placeholder="0">
-        </div>
-    </form>
-</div>
+<button type="button" name="button_add_weapon" class="btn btn-purple" onclick="builderAddWeapon()">+</button> <button type="button" name="button_remove_weapon" class="btn btn-purple" onclick="builderAddWeapon(true)">-</button>
 
-(Add more through JS)
+<div id="weapons"></div>
 
 #### Passives & Weak Points:
 
-<div id="passives"></div>
-<div id="passives_1">
-    <form>
-        <div class="large-input flex-grow-2">
-            <label for="id_passives_name_1">Name*:</label>
-            <input id="id_passives_name_1" type="text" placeholder="Flying Fish">
-        </div>
-        <div class="small-input">
-            <label for="id_passives_type_1">Type*:</label>
-            <input id="id_passives_type_1" type="text" placeholder="Passive/Weak Point...">
-        </div>        
-    </form>
-    <form>
-        <div class="large-input">
-            <label for="id_passives_description_1">Description*:</label>
-            <textarea id="id_passives_description_1" rows="3" placeholder="Description..."></textarea>
-        </div>
-    </form>
-</div>
+<button type="button" name="button_add_passive" class="btn btn-purple" onclick="builderAddPassive()">+</button> <button type="button" name="button_remove_passive" class="btn btn-purple" onclick="builderAddPassive(true)">-</button>
 
-(Add more through JS)
+<div id="passives"></div>
 
 #### Traits:
 
@@ -350,25 +234,9 @@ permalink: /tools
 
 #### Drops:
 
-<div id="drops"></div>
-<div id="drops_1">
-    <form>
-        <div class="small-input">
-            <label for="id_drops_quantity_1">Quantity:</label>
-            <input id="id_drops_quantity_1" type="text" placeholder="5">
-        </div>
-        <div class="large-input flex-grow-3">
-            <label for="id_drops_name_1">Name*:</label>
-            <input id="id_drops_name_1" type="text" placeholder="Cheep Cheep Meat">
-        </div>
-        <div class="large-input flex-grow-3">
-            <label for="id_drops_rank_1">Rank/Details:</label>
-            <input id="id_drops_rank_1" type="text" placeholder="Cheep Cheep Meat">
-        </div>
-    </form>
-</div>
+<button type="button" name="button_add_drop" class="btn btn-purple" onclick="builderAddDrop()">+</button> <button type="button" name="button_remove_drop" class="btn btn-purple" onclick="builderAddDrop(true)">-</button>
 
-(Add more through JS)
+<div id="drops"></div>
 
 <div id="result_infos"></div>
 
