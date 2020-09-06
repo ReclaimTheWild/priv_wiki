@@ -155,7 +155,7 @@ function fetchTableData() {
     data.stats.movement = fetchFromElement("id_movement");
 
     data.main_attacks = [];
-    for (let counter = 1; counter > builderAddMainAttack.counter; ++counter) {
+    for (let counter = 1; counter <= builderAddMainAttack.counter; ++counter) {
         let subdata = {};
         subdata.name = fetchFromElement("id_attack_name_" + counter);
         subdata.damage = fetchFromElement("id_attack_damage_" + counter);
@@ -166,7 +166,7 @@ function fetchTableData() {
     }
 
    data.abilities = [];
-   for (let counter = 1; counter > builderAddAbility.counter; ++counter) {
+   for (let counter = 1; counter <= builderAddAbility.counter; ++counter) {
        let subdata = {};
        subdata.name = fetchFromElement("id_ability_name_" + counter);
        subdata.type = fetchFromElement("id_ability_type_" + counter, false);
@@ -179,7 +179,7 @@ function fetchTableData() {
    }
 
     data.weapons = [];
-    for (let counter = 1; counter > builderAddWeapon.counter; ++counter) {
+    for (let counter = 1; counter <= builderAddWeapon.counter; ++counter) {
        let subdata = {};
        subdata.name = fetchFromElement("id_weapon_name_" + counter);
        subdata.rank = fetchFromElement("id_weapon_rank_" + counter);
@@ -192,8 +192,7 @@ function fetchTableData() {
     }
 
     data.passives = [];
-    for (let counter = 1; counter > builderAddPassive.counter; ++counter) {
-        console.log("Passives: " + counter " vs. " + builderAddPassive.counter);
+    for (let counter = 1; counter <= builderAddPassive.counter; ++counter) {
         let subdata = {};
         subdata.name = fetchFromElement("id_passive_name_" + counter);
         subdata.type = fetchFromElement("id_passive_type_" + counter);
@@ -238,7 +237,7 @@ function fetchTableData() {
     data.traits.courage.cooking = fetchFromElement("id_traits_cooking");
 
     data.drops = [];
-    for (let counter = 1; counter > builderAddDrop.counter; ++counter) {
+    for (let counter = 1; counter <= builderAddDrop.counter; ++counter) {
         let subdata = {};
         subdata.type = fetchFromElement("id_drop_quantity_" + counter, false);
         subdata.name = fetchFromElement("id_drop_name_" + counter);
