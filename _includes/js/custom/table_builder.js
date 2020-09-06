@@ -115,7 +115,7 @@ let example = {
 function fetchFromElement(id, required = true) {
     let value = document.getElementById(id).value;
     if (value === "" && required === true) {
-        let index = id.slice(0, 3);
+        let index = id.slice(3);
         index.replace(/_/g, " ");
         index.replace(/\b\w/g, function(match) {match.toUpperCase()});
         document.getElementById("result_infos");
@@ -1188,8 +1188,8 @@ function buildTable() {
 
     let data = fetchTableData();
     console.log(data);
-    if (fetchTableData.hasError === true)
-        return;
+    // if (fetchTableData.hasError === true)
+    //     return;
 
     let div_table = document.querySelector("#built-table");
     let newTable = document.createElement("table");
