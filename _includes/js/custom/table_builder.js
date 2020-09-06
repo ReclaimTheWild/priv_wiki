@@ -182,7 +182,7 @@ function fetchTableData() {
        subdata.name = fetchFromElement("id_weapon_name_" + counter);
        subdata.rank = fetchFromElement("id_weapon_rank_" + counter);
        subdata.ammo = fetchFromElement("id_weapon_ammo_" + counter, false);
-       subdata.enchantment = fetchFromElement("id_weapon_enchantment_" + counter, false);
+       subdata.enchantment = fetchFromElement("id_weapon_ench_" + counter, false);
        subdata.accuracy = fetchFromElement("id_weapon_accuracy_" + counter);
        subdata.attack = fetchFromElement("id_weapon_attack_" + counter, false);
        subdata.durability = fetchFromElement("id_weapon_durability_" + counter);
