@@ -134,11 +134,13 @@ function fetchFromElement(id, required = true) {
 
 function fetchTableData() {
     fetchTableData.hasError = false;
-    let data;
+    let data = {};
 
+    data.head = {};
     data.head.name = fetchFromElement("id_name");
     data.head.rank = fetchFromElement("id_rank");
 
+    data.stats = {}
     data.stats.hp = fetchFromElement("id_hp");
     data.stats.mp = fetchFromElement("id_mp");
     data.stats.sp = fetchFromElement("id_sp");
@@ -153,7 +155,7 @@ function fetchTableData() {
 
     data.main_attacks = [];
     for (let counter = 1; counter > builderAddMainAttack.counter; ++counter) {
-        let subdata;
+        let subdata = {};
         subdata.name = fetchFromElement("id_attack_name_" + counter);
         subdata.damage = fetchFromElement("id_attack_damage_" + counter);
         subdata.hit = fetchFromElement("id_attack_hit_" + counter);
@@ -164,7 +166,7 @@ function fetchTableData() {
 
    data.abilities = [];
    for (let counter = 1; counter > builderAddAbility.counter; ++counter) {
-       let subdata;
+       let subdata = {};
        subdata.name = fetchFromElement("id_ability_name_" + counter);
        subdata.type = fetchFromElement("id_ability_type_" + counter, false);
        subdata.damage = fetchFromElement("id_ability_damage_" + counter);
@@ -177,7 +179,7 @@ function fetchTableData() {
 
     data.weapons = [];
     for (let counter = 1; counter > builderAddWeapon.counter; ++counter) {
-       let subdata;
+       let subdata = {};
        subdata.name = fetchFromElement("id_weapon_name_" + counter);
        subdata.rank = fetchFromElement("id_weapon_rank_" + counter);
        subdata.ammo = fetchFromElement("id_weapon_ammo_" + counter, false);
@@ -190,18 +192,20 @@ function fetchTableData() {
 
     data.passives = [];
     for (let counter = 1; counter > builderAddPassive.counter; ++counter) {
-        let subdata;
+        let subdata = {};
         subdata.name = fetchFromElement("id_passive_name_" + counter);
         subdata.type = fetchFromElement("id_passive_type_" + counter);
         subdata.details = fetchFromElement("id_passive_details_" + counter);
         data.passives.push(subdata);
     }
     
+    data.traits = {};
     data.traits.informations = fetchFromElement("id_traits_infos");
     data.traits.resistance = fetchFromElement("id_traits_resistance", false);
     data.traits.immunity = fetchFromElement("id_traits_immunity", false);
     data.traits.vulnerability = fetchFromElement("id_traits_vulnerability", false);
 
+    data.traits.power = {};
     data.traits.power.combat = fetchFromElement("id_traits_combat");
     data.traits.power.hearts = fetchFromElement("id_traits_hearts");
     data.traits.power.athletics = fetchFromElement("id_traits_athletics");
@@ -211,6 +215,7 @@ function fetchTableData() {
     data.traits.power.mechanics = fetchFromElement("id_traits_mechanics");
     data.traits.power.smithing = fetchFromElement("id_traits_smithing");
 
+    data.traits.wisdom = {};
     data.traits.wisdom.willpower = fetchFromElement("id_traits_willpower");
     data.traits.wisdom.magic = fetchFromElement("id_traits_magic");
     data.traits.wisdom.arcana = fetchFromElement("id_traits_arcana");
@@ -220,6 +225,7 @@ function fetchTableData() {
     data.traits.wisdom.perform = fetchFromElement("id_traits_perform");
     data.traits.wisdom.enchanting = fetchFromElement("id_traits_enchanting");
 
+    data.traits.courage = {};
     data.traits.courage.accuracy = fetchFromElement("id_traits_accuracy");
     data.traits.courage.stamina = fetchFromElement("id_traits_stamina");
     data.traits.courage.nature = fetchFromElement("id_traits_nature");
@@ -231,7 +237,7 @@ function fetchTableData() {
 
     data.drops = [];
     for (let counter = 1; counter > builderAddDrop.counter; ++counter) {
-        let subdata;
+        let subdata = {};
         subdata.type = fetchFromElement("id_drop_quantity_" + counter, false);
         subdata.name = fetchFromElement("id_drop_name_" + counter);
         subdata.name = fetchFromElement("id_drop_rank_" + counter, false);
