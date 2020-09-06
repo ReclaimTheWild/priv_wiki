@@ -745,17 +745,17 @@ function generateTableDefaultWeapon(table) {
         cell_acc.classList.add("text-grey-dk-300");
         cell_acc.classList.add("creature-content-bg-dark");
         cell_acc.colSpan = "2";
-        cell_acc.appendChild(document.createTextNode("Accuracy: " + example.weapon.accuracy));
+        cell_acc.appendChild(document.createTextNode("Accuracy: " + element.accuracy));
         let cell_atk = row_3.insertCell();
         cell_atk.classList.add("text-grey-dk-300");
         cell_atk.classList.add("creature-content-bg-dark");
         cell_atk.colSpan = "2";
-        cell_atk.appendChild(document.createTextNode("Attack: " + example.weapon.accuracy));
+        cell_atk.appendChild(document.createTextNode("Attack: " + element.attack));
         let cell_dur = row_3.insertCell();
         cell_dur.classList.add("text-grey-dk-300");
         cell_dur.classList.add("creature-content-bg-dark");
         cell_dur.colSpan = "2";
-        cell_dur.appendChild(document.createTextNode("Durability: " + example.weapon.accuracy));
+        cell_dur.appendChild(document.createTextNode("Durability: " + element.durability));
     }
 }
 
