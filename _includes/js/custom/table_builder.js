@@ -1168,6 +1168,7 @@ function generateTableDrops(table) {
         drop_str_1 += " (" + example.drops[0].rank + ")";
     cell_d1.appendChild(document.createTextNode(drop_str_1));
     let drops_sup = example.drops.slice(1);
+    console.log(drops_sup);
     for (let element of drops_sup) {
         let row = table.insertRow();
         let cell_d = row.insertCell();
