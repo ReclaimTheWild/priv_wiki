@@ -238,10 +238,10 @@ permalink: /tools
 
 <div id="drops_container"></div>
 
-<div id="result_infos"></div>
-
 <button type="button" name="button" class="btn" onclick="testDisplay()">Test Display</button>
 <button type="button" name="button" class="btn" onclick="buildTable()">Generate Table</button>
+
+<div id="result_infos"></div>
 
 <div id="built-table" class="table-wrapper"></div>
 

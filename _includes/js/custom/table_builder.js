@@ -1173,7 +1173,7 @@ function generateTableDrops(table) {
         cell_d.classList.add("text-grey-dk-300");
         cell_d.classList.add("creature-content-bg-light");
         cell_d.colSpan = "5";
-        let drop_str;
+        let drop_str = "";
         if (element.quantity || 0 !== element.quantity.length)
             drop_str += element.quantity + "x ";
         drop_str += element.name;
@@ -1189,8 +1189,9 @@ function buildTable() {
     console.log(data);
     // if (fetchTableData.hasError === true)
     //     return;
-
+    document.getElementById("result_infos").innerHTML = "";
     let div_table = document.querySelector("#built-table");
+    div_table.innerHTML = "";
     let newTable = document.createElement("table");
     newTable.classList.add("creature-table");
     div_table.appendChild(newTable);
@@ -1207,6 +1208,7 @@ function buildTable() {
     
     let div_code = document.querySelector("#built-table-code");
     let code = div_code.querySelector("code");
+    code.innerHTML = "";
     code.appendChild(document.createTextNode(process(table.outerHTML)));
 }
 
