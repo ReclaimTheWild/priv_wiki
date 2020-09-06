@@ -717,7 +717,7 @@ function generateTableDefaultWeapon(table) {
         cell_rank.classList.add("text-grey-dk-300");
         cell_rank.classList.add("creature-content-bg-dark");
         cell_rank.colSpan = "6";
-        cell_rank.appendChild(document.createTextNode("(" + example.weapon.rank + ")"));
+        cell_rank.appendChild(document.createTextNode("(" + element.rank + ")"));
     
         if (element.ammo || 0 != element.ammo.length) {
             let row_3_pre_1 = table.insertRow();
