@@ -4,6 +4,8 @@ title: Silvered
 summary: As seen in the Master Sword, this Enchantment is truly Evil's Bane. 
 permalink: /enchantments/silvered
 parent: Enchantments
+tags:
+    - Enchantment
 ---
 
 # Silvered

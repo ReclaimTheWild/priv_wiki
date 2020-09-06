@@ -72,6 +72,23 @@ last_edit_time_format: "%b %e %Y at %I:%M %p"
 back_to_top: true
 back_to_top_text: "Back to top"
 
+exclude:
+  - tag/TAG.md
+
+collections:
+  tag:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "tag"
+    values:
+      title: "Tag index"
+      layout: "default"
+      excerpt: "List of tagged pages"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
