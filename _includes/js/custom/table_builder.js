@@ -117,8 +117,6 @@ function fetchFromElement(id, required = true) {
     let value = document.getElementById(id).value;
     if (value === "" && required === true) {
         let index = id.slice(3);
-        index = index.replace(/_/g, " ");
-        index = index.replace(/\b\w/g, function(match) {match.toUpperCase()});
         document.getElementById("result_infos");
         let error_head = document.createElement("span");
         error_head.appendChild(document.createTextNode(index + ": "));
@@ -442,7 +440,7 @@ function builderAddPassive(removeLast = false) {
     form_name_dmg.appendChild(createDivInput(["small-input"], "id_passive_type_" + builderAddPassive.counter, "Type*:", "Passive/Weak Point"));
 
     let form_details = document.createElement("form");
-    form_details.appendChild(createDivTextarea(["large-input"], "id_passive_details_" + builderAddAbility.counter, "Description*:", "Description...", 3));
+    form_details.appendChild(createDivTextarea(["large-input"], "id_passive_details_" + builderAddPassive.counter, "Description*:", "Description...", 3));
     
     main_el.appendChild(form_name_dmg);
     main_el.appendChild(form_details);
