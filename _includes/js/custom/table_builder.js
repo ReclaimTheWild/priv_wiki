@@ -727,7 +727,7 @@ function generateTableDefaultWeapon(table) {
             cell_ammo.colSpan = "6";
             let ammo_strong = document.createElement("strong");
             ammo_strong.appendChild(document.createTextNode("Ammunition: "));
-            cell_ammo.appendChild(weap_strong);
+            cell_ammo.appendChild(ammo_strong);
             cell_ammo.appendChild(document.createTextNode(element.ammo));
         }
         
