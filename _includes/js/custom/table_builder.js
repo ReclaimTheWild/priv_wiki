@@ -171,7 +171,7 @@ function fetchTableData() {
        subdata.name = fetchFromElement("id_ability_name_" + counter);
        subdata.type = fetchFromElement("id_ability_type_" + counter, false);
        subdata.damage = fetchFromElement("id_ability_damage_" + counter);
-       subdata.hit = fetchFromElement("id_ability_cost_" + counter);
+       subdata.cost = fetchFromElement("id_ability_cost_" + counter);
        subdata.range = fetchFromElement("id_ability_range_" + counter);
        subdata.requirement = fetchFromElement("id_ability_requirement_" + counter, false);
        subdata.details = fetchFromElement("id_ability_details_" + counter);
@@ -685,7 +685,7 @@ function generateTableAbilities(table, data) {
         cell_desc.classList.add("creature-content-bg-light");
         cell_desc.classList.add("fs-2");
         cell_desc.colSpan = "6";
-        cell_desc.appendChild(document.createTextNode(element.description));
+        cell_desc.appendChild(document.createTextNode(element.details));
     }
 }
 
@@ -770,7 +770,7 @@ function generateTablePassives(table, data) {
         cell_desc.classList.add("creature-content-bg-light");
         cell_desc.classList.add("fs-2");
         cell_desc.colSpan = "6";
-        cell_desc.appendChild(document.createTextNode(element.description));
+        cell_desc.appendChild(document.createTextNode(element.details));
     }
 }
 
@@ -1199,7 +1199,7 @@ function buildTable() {
     generateTablePassives(table, data);
     generateTableTraits(table, data);
     if (data.drops != null)
-        generateTableDrops(table);
+        generateTableDrops(table, data);
     
     let div_code = document.querySelector("#built-table-code");
     let code = div_code.querySelector("code");
