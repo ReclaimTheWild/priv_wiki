@@ -119,6 +119,10 @@ table.rtw-table thead th {
     color: #FFFFFF;
 }
 
+th, td {
+    background-color: unset !important;
+}
+
 /*
 ** RtW Creature Table
 */
