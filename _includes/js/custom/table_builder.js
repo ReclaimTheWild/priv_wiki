@@ -486,7 +486,7 @@ function builderAddDrop(removeLast = false) {
 ** ----------------------------------------
 */
 
-function generateTableHead(table) {
+function generateTableHead(table, data) {
     let thead = table.createTHead();
     let row_name = thead.insertRow();
     let th_name = document.createElement("th");
@@ -508,7 +508,7 @@ function generateTableHead(table) {
     th_rank.classList.add("creature-title-bg");
 }
 
-function generateTableBodyStats(table) {
+function generateTableBodyStats(table, data) {
 
     let row_p = table.insertRow();
     let cell_hp = row_p.insertCell();
