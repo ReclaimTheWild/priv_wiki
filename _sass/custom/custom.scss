@@ -89,6 +89,40 @@ input {
     font-weight: 700;
 }
 
+/*
+** Classic RtW-Table
+*/
+
+table.rtw-table {
+    border: 2px solid #538135;
+    background-color: #E2EFD9;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.rtw-table td, table.rtw-table th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+table.rtw-table tr:nth-child(even) {
+    background: #C5E0B3;
+}
+
+table.rtw-table thead {
+    background: #538135;
+}
+
+table.rtw-table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/*
+** RtW Creature Table
+*/
+
 .creature-table {
   table {
       border-collapse: collapse !important;

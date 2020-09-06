@@ -121,7 +121,7 @@ You can find the source code for Jekyll at GitHub:
 {:c-dk-bg: style="background: #C5E0B3;" .text-grey-dk-300 }
 {:c-dk-bg-sm: c-dk-bg .fs-2}
 
-| Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
+<!-- | Cheep Cheep, Common{: c-name }                                                                                                                    ||||||
 | Rank 1 Natural Hunter{: c-type }                                                                                                                  ||||||
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **HP**: 12 {: c-dk-bg } || **MP**: 0 {: c-dk-bg } || **SP**: 12 {: c-dk-bg }                                                                      ||
@@ -153,4 +153,14 @@ You can find the source code for Jekyll at GitHub:
 | Smithing {: c-dk-bg-sm }     | 0 {: c-dk-bg-sm } | Enchanting {: c-dk-bg-sm }  | 0 {: c-dk-bg-sm } | Cooking {: c-dk-bg-sm }     | 0 {: c-dk-bg-sm }    |
 | **Drops**: {: c-lt-bg }   | 5x Cheep Cheep Meat (Rank 1 Food Ingredient) {: c-lt-bg }                                                             |||||
 |^^                         | 2x Cheep Cheep Fin (Rank 1 Critter, Spongy) {: c-lt-bg }                                                              |||||
-{: .creature-table }
+{: .creature-table } -->
+
+| Element  | Color  | Terrain      | Status       | Vulnerability | Jelly Property |
+| -------------------------------------------------------------------------------- |
+| Darkness | Purple | Oiled        | Blind        | Light         | Dusky          |
+| Earth    | Green  | Sand, Quick  | Sand-Covered | Ice           | Coarse         |
+| Fire     | Red    | Brushfire    | On Fire      | Water         | Toasty         |
+| Ice      | Teal   | Ice, Dry     | Slowed       | Fire          | Fireproof      |
+| Light    | White  | Normal       | Cursed       | Darkness      | Bright         |
+| Water    | Navy   | Water, Fresh | Soaked       | Shock         | Spongy         |
+{: .rtw-table}
