@@ -6,7 +6,7 @@ permalink: /tools
 
 #### Head:
 
-<form style="display:flex;">
+<form>
     <div class="large-input">
         <label for="id_name">Name*:</label>
         <input id="id_name" type="text" placeholder="Name, Common">
@@ -104,14 +104,14 @@ permalink: /tools
         <input id="id_traits_infos" type="text" placeholder="Limited Intelligence, Undead">
     </div>
     <div class="large-input">
-        <label for="id_traits_infos">Resistance:</label>
-        <input id="id_traits_infos" type="text" placeholder="Fire damage (Rank 5)">
+        <label for="id_traits_resistance">Resistance:</label>
+        <input id="id_traits_resistance" type="text" placeholder="Fire damage (Rank 5)">
     </div>
 </form>
 <form>
     <div class="large-input">
-        <label for="id_traits_vulnerability">Immunity:</label>
-        <input id="id_traits_vulnerability" type="text" placeholder="Darkness (Leave empty for none)">
+        <label for="id_traits_immunity">Immunity:</label>
+        <input id="id_traits_immunity" type="text" placeholder="Darkness (Leave empty for none)">
     </div>
     <div class="large-input">
         <label for="id_traits_vulnerability">Vulnerability:</label>

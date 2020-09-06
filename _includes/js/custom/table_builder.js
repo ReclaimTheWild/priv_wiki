@@ -19,44 +19,49 @@ let example = {
         vitality: "13",
         movement: "6 (Swimming), 1 (Walking)",
     },
-    main_attack: {
-        name: "Spurt Water",
-        damage: "7",
-        hit: +8,
-        range: "Projectile 4",
-    },
+    main_attacks: [
+        {
+            name: "Spurt Water",
+            damage: "7",
+            hit: "+8",
+            range: "Projectile 4",
+            details: "Description", //not required
+        },
+    ],
     abilities: [
         {
             name: "Arc Shot",
+            type : "Reaction", //not required
             damage: "7, Water",
             cost: "4 Stamina",
             range: "Projectile 12-16",
+            requirement: "Be cool", //not required
             description: "You may ignore allies, enemies and any obstacles that do not reach higher than 6 squares above you, for determining line of sight for this attack.",
         },
+    ],
+    weapons: [
         {
-            name: "Jump Attack",
-            damage: "10",
-            cost: "6 Stamina",
-            range: "Jump 4, Melee",
-            description : "You jump towards your target in a straight line, landing next to them, even if you have already reached your maximum Movement for the turn. You are Off-Balance until the start of your next turn. This attack cannot be performed if you are Halted or Slowed.",
+            name: "Cheep Water Spurt",
+            rank: "Rank 1 Natural Rod, Water",
+            ammo: "2x Bombs, 5x Blunt Arrows", //not required
+            enchantment: "Something", //not required
+            accuracy: "1",
+            attack: "5",
+            durability: "6",
         },
     ],
-    weapon: {
-        name: "Cheep Water Spurt",
-        rank: "Rank 1 Natural Rod, Water",
-        accuracy: "1",
-        attack: "5",
-        durability: "6",
-    },
     passives: [
         {
             name: "Flying Fish",
+            type: "Explanation",
             description: "While on the surface of the water, this creature can jump as if its Athletics were 5 points higher. (Horiz. 4; Vert. 3)",
         },
     ],
     traits: {
         informations: "Limited Intelligence, Undead",
-        vulnerability : "",
+        resistance: "", //not required
+        immunity: "", //not required
+        vulnerability : "", //not required
         power: {
             combat: 2,
             hearts: 3,
@@ -91,16 +96,155 @@ let example = {
     drops: [
         {
             name: "Cheep Cheep Meat",
-            rank: "Rank 1 Food Ingredient",
-            quantity: 5,
+            rank: "Rank 1 Food Ingredient", //not required
+            quantity: 5, //not required
         },
         {
-            name: "Cheep Cheep Fin",
-            rank: "Rank 1 Critter, Spongy",
-            quantity: 2,
-        },
+            name: "Weapons",
+            rank: "when available",
+        }
     ],
 }
+
+/*
+** ---------------------------------------
+** FUNCTION TO FETCH THE COMPLETED TABLE -
+** ---------------------------------------
+*/
+
+function fetchFromElement(id, required = true) {
+    let value = document.getElementById(id).value;
+    if (value === "" && required === true) {
+        let index = id.slice(0, 3);
+        index.replace(/_/g, " ");
+        index.replace(/\b\w/g, function(match) {match.toUpperCase()});
+        document.getElementById("result_infos");
+        let error_head = document.createElement("span");
+        error_head.appendChild(document.createTextNode(index + ": "));
+        error_head.classList.add("error-info-bold");
+        error_head.classList.add("text-red-200");
+        let error_p = document.createElement("p");
+        error_p.appendChild(error_head);
+        error_p.appendChild(document.createTextNode("Is required and can't be null."));
+        document.getElementById("result_infos").appendChild(error_p);
+        fetchTableData.hasError = true;
+    }
+    return value;
+}
+
+function fetchTableData() {
+    fetchTableData.hasError = false;
+    let data;
+
+    data.head.name = fetchFromElement("id_name");
+    data.head.rank = fetchFromElement("id_rank");
+
+    data.stats.hp = fetchFromElement("id_hp");
+    data.stats.mp = fetchFromElement("id_mp");
+    data.stats.sp = fetchFromElement("id_sp");
+    data.stats.defense = fetchFromElement("id_defense");
+    data.stats.defense_type = fetchFromElement("id_defense_type");
+    data.stats.concentration = fetchFromElement("id_concentration");
+    data.stats.initiative = fetchFromElement("id_initiative");
+    data.stats.evasion = fetchFromElement("id_evasion");
+    data.stats.vitality = fetchFromElement("id_vitality");
+    data.stats.size = fetchFromElement("id_size");
+    data.stats.movement = fetchFromElement("id_movement");
+
+    data.main_attacks = [];
+    for (let counter = 1; counter > builderAddMainAttack.counter; ++counter) {
+        let subdata;
+        subdata.name = fetchFromElement("id_attack_name_" + counter);
+        subdata.damage = fetchFromElement("id_attack_damage_" + counter);
+        subdata.hit = fetchFromElement("id_attack_hit_" + counter);
+        subdata.range = fetchFromElement("id_attack_range_" + counter);
+        subdata.details = fetchFromElement("id_attack_details_" + counter, false);
+        data.main_attacks.push(subdata);
+    }
+
+   data.abilities = [];
+   for (let counter = 1; counter > builderAddAbility.counter; ++counter) {
+       let subdata;
+       subdata.name = fetchFromElement("id_ability_name_" + counter);
+       subdata.type = fetchFromElement("id_ability_type_" + counter, false);
+       subdata.damage = fetchFromElement("id_ability_damage_" + counter);
+       subdata.hit = fetchFromElement("id_ability_cost_" + counter);
+       subdata.range = fetchFromElement("id_ability_range_" + counter);
+       subdata.requirement = fetchFromElement("id_ability_requirement_" + counter, false);
+       subdata.details = fetchFromElement("id_ability_details_" + counter);
+       data.abilities.push(subdata);
+   }
+
+    data.weapons = [];
+    for (let counter = 1; counter > builderAddWeapon.counter; ++counter) {
+       let subdata;
+       subdata.name = fetchFromElement("id_weapon_name_" + counter);
+       subdata.rank = fetchFromElement("id_weapon_rank_" + counter);
+       subdata.ammo = fetchFromElement("id_weapon_ammo_" + counter, false);
+       subdata.enchantment = fetchFromElement("id_weapon_enchantment_" + counter, false);
+       subdata.accuracy = fetchFromElement("id_weapon_accuracy_" + counter);
+       subdata.attack = fetchFromElement("id_weapon_attack_" + counter, false);
+       subdata.durability = fetchFromElement("id_weapon_durability_" + counter);
+       data.weapons.push(subdata);
+    }
+
+    data.passives = [];
+    for (let counter = 1; counter > builderAddPassive.counter; ++counter) {
+        let subdata;
+        subdata.name = fetchFromElement("id_passive_name_" + counter);
+        subdata.type = fetchFromElement("id_passive_type_" + counter);
+        subdata.details = fetchFromElement("id_passive_details_" + counter);
+        data.passives.push(subdata);
+    }
+    
+    data.traits.informations = fetchFromElement("id_traits_infos");
+    data.traits.resistance = fetchFromElement("id_traits_resistance", false);
+    data.traits.immunity = fetchFromElement("id_traits_immunity", false);
+    data.traits.vulnerability = fetchFromElement("id_traits_vulnerability", false);
+
+    data.traits.power.combat = fetchFromElement("id_traits_combat");
+    data.traits.power.hearts = fetchFromElement("id_traits_hearts");
+    data.traits.power.athletics = fetchFromElement("id_traits_athletics");
+    data.traits.power.civilization = fetchFromElement("id_traits_civilization");
+    data.traits.power.fortitude = fetchFromElement("id_traits_fortitude");
+    data.traits.power.intimidate = fetchFromElement("id_traits_intimidate");
+    data.traits.power.mechanics = fetchFromElement("id_traits_mechanics");
+    data.traits.power.smithing = fetchFromElement("id_traits_smithing");
+
+    data.traits.wisdom.willpower = fetchFromElement("id_traits_willpower");
+    data.traits.wisdom.magic = fetchFromElement("id_traits_magic");
+    data.traits.wisdom.arcana = fetchFromElement("id_traits_arcana");
+    data.traits.wisdom.perception = fetchFromElement("id_traits_perception");
+    data.traits.wisdom.influence = fetchFromElement("id_traits_influence");
+    data.traits.wisdom.discipline = fetchFromElement("id_traits_discipline");
+    data.traits.wisdom.perform = fetchFromElement("id_traits_perform");
+    data.traits.wisdom.enchanting = fetchFromElement("id_traits_enchanting");
+
+    data.traits.courage.accuracy = fetchFromElement("id_traits_accuracy");
+    data.traits.courage.stamina = fetchFromElement("id_traits_stamina");
+    data.traits.courage.nature = fetchFromElement("id_traits_nature");
+    data.traits.courage.agility = fetchFromElement("id_traits_agility");
+    data.traits.courage.command = fetchFromElement("id_traits_command");
+    data.traits.courage.insight = fetchFromElement("id_traits_insight");
+    data.traits.courage.guile = fetchFromElement("id_traits_guile");
+    data.traits.courage.cooking = fetchFromElement("id_traits_cooking");
+
+    data.drops = [];
+    for (let counter = 1; counter > builderAddDrop.counter; ++counter) {
+        let subdata;
+        subdata.type = fetchFromElement("id_drop_quantity_" + counter, false);
+        subdata.name = fetchFromElement("id_drop_name_" + counter);
+        subdata.name = fetchFromElement("id_drop_rank_" + counter, false);
+        data.drops.push(subdata);
+    }
+
+    return data;
+}
+
+/*
+** ----------------------------------------
+*/
+
 
 function createDivInput(classes, used_id, label_text, input_placeholder) {
     let div = document.createElement("div");
@@ -201,7 +345,7 @@ function builderAddAbility(removeLast = false) {
 
     let form_name_dmg = document.createElement("form");
     form_name_dmg.appendChild(createDivInput(["large-input", "flex-grow-2"], "id_ability_name_" + builderAddAbility.counter, "Name*:", "Arc Shot"));
-    form_name_dmg.appendChild(createDivInput(["large-input"], "id_ability_type_" + builderAddAbility.counter, "Type*:", "Reaction (empty for Standard"));
+    form_name_dmg.appendChild(createDivInput(["large-input"], "id_ability_type_" + builderAddAbility.counter, "Type:", "Reaction (empty for Standard"));
     form_name_dmg.appendChild(createDivInput(["small-input"], "id_ability_damage_" + builderAddAbility.counter, "Damage*:", "42"));
 
     let form_hit_range = document.createElement("form");
@@ -446,34 +590,41 @@ function generateTableBodyStats(table) {
 }
 
 function generateTableNormalAttack(table) {
-    let row_1 = table.insertRow();
-    let cell_name = row_1.insertCell();
-    cell_name.classList.add("text-grey-dk-300");
-    cell_name.classList.add("creature-content-bg-dark");
-    cell_name.colSpan = "3";
-    let cell_name_strong = document.createElement("strong");
-    cell_name_strong.appendChild(document.createTextNode(example.main_attack.name));
-    cell_name.appendChild(cell_name_strong);
-    let cell_dmg = row_1.insertCell();
-    cell_dmg.classList.add("text-grey-dk-300");
-    cell_dmg.classList.add("creature-content-bg-dark");
-    cell_dmg.colSpan = "3";
-    cell_dmg.appendChild(document.createTextNode("Damage: " +
-                                                example.main_attack.damage));
-
-    let row_2 = table.insertRow();
-    let cell_hit = row_2.insertCell();
-    cell_hit.classList.add("text-grey-dk-300");
-    cell_hit.classList.add("creature-content-bg-dark");
-    cell_hit.colSpan = "3";
-    cell_hit.appendChild(document.createTextNode("To-Hit Check: " +
-                                                example.main_attack.hit));
-    let cell_ran = row_2.insertCell();
-    cell_ran.classList.add("text-grey-dk-300");
-    cell_ran.classList.add("creature-content-bg-dark");
-    cell_ran.colSpan = "3";
-    cell_ran.appendChild(document.createTextNode("Range: " +
-                                                example.main_attack.range));
+    for (let element of example.main_attacks) {
+        let row_1 = table.insertRow();
+        let cell_name = row_1.insertCell();
+        cell_name.classList.add("text-grey-dk-300");
+        cell_name.classList.add("creature-content-bg-dark");
+        cell_name.colSpan = "3";
+        let cell_name_strong = document.createElement("strong");
+        cell_name_strong.appendChild(document.createTextNode(element.name));
+        cell_name.appendChild(cell_name_strong);
+        let cell_dmg = row_1.insertCell();
+        cell_dmg.classList.add("text-grey-dk-300");
+        cell_dmg.classList.add("creature-content-bg-dark");
+        cell_dmg.colSpan = "3";
+        cell_dmg.appendChild(document.createTextNode("Damage: " + element.damage));
+    
+        let row_2 = table.insertRow();
+        let cell_hit = row_2.insertCell();
+        cell_hit.classList.add("text-grey-dk-300");
+        cell_hit.classList.add("creature-content-bg-dark");
+        cell_hit.colSpan = "3";
+        cell_hit.appendChild(document.createTextNode("To-Hit Check: " + element.hit));
+        let cell_ran = row_2.insertCell();
+        cell_ran.classList.add("text-grey-dk-300");
+        cell_ran.classList.add("creature-content-bg-dark");
+        cell_ran.colSpan = "3";
+        cell_ran.appendChild(document.createTextNode("Range: " + element.range));
+    
+        let row_3 = table.insertRow();
+        let cell_details = row_3.insertCell();
+        cell_details.classList.add("text-grey-dk-300");
+        cell_details.classList.add("creature-content-bg-dark");
+        cell_details.classList.add("fs-2");
+        cell_details.colSpan = "6";
+        cell_details.appendChild(document.createTextNode(element.details));
+    }
 }
 
 function generateTableAbilities(table) {
@@ -492,7 +643,16 @@ function generateTableAbilities(table) {
         cell_dmg.colSpan = "3";
         cell_dmg.appendChild(document.createTextNode("Damage: " +
                                                     element.damage));
-    
+        if (element.type || 0 !== element.type.length) {
+            let row_1_bis = table.insertRow();
+            cell_dmg.rowSpan = "2";
+            let cell_type = row_1_bis.insertCell();
+            cell_type.classList.add("text-grey-dk-300");
+            cell_type.classList.add("creature-content-bg-light");
+            cell_type.colSpan = "3";
+            cell_type.appendChild(document.createTextNode("(" + element.type + ")"));
+        }
+
         let row_2 = table.insertRow();
         row_2.classList.add("text-grey-dk-300");
         row_2.classList.add("creature-content-bg-light");
@@ -508,6 +668,18 @@ function generateTableAbilities(table) {
         cell_ran.appendChild(document.createTextNode("Range: " +
                                                     element.range));
 
+        if (element.requirement || 0 !== element.requirement.length) {
+            let row_3_pre = table.insertRow();
+            let cell_requirement = row_3_pre.insertCell();
+            cell_requirement.classList.add("text-grey-dk-300");
+            cell_requirement.classList.add("creature-content-bg-light");
+            cell_requirement.colSpan = "6";
+            let requirement_strong = document.createElement("strong");
+            requirement_strong.appendChild(document.createTextNode("Use Requirement: "));
+            cell_requirement.appendChild(requirement_strong);
+            cell_requirement.appendChild(document.createTextNode(element.requirement));
+        }
+
         let row_3 = table.insertRow();
         let cell_desc = row_3.insertCell();
         cell_desc.classList.add("text-grey-dk-300");
@@ -519,39 +691,66 @@ function generateTableAbilities(table) {
 }
 
 function generateTableDefaultWeapon(table) {
-    let row_1 = table.insertRow();
-    let cell_name = row_1.insertCell();
-    cell_name.classList.add("text-grey-dk-300");
-    cell_name.classList.add("creature-content-bg-dark");
-    cell_name.colSpan = "6";
-    let weap_strong = document.createElement("strong");
-    weap_strong.appendChild(document.createTextNode("Default Weapon"));
-    cell_name.appendChild(weap_strong);
-    cell_name.appendChild(document.createTextNode(": " + example.weapon.name));
+    let first_element = true;
+    for (let element of example.weapons) {
+        let row_1 = table.insertRow();
+        let cell_name = row_1.insertCell();
+        cell_name.classList.add("text-grey-dk-300");
+        cell_name.classList.add("creature-content-bg-dark");
+        cell_name.colSpan = "6";
+        if (first_element === true) {
+            let weap_strong = document.createElement("strong");
+            weap_strong.appendChild(document.createTextNode("Default Weapon: "));
+            cell_name.appendChild(weap_strong);
+            first_element = false;
+        }
+        cell_name.appendChild(document.createTextNode(element.name));
+    
+        let row_2 = table.insertRow();
+        let cell_rank = row_2.insertCell();
+        cell_rank.classList.add("text-grey-dk-300");
+        cell_rank.classList.add("creature-content-bg-dark");
+        cell_rank.colSpan = "6";
+        cell_rank.appendChild(document.createTextNode("(" + example.weapon.rank + ")"));
+    
+        if (element.ammo || 0 != element.ammo.length) {
+            let row_3_pre_1 = table.insertRow();
+            let cell_ammo = row_3_pre_1.insertCell();
+            cell_ammo.classList.add("text-grey-dk-300");
+            cell_ammo.classList.add("creature-content-bg-dark");
+            cell_ammo.colSpan = "6";
+            let ammo_strong = document.createElement("strong");
+            ammo_strong.appendChild(document.createTextNode("Ammunition: "));
+            cell_ammo.appendChild(weap_strong);
+            cell_ammo.appendChild(document.createTextNode(element.ammo));
+        }
+        
+        if (element.enchantment || 0 !== element.enchantment.length) {
+            let row_3_pre_2 = table.insertRow();
+            let cell_ench = row_3_pre_2.insertCell();
+            cell_ench.classList.add("text-grey-dk-300");
+            cell_ench.classList.add("creature-content-bg-dark");
+            cell_ench.colSpan = "6";
+            cell_ench.appendChild(document.createTextNode("Enchantment: " + element.enchantment));
+        }
 
-    let row_2 = table.insertRow();
-    let cell_rank = row_2.insertCell();
-    cell_rank.classList.add("text-grey-dk-300");
-    cell_rank.classList.add("creature-content-bg-dark");
-    cell_rank.colSpan = "6";
-    cell_rank.appendChild(document.createTextNode("(" + example.weapon.rank + ")"));
-
-    let row_3 = table.insertRow();
-    let cell_acc = row_3.insertCell();
-    cell_acc.classList.add("text-grey-dk-300");
-    cell_acc.classList.add("creature-content-bg-dark");
-    cell_acc.colSpan = "2";
-    cell_acc.appendChild(document.createTextNode("Accuracy: " + example.weapon.accuracy));
-    let cell_atk = row_3.insertCell();
-    cell_atk.classList.add("text-grey-dk-300");
-    cell_atk.classList.add("creature-content-bg-dark");
-    cell_atk.colSpan = "2";
-    cell_atk.appendChild(document.createTextNode("Attack: " + example.weapon.accuracy));
-    let cell_dur = row_3.insertCell();
-    cell_dur.classList.add("text-grey-dk-300");
-    cell_dur.classList.add("creature-content-bg-dark");
-    cell_dur.colSpan = "2";
-    cell_dur.appendChild(document.createTextNode("Durability: " + example.weapon.accuracy));
+        let row_3 = table.insertRow();
+        let cell_acc = row_3.insertCell();
+        cell_acc.classList.add("text-grey-dk-300");
+        cell_acc.classList.add("creature-content-bg-dark");
+        cell_acc.colSpan = "2";
+        cell_acc.appendChild(document.createTextNode("Accuracy: " + example.weapon.accuracy));
+        let cell_atk = row_3.insertCell();
+        cell_atk.classList.add("text-grey-dk-300");
+        cell_atk.classList.add("creature-content-bg-dark");
+        cell_atk.colSpan = "2";
+        cell_atk.appendChild(document.createTextNode("Attack: " + example.weapon.accuracy));
+        let cell_dur = row_3.insertCell();
+        cell_dur.classList.add("text-grey-dk-300");
+        cell_dur.classList.add("creature-content-bg-dark");
+        cell_dur.colSpan = "2";
+        cell_dur.appendChild(document.createTextNode("Durability: " + example.weapon.accuracy));
+    }
 }
 
 function generateTablePassives(table) {
@@ -564,7 +763,7 @@ function generateTablePassives(table) {
         let pas_strong = document.createElement("strong");
         pas_strong.appendChild(document.createTextNode(element.name));
         cell_name.appendChild(pas_strong);
-        cell_name.appendChild(document.createTextNode(" (Passive)"));
+        cell_name.appendChild(document.createTextNode(" (" + element.type + ")"));
 
         let row_2 = table.insertRow();
         let cell_desc = row_2.insertCell();
@@ -586,6 +785,26 @@ function generateTableTraits(table) {
     cell_name.colSpan = "6";
     cell_name.appendChild(document.createTextNode(traits.informations));
 
+    if (traits.resistance || 0 !== traits.resistance.length) {
+        let row_res = table.insertRow();
+        let cell_res = row_res.insertCell();
+        cell_res.classList.add("text-grey-dk-300");
+        cell_res.classList.add("creature-content-bg-dark");
+        cell_res.classList.add("fs-4");
+        cell_res.colSpan = "6";
+        cell_res.appendChild(document.createTextNode("Resistance: " + traits.resistance));
+    }
+
+    if (traits.immunity || 0 !== traits.immunity.length) {
+        let row_immu = table.insertRow();
+        let cell_immu = row_immu.insertCell();
+        cell_immu.classList.add("text-grey-dk-300");
+        cell_immu.classList.add("creature-content-bg-dark");
+        cell_immu.classList.add("fs-4");
+        cell_immu.colSpan = "6";
+        cell_immu.appendChild(document.createTextNode("Immunity: " + traits.vulnerability));
+    }
+
     if (traits.vulnerability || 0 !== traits.vulnerability.length) {
         let row_vuln = table.insertRow();
         let cell_vuln = row_vuln.insertCell();
@@ -595,7 +814,7 @@ function generateTableTraits(table) {
         cell_vuln.colSpan = "6";
         cell_vuln.appendChild(document.createTextNode("Vulnerability: " + traits.vulnerability));
     }
-
+    
     let row_1 = table.insertRow();
     let cell_1_1 = row_1.insertCell();
     cell_1_1.appendChild(document.createTextNode("Combat"));
@@ -927,19 +1146,21 @@ function generateTableDrops(table) {
     let cell_drop = row_1.insertCell();
     cell_drop.classList.add("text-grey-dk-300");
     cell_drop.classList.add("creature-content-bg-light");
-    cell_drop.rowSpan = example.drops.length.toString();
+    cell_drop.rowSpan = example.drops.length;
     let drop_strong = document.createElement("strong");
-    drop_strong.appendChild(document.createTextNode("Drops"));
+    drop_strong.appendChild(document.createTextNode("Drops:"));
     cell_drop.appendChild(drop_strong);
-    cell_drop.appendChild(document.createTextNode(":"));
     let cell_d1 = row_1.insertCell();
     cell_d1.classList.add("text-grey-dk-300");
     cell_d1.classList.add("creature-content-bg-light");
     cell_d1.colSpan = "5";
-    cell_d1.appendChild(document.createTextNode(
-        example.drops[0].quantity + "x " +
-        example.drops[0].name + " (" + example.drops[0].rank + ")"
-    ));
+    let drop_str_1;
+    if (example.drops[0].quantity || 0 !== example.drops[0].quantity.length)
+        drop_str_1 += example.drops[0].quantity + "x ";
+    drop_str_1 += example.drops[0].name;
+    if (example.drops[0].rank || 0 !== example.drops[0].rank.length)
+        drop_str_1 += " (" + example.drops[0].rank + ")";
+    cell_d1.appendChild(document.createTextNode(drop_str_1));
     let drops_sup = example.drops.slice(1);
     for (let element of drops_sup) {
         let row = table.insertRow();
@@ -947,14 +1168,23 @@ function generateTableDrops(table) {
         cell_d.classList.add("text-grey-dk-300");
         cell_d.classList.add("creature-content-bg-light");
         cell_d.colSpan = "5";
-        cell_d.appendChild(document.createTextNode(
-            element.quantity + "x " +
-            element.name + " (" + element.rank + ")"
-        )); 
+        let drop_str;
+        if (element.quantity || 0 !== element.quantity.length)
+            drop_str += element.quantity + "x ";
+        drop_str += element.name;
+        if (element.rank || 0 !== element.rank.length)
+            drop_str += " (" + element.rank + ")";
+        cell_d.appendChild(document.createTextNode(drop_str));
     }
 }
 
 function buildTable() {
+
+    let data = fetchTableData();
+    console.log(data);
+    if (fetchTableData.hasError === true)
+        return;
+
     let div_table = document.querySelector("#built-table");
     let newTable = document.createElement("table");
     newTable.classList.add("creature-table");
