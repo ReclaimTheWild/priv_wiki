@@ -239,9 +239,9 @@ function fetchTableData() {
     data.drops = [];
     for (let counter = 1; counter <= builderAddDrop.counter; ++counter) {
         let subdata = {};
-        subdata.type = fetchFromElement("id_drop_quantity_" + counter, false);
+        subdata.quantity = fetchFromElement("id_drop_quantity_" + counter, false);
         subdata.name = fetchFromElement("id_drop_name_" + counter);
-        subdata.name = fetchFromElement("id_drop_rank_" + counter, false);
+        subdata.rank = fetchFromElement("id_drop_rank_" + counter, false);
         data.drops.push(subdata);
     }
 
