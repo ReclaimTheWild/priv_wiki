@@ -117,8 +117,8 @@ function fetchFromElement(id, required = true) {
     let value = document.getElementById(id).value;
     if (value === "" && required === true) {
         let index = id.slice(3);
-        index.replace(/_/g, " ");
-        index.replace(/\b\w/g, function(match) {match.toUpperCase()});
+        index = index.replace(/_/g, " ");
+        index = index.replace(/\b\w/g, function(match) {match.toUpperCase()});
         document.getElementById("result_infos");
         let error_head = document.createElement("span");
         error_head.appendChild(document.createTextNode(index + ": "));
@@ -193,6 +193,7 @@ function fetchTableData() {
 
     data.passives = [];
     for (let counter = 1; counter > builderAddPassive.counter; ++counter) {
+        console.log("Passives: " + counter " vs. " + builderAddPassive.counter);
         let subdata = {};
         subdata.name = fetchFromElement("id_passive_name_" + counter);
         subdata.type = fetchFromElement("id_passive_type_" + counter);
@@ -1161,7 +1162,7 @@ function generateTableDrops(table) {
     cell_d1.classList.add("text-grey-dk-300");
     cell_d1.classList.add("creature-content-bg-light");
     cell_d1.colSpan = "5";
-    let drop_str_1;
+    let drop_str_1 = "";
     if (example.drops[0].quantity || 0 !== example.drops[0].quantity.length)
         drop_str_1 += example.drops[0].quantity + "x ";
     drop_str_1 += example.drops[0].name;
