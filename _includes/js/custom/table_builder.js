@@ -1185,11 +1185,12 @@ function generateTableDrops(table) {
 
 function buildTable() {
 
+    document.getElementById("result_infos").innerHTML = "";
+
     let data = fetchTableData();
     console.log(data);
     // if (fetchTableData.hasError === true)
     //     return;
-    document.getElementById("result_infos").innerHTML = "";
     let div_table = document.querySelector("#built-table");
     div_table.innerHTML = "";
     let newTable = document.createElement("table");
