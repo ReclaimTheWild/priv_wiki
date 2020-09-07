@@ -61,10 +61,10 @@ url: "https://reclaimthewild.github.io"
 
 color_scheme: light
 aux_links:
-  "Main Website":
-    - "https://reclaimthewild.net/"
   "Tags":
     - "/priv_wiki/tag"
+  "Main Website":
+    - "https://reclaimthewild.net/"
 aux_links_new_tab: false
 
 footer_content: "This is a mirror of the official Reclaim the Wild's wiki and is not in any way affiliated with either Nintendo, or the Reclaim the Wild's team."
