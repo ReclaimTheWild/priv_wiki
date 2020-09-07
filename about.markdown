@@ -164,3 +164,5 @@ You can find the source code for Jekyll at GitHub:
 | Light    | White  | Normal       | Cursed       | Darkness      | Bright         |
 | Water    | Navy   | Water, Fresh | Soaked       | Shock         | Spongy         |
 {: .rtw-table}
+
+Test
