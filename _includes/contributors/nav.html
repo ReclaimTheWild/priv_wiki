@@ -1,0 +1,14 @@
+{%- comment -%}
+  Use {%- include contributors/nav.html -%}
+  for an HTML list of links to where the tags are previewed.
+{%- endcomment -%}
+
+{%- if page.contributors.size > 0 -%}
+<ul class="contributor-list">
+  <li class="contributor-list-item"><a href="{{ site.url }}{{ site.baseurl }}/contributor/">Contributors</a>:</li>
+  {% for contributor in page.contributors %}
+  <li class="contributor-list-item">#{% include contributors/contributor_link.html contributor=contributor %}</li>
+  {% endfor %}
+  {%- assign contributor = nil %}
+</ul>
+{%- endif -%}

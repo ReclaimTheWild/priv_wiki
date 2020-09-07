@@ -77,9 +77,13 @@ back_to_top_text: "Back to top"
 
 exclude:
   - tag/TAG.md
+  - contributor/CONTRIBUTOR.md
 
 collections:
   tag:
+    output: true
+    permalink: /:collection/:name
+  contributor:
     output: true
     permalink: /:collection/:name
 
@@ -92,6 +96,14 @@ defaults:
       title: "Tag index"
       layout: "default"
       excerpt: "List of tagged pages"
+  -
+    scope:
+      path: ""
+      type: "contributor"
+    values:
+      title: "Contributor index"
+      layout: "default"
+      excerpt: "List of contributors"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
