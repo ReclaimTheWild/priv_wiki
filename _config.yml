@@ -62,10 +62,8 @@ url: "https://reclaimthewild.github.io"
 color_scheme: light
 aux_links:
   "Main Website":
-    new_tab: true
     - "https://reclaimthewild.net/"
   "Tags":
-    new_tab: false
     - "/tag"
 aux_links_new_tab: false
 
