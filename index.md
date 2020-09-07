@@ -7,7 +7,7 @@ nav_order: 1
 
 # Home
 
-![twili_icon](assets/images/emoji.twili.png) I am a Twili
+![twili_icon](assets/images/emoji/twili.png) I am a Twili
 
 Welcome to the mirror of Reclaim the Wild's homebrew wiki !
 
