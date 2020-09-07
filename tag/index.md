@@ -2,6 +2,7 @@
 layout: default
 title: Tags
 description: Tag cloud and descriptions
+nav_exclude: true
 ---
 # Tag cloud
 
