@@ -12,7 +12,7 @@ on the contributor pages, and in the list below.
 <!-- If you would like to suggest a new tag, feel free to open a [new issue](https://github.com/ReclaimTheWild/priv_wiki/issues/new) and ask about it !
 (Update that link when we switch repos) -->
 
-{% include contributors/cloud.html %}
+<!-- {% include contributors/cloud.html %} -->
 
 # Contributor index
 

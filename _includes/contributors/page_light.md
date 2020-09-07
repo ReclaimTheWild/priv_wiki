@@ -18,7 +18,7 @@ Articles: {{ tagged_pages.size }}
 
 {%- for tagged_page in tagged_pages %}
 
-- <a href="{{ site.url }}{{ site.baseurl }}{{ tagged_page.url }}">{{ tagged_page.title }}</a>{% if tagged_page.summary %} - {{ tagged_page.summary }}{% endif %} ({%- for contributor_3 in tagged_page.contributors %}\#{% include contributors/contributor_link.html contributor=contributor_3 %}{%- endfor %})
+- <a href="{{ site.url }}{{ site.baseurl }}{{ tagged_page.url }}">{{ tagged_page.title }}</a>{% if tagged_page.summary %} - {{ tagged_page.summary }}{% endif %} (By{%- for contributor_3 in tagged_page.contributors %} {% include contributors/contributor_link.html contributor=contributor_3 %}{%- endfor %})
 {% endfor %}
 
 {%- assign current_page_slug = nil -%}
