@@ -4,7 +4,7 @@
 {%- endcomment -%}
 
 {% raw %}
-<!-- {%- if page.contributors.size > 0 -%}
+{%- if page.contributors.size > 0 -%}
 <ul class="contributor-list">
   <li class="contributor-list-item"><a href="{{ site.url }}{{ site.baseurl }}/contributor/">Contributors</a>:</li>
   {% for contributor in page.contributors %}
@@ -12,7 +12,7 @@
   {% endfor %}
   {%- assign contributor = nil %}
 </ul>
-{%- endif -%} -->
+{%- endif -%}
 {% endraw %}
 
 {%- if page.contributors.size > 0 -%}
@@ -24,9 +24,7 @@
       {% if contributor.avatar %}
         <img src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
       {% endif %}
-      <a href="{{ "contributor/" | append: contributor.id | absolute_url }}">
-        {{ contributor.name }}
-      </a>
+      {% include contributors/contributor_link.html contributor=contributor.id %}
       {% if contributor.bio %}
         - ({{ contributor.bio }})
       {% endif %}
