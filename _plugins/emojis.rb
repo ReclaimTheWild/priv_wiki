@@ -4,6 +4,13 @@ class ZeldaEmojis < Liquid::Tag
       @input = input
     end
   
+    # Lookup allows access to the page/post variables through the tag context
+    def lookup(context, name)
+      lookup = context
+      name.split(".").each { |value| lookup = lookup[value] }
+      lookup
+    end
+
     def render(context)
       input = @input.strip
       baseurl = "#{lookup(context, 'site.baseurl')}"
