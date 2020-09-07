@@ -125,7 +125,7 @@ layout: table_wrappers
               {% for contributor in site.data.contributors %}
                 <li>
                   {% if contributor.avatar %}
-                    <img src="{{ "/assets/images/emoji/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
+                    <img src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
                   {% endif %}
                   <a href="{{ "profiles/" | append: contributor.id | absolute_url }}">
                     {{ contributor.name }}
