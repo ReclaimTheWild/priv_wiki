@@ -25,14 +25,14 @@
     {%- assign used = used | plus: 1 -%}
   {%- endunless -%}
   {%- assign contributor_page_url_9 = slug_9 | prepend: "/contributor/" -%}
+  {% assign contributor_slug_9 = site.data.contributors | where: 'id', slug_9 | first %}
   {%- if site_contributor_page_slugs contains slug_9 -%}
   {%- assign contributor_page_9 = site.contributor | where: "url", contributor_page_url_9 | first %}
-  {% assign contributor_slug_9 = site.data.contributors | where: 'id', slug_9 | first %}
-  <dt>#<a href="{{ site.url }}{{ site.baseurl }}{{ contributor_page_url_9 }}" class="contributor-link">{{ contributor_slug_9.name }}</a></dt>
+  <dt><a href="{{ site.url }}{{ site.baseurl }}{{ contributor_page_url_9 }}" class="contributor-link">{{ contributor_slug_9.name }}</a></dt>
   <dd>{{ tagged_size }} articles. {{ contributor_page_9.description }}</dd>
   {%- else %}
   {%- assign contributor_page_url_9 = slug_9 | prepend: "/contributor/#" -%}
-  <dt>#<a href="{{ site.url }}{{ site.baseurl }}{{ contributor_page_url_9 }}" class="contributor-link">{{ contributor_slug_9.name }}</a></dt>
+  <dt><a href="{{ site.url }}{{ site.baseurl }}{{ contributor_page_url_9 }}" class="contributor-link">{{ contributor_slug_9.name }}</a></dt>
   <dd>{{ tagged_size }} articles.</dd>
   {% endif -%}
 {%- endfor %}
