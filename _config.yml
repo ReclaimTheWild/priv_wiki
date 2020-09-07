@@ -62,6 +62,8 @@ url: "https://reclaimthewild.github.io"
 
 color_scheme: light
 aux_links:
+  "Contributors":
+    - "/priv_wiki/contributor"
   "Tags":
     - "/priv_wiki/tag"
   "Main Website":

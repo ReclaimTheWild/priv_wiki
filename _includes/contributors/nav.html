@@ -3,7 +3,8 @@
   for an HTML list of links to where the tags are previewed.
 {%- endcomment -%}
 
-{%- if page.contributors.size > 0 -%}
+{% raw %}
+<!-- {%- if page.contributors.size > 0 -%}
 <ul class="contributor-list">
   <li class="contributor-list-item"><a href="{{ site.url }}{{ site.baseurl }}/contributor/">Contributors</a>:</li>
   {% for contributor in page.contributors %}
@@ -11,4 +12,25 @@
   {% endfor %}
   {%- assign contributor = nil %}
 </ul>
+{%- endif -%} -->
+{% endraw %}
+
+{%- if page.contributors.size > 0 -%}
+<p>Contributors:</p>
+<ul>
+  {% for _contributor in page.contributors %}
+  {% assign contributor = site.data.contributors | where: 'id', _contributor | first %}
+    <li>
+      {% if contributor.avatar %}
+        <img src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
+      {% endif %}
+      <a href="{{ "contributor/" | append: contributor.id | absolute_url }}">
+        {{ contributor.name }}
+      </a>
+      {% if contributor.bio %}
+        - ({{ contributor.bio }})
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
 {%- endif -%}

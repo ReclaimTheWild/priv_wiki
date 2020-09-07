@@ -12,7 +12,9 @@
 
 {% include contributors/tagged_pages.html slug=page_slug %}
 
-## #{{ page_slug }}
+{% assign contributor_data = site.data.contributors | where: 'id', page_slug | first %}
+
+## {{ contributor_data.name }}
 
 {% assign contributor_url = page_slug | prepend: "/contributor/" -%}
 {%- if contributor_url == page.url -%}

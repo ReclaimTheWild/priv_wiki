@@ -120,39 +120,7 @@ layout: table_wrappers
           <hr>
           <footer>
             {%- include tags/nav.html %}
-            {%- include contributors/nav.html %}
-            <ul>
-              {% for contributor in site.data.contributors %}
-                <li>
-                  {% if contributor.avatar %}
-                    <img src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
-                  {% endif %}
-                  <a href="{{ "profiles/" | append: contributor.id | absolute_url }}">
-                    {{ contributor.name }}
-                  </a>
-                  {% if contributor.bio %}
-                    - ({{ contributor.bio }})
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
-
-            <ul>
-              {% for _contributor in page.contributors %}
-              {% assign contributor = site.data.contributors | where: 'id', _contributor | first %}
-                <li>
-                  {% if contributor.avatar %}
-                    <img src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
-                  {% endif %}
-                  <a href="{{ "profiles/" | append: contributor.id | absolute_url }}">
-                    {{ contributor.name }}
-                  </a>
-                  {% if contributor.bio %}
-                    - ({{ contributor.bio }})
-                  {% endif %}
-                </li>
-              {% endfor %}
-              </ul>            
+            {%- include /nav.html %}
             
             {% if site.back_to_top %}
               <p><a href="#top" id="back-to-top">{{ site.back_to_top_text }}</a></p>

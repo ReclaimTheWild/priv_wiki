@@ -19,5 +19,6 @@
 {%- unless site_contributor_page_urls contains contributor_url -%}
   {%- assign contributor_url = include.contributor | slugify | prepend: "/contributor/#" -%}
 {%- endunless -%}
-<a href="{{ site.url }}{{ site.baseurl }}{{ contributor_url }}" {{ attr }}>{{ include.contributor }}</a>
+{% assign contributor_link_data = site.data.contributors | where: 'id', include.contributor | first %}
+<a href="{{ site.url }}{{ site.baseurl }}{{ contributor_url }}" {{ attr }}>{{ contributor_link_data.name }}</a>
 {%- assign contributor_url = nil -%}
