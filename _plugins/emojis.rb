@@ -6,7 +6,7 @@ class ZeldaEmojis < Liquid::Tag
   
     def render(context)
       input = @input
-      output = "<img src=\"/assets/images/emoji/#{input}.png\" alt=\"#{input}\">"
+      output = "<img src=\"assets/images/emoji/#{input}.png\" alt=\"#{input}\">"
       return output;
     end
   end
