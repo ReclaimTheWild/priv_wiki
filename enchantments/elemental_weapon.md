@@ -38,3 +38,4 @@ Finally, the user gains access to the Elemental Chaff attack, below.
 {: .rtw-table}
 
 *: Onyx weapons exude a black smoke that can obscure vision when held steady (IE, placed on the ground, or when held by a user who is not in combat). This smoke may fill a single square, and generally prevents light from shining through. Perception checks made through the smoke take a (Rank) penalty, and light sources within the smoke have their Rank (or radius) reduced by (Rank).
+{: .fs-2}
