@@ -122,16 +122,16 @@ layout: table_wrappers
             {%- include tags/nav.html %}
 
             <ul>
-              {% for author in site.data.authors %}
+              {% for contributor in site.data.contributors %}
                 <li>
-                  {% if author.avatar %}
-                    <img src="{{ "/assets/images/emoji/" | append: author.avatar | absolute_url }}" alt="{{author.name}}" width="32" height="32">
+                  {% if contributor.avatar %}
+                    <img src="{{ "/assets/images/emoji/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
                   {% endif %}
-                  <a href="{{ "profiles/" | append: author.id | absolute_url }}">
-                    {{ author.name }}
+                  <a href="{{ "profiles/" | append: contributor.id | absolute_url }}">
+                    {{ contributor.name }}
                   </a>
-                  {% if author.bio %}
-                    - ({{ author.bio }})
+                  {% if contributor.bio %}
+                    - ({{ contributor.bio }})
                   {% endif %}
                 </li>
               {% endfor %}
