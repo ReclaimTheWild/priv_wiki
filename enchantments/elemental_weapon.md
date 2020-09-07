@@ -30,11 +30,11 @@ Finally, the user gains access to the Elemental Chaff attack, below.
 | -------------------------------------------------------------------------------- |
 | Diamond | Light | Cursed | Casts light, radius (Rank)       |
 | Emerald    | Earth  | Rusted | Resist Rain (Rank)       |
-| Onyx     | Darkness    | Sick | Exudes black smoke *       |
+| Onyx     | Darkness    | Sick | Exudes black smoke [^1]       |
 | Opal      | Water   | Soaked | Resist Sandstorm (Rank)       |
 | Ruby    | Fire  | On Fire | Resist Coldsnap (Rank)       |
 | Sapphire    | Ice   | Slowed | Resist Heatwave (Rank)       |
 | Topaz | Shock | Off-Balance | Generates Electricity |
 {: .rtw-table}
 
-*Onyx weapons exude a black smoke that can obscure vision when held steady (IE, placed on the ground, or when held by a user who is not in combat). This smoke may fill a single square, and generally prevents light from shining through. Perception checks made through the smoke take a (Rank) penalty, and light sources within the smoke have their Rank (or radius) reduced by (Rank).
+[^1]: Onyx weapons exude a black smoke that can obscure vision when held steady (IE, placed on the ground, or when held by a user who is not in combat). This smoke may fill a single square, and generally prevents light from shining through. Perception checks made through the smoke take a (Rank) penalty, and light sources within the smoke have their Rank (or radius) reduced by (Rank).
