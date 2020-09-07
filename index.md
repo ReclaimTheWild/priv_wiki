@@ -9,7 +9,9 @@ nav_order: 1
 
 ![twili_icon](assets/images/emoji/twili.png) I am a Twili
 
-{%- em twili %} {%- emoji twili %} Test emoji
+{% em twili %} {%- emoji twili %} Test emoji
+
+{% em twili %} {% em twili %} Test {% em twili %}
 
 Welcome to the mirror of Reclaim the Wild's homebrew wiki !
 
