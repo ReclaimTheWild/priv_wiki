@@ -64,7 +64,7 @@ aux_links:
   "Main Website":
     - "https://reclaimthewild.net/"
   "Tags":
-    - "/tag"
+    - "/priv_wiki/tag"
 aux_links_new_tab: false
 
 footer_content: "This is a mirror of the official Reclaim the Wild's wiki and is not in any way affiliated with either Nintendo, or the Reclaim the Wild's team."
