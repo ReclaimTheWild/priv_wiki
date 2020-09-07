@@ -1,0 +1,25 @@
+mei:
+  id: mei
+  name: Meï
+  avatar: mei.png
+  bio: The original maintainer of this wiki-blog ! Feel free to contact him for any technical questions !
+
+elementalknight:
+  id: elementalknight
+  name: Elemental Knight
+  avatar: elementalknight.png
+  bio: The one and only, the original creator of Reclaim the Wild !
+
+test-user1:
+  id: test-user1
+  name: Test the Test User
+  bio: Test User with a bio
+
+test-user2:
+  id: test-user2
+  name: Test2 the Test User
+  avatar: test.png
+
+test-user3:
+  id: test-user3
+  name: Test3 the Test User
