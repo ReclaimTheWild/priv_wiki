@@ -15,20 +15,52 @@
 {%- endif -%} -->
 {% endraw %}
 
-{%- if page.contributors.size > 0 -%}
-<p>Contributors:</p>
-<ul>
+{%- if page.contributors.size == 1 -%}
   {% for _contributor in page.contributors %}
   {% assign contributor = site.data.contributors | where: 'id', _contributor | first %}
-    <li>
+  <div class="contributor-footer">
+    <div class="c-f-image">
       {% if contributor.avatar %}
-        <img src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="32" height="32">
+        <img class="droplet-border" src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="96" height="96">
+      {% else %}
+        <img class="droplet-border" src="{{ "/assets/images/rtw_square.png" | absolute_url }}" alt="{{contributor.name}}" width="96" height="96">
       {% endif %}
-      {% include contributors/contributor_link.html contributor=contributor.id %}
-      {% if contributor.bio %}
+    </div>
+    <div class="c-f-infos">
+      <div class="c-f-i-name">
+        {% include contributors/contributor_link.html contributor=contributor.id %}
+      </div>
+      <div class="c-f-i-bio">
+        {% if contributor.bio %}
         - ({{ contributor.bio }})
       {% endif %}
-    </li>
+      </div>
+    </div>
+  </div>
   {% endfor %}
-  </ul>
+{%- endif -%}
+{%- if page.contributors.size > 1 -%}
+<a href="{{ site.url }}{{ site.baseurl }}/contributor/">Contributors</a>:
+  {% for _contributor in page.contributors %}
+  {% assign contributor = site.data.contributors | where: 'id', _contributor | first %}
+  <div class="contributor-footer">
+    <div class="c-f-image">
+      {% if contributor.avatar %}
+        <img class="droplet-border" src="{{ "/assets/images/user_pics/" | append: contributor.avatar | absolute_url }}" alt="{{contributor.name}}" width="96" height="96">
+      {% else %}
+        <img class="droplet-border" src="{{ "/assets/images/rtw_square.png" | absolute_url }}" alt="{{contributor.name}}" width="96" height="96">
+      {% endif %}
+    </div>
+    <div class="c-f-infos">
+      <div class="c-f-i-name">
+        {% include contributors/contributor_link.html contributor=contributor.id %}
+      </div>
+      <div class="c-f-i-bio">
+        {% if contributor.bio %}
+        - ({{ contributor.bio }})
+      {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 {%- endif -%}

@@ -6,6 +6,39 @@
 //   align-items: center;
 // }
 
+img.droplet-border {
+  border-radius: 0 50% 50% 50%;
+}
+
+div.contributor-footer {
+  
+  display: flex;
+  padding: 8px 8px 8px;
+  flex-direction: row;
+
+  & > div.c-f-image {
+    flex: 0 1 auto;
+	 align-self: flex-start;
+	 padding-right: 8px;
+  }
+  & > div.c-f-infos {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    & > div.c-f-i-name {
+      font-size: 1.3em;
+      font-weight: 700;
+      flex: 0 1 auto;
+    }
+    & > div.c-f-i.bio {
+      font-size: 0.85em;
+      flex: 1 1 auto;
+    }
+  }
+}
+
 form {
   display: flex;
   align-items: center;
@@ -188,3 +221,4 @@ background-color: #E2EFD9;
 .creature-content-bg-dark {
 background-color: #C5E0B3;
 }
+
