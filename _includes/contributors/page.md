@@ -24,7 +24,7 @@
     </div>
     <div class="c-f-infos">
       <div class="c-f-i-name">
-        <h2 id="{{page_slug}}">contributor_data.name</h2>
+        <h2 id="{{page_slug}}">{{contributor_data.name}}</h2>
       </div>
       <div class="c-f-i-bio">
         {% if contributor_data.bio %}
