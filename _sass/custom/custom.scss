@@ -8,6 +8,7 @@
 
 img.droplet-border {
   border-radius: 0 50% 50% 50%;
+  max-width: unset;
 }
 
 div.contributor-footer {
@@ -33,7 +34,7 @@ div.contributor-footer {
       flex: 0 1 auto;
     }
     & > div.c-f-i-bio {
-      font-size: 0.85em;
+      font-size: 0.8em;
       flex: 1 1 auto;
     }
   }
