@@ -35,9 +35,9 @@
   </div>
 
 {% assign contributor_url = page_slug | prepend: "/contributor/" -%}
-{%- if contributor_url == page.url -%}
+<!-- {%- if contributor_url == page.url -%}
 {{ page.description }}
-{%- endif %}
+{%- endif %} -->
 
 Articles: {{ tagged_pages.size }}
 
