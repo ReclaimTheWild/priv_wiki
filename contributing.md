@@ -38,7 +38,7 @@ You can then select the create new file button.
 
 ![Creating a file screenshot](assets/images/contributing/02.png)
 
-From there, you can name your file (don't forget the Markdown identifier ".md"), and paste your article in the only editor. The specifications and templates for your articles are available on the [Syntax & Templates](syntax_templates.md) page.
+From there, you can name your file (don't forget the Markdown identifier ".md"), and paste your article in the online editor. The specifications and templates for your articles are available on the [Syntax & Templates](syntax_templates.md) page.
 
 ![Commiting to a new branch and create a Pull Request](assets/images/contributing/03.png)
 
