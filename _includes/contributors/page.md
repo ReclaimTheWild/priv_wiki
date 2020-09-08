@@ -14,7 +14,25 @@
 
 {% assign contributor_data = site.data.contributors | where: 'id', page_slug | first %}
 
-## {{ contributor_data.name }}
+  <div class="contributor-footer">
+    <div class="c-f-image">
+      {% if contributor_data.avatar %}
+        <img class="droplet-border" src="{{ "/assets/images/user_pics/" | append: contributor_data.avatar | absolute_url }}" alt="{{contributor_data.name}}" width="128" height="128">
+      {% else %}
+        <img class="droplet-border" src="{{ "/assets/images/rtw_square.png" | absolute_url }}" alt="{{contributor_data.name}}" width="128" height="128">
+      {% endif %}
+    </div>
+    <div class="c-f-infos">
+      <div class="c-f-i-name">
+        <h2 id="{{page_slug}}">{% include contributors/contributor_link.html contributor=contributor_data.id %}</h2>
+      </div>
+      <div class="c-f-i-bio">
+        {% if contributor_data.bio %}
+        {{ contributor_data.bio }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 
 {% assign contributor_url = page_slug | prepend: "/contributor/" -%}
 {%- if contributor_url == page.url -%}
