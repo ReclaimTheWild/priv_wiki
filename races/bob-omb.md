@@ -100,6 +100,7 @@ Below is a chart with the basic Bomb ability, and other options. You can gain a 
 | [Smoke Bomb][eya-bomb] | 4 Health | Burst 2 | No damage | All squares affected are covered with a [Thick Smoke][eya-bomb]. The smoke dissipates immediately upon exposure to wind, or at the end of battle or 1 minute. |
 | [Thunder Bomb][eya-bomb] | | Burst 1 | Blunt | Roll To-Hit target’s Vitality; on success, target is [Deafened][eya-bomb]. |
 | [Versatile Bomb][eya-bomb] | | Burst 1 | Piercing or Sharp | No special effects. |
+{: .small-numbers-table }
 
 [eya-bomb]: {{ "/items/expand_armory_bombs" | absolute_url }}
 [inkling]: {{"/races/inkling" | absolute_url }}
