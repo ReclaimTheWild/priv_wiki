@@ -12,31 +12,22 @@ img.center {
   margin-right: auto;
 }
 
-div.container_floating_right {
-  float: right;
-  width: 40%;
-  margin: 4px 4px 4px 4px;
+div.container_floating {
 
-  & > div.image_legend_container {
-    border: 2px solid #ebebeb;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-  
-    & > img {
-      max-width: 100%;
-    }
-    & > p {
-      text-align: center;
-      margin: 4px;
-    }
+  &_right {
+    float: right;
   }
-}
-
-div.container_floating_left {
-  float: right;
+  &_left {
+    float: left;
+  }
+  &_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   width: 40%;
   margin: 4px 4px 4px 4px;
+  overflow: auto;
 
   & > div.image_legend_container {
     border: 2px solid #ebebeb;
