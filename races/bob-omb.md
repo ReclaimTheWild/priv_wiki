@@ -85,23 +85,20 @@ Below is a chart with the basic Bomb ability, and other options. You can gain a 
 | Name | Cost | Range | Damage Type | Effet |
 | ----------------------------------------- |
 | Bomb | | Burst 1 | Blunt | No special effects. |
-| [Aqua Bomb][eya-bomb] | | Burst 1 | Water | Expels water. All flames in affected squares are put out, and Lava terrain temporarily becomes normal. Roll To-Hit target’s Vitality; on success, target is Soaked. |
+| [Aqua Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Water | Expels water. All flames in affected squares are put out, and Lava terrain temporarily becomes normal. Roll To-Hit target’s Vitality; on success, target is Soaked. |
 | Brushfire Bomb | | Burst 1 | Fire | All squares affected become Brushfire terrain. Roll To-Hit target’s Vitality; on success, target is On Fire. You don’t take damage from the Brushfire terrain until your turn ends. |
-| [Dark Bomb][eya-bomb] | | Burst 1 | Dark | All squares affected are covered with a [Thick Smoke][eya-bomb]. The smoke dissipates immediately upon exposure to wind, or at the end of your next turn |
-| [Earth Bomb][eya-bomb] | | Burst 1 | Earth | Roll To-Hit target’s Vitality; on success, target is [Earthbound][eya-bomb]. |
+| [Dark Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Dark | All squares affected are covered with a [Thick Smoke]({{ "/items/expand_armory_bombs" | absolute_url }}). The smoke dissipates immediately upon exposure to wind, or at the end of your next turn |
+| [Earth Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Earth | Roll To-Hit target’s Vitality; on success, target is [Earthbound]({{ "/items/expand_armory_bombs" | absolute_url }}). |
 | Flashbang Bomb | 4 Health | Burst 1 | No damage | Makes a blinding flash. Roll To-Hit target’s Vitality; on success, target is Blinded until the end of their next turn. |
-| [Ice Bomb][eya-bomb] | | Burst 1 | Ice | All squares affected become Slightly Slick terrain; if they are already Slightly Slick, they become Severely Slick. Freezes water squares and turns them Slightly Slick. All flames in affected squares are put out, and Lava temporarily becomes normal. |
-| [Light Bomb][eya-bomb] | | Burst 1 | Light | Roll To-Hit target’s Vitality; on success, target is Dazzled. |
+| [Ice Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Ice | All squares affected become Slightly Slick terrain; if they are already Slightly Slick, they become Severely Slick. Freezes water squares and turns them Slightly Slick. All flames in affected squares are put out, and Lava temporarily becomes normal. |
+| [Light Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Light | Roll To-Hit target’s Vitality; on success, target is Dazzled. |
 | Magneto-Bomb | | Burst 1 | Shock | 	Roll To-Hit target’s Vitality; on success, if they are using a Metal weapon or Metal armor, they are pushed out of the radius of the bomb. |
 | Sandbomb | 4 Health | Burst 1 | No damage | Expels a thick layer of sand. All flames in affected squares are put out, and Oiled or Slick terrain becomes normal. Roll To-Hit target’s Vitality; on success, target is Sand-Covered. |
-| [Splat Bomb][inkling] | | Burst 1 | Blunt | All squares affected become [Ink-Daubed terrain][inkling]. Roll To-Hit target’s Vitality; on success, target is [Stained][inkling]. |
-| [Smoke Bomb][eya-bomb] | 4 Health | Burst 2 | No damage | All squares affected are covered with a [Thick Smoke][eya-bomb]. The smoke dissipates immediately upon exposure to wind, or at the end of battle or 1 minute. |
-| [Thunder Bomb][eya-bomb] | | Burst 1 | Blunt | Roll To-Hit target’s Vitality; on success, target is [Deafened][eya-bomb]. |
-| [Versatile Bomb][eya-bomb] | | Burst 1 | Piercing or Sharp | No special effects. |
+| [Splat Bomb]({{"/races/inkling" | absolute_url }}) | | Burst 1 | Blunt | All squares affected become [Ink-Daubed terrain]({{"/races/inkling" | absolute_url }}). Roll To-Hit target’s Vitality; on success, target is [Stained]({{"/races/inkling" | absolute_url }}). |
+| [Smoke Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | 4 Health | Burst 2 | No damage | All squares affected are covered with a [Thick Smoke]({{ "/items/expand_armory_bombs" | absolute_url }}). The smoke dissipates immediately upon exposure to wind, or at the end of battle or 1 minute. |
+| [Thunder Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Blunt | Roll To-Hit target’s Vitality; on success, target is [Deafened]({{ "/items/expand_armory_bombs" | absolute_url }}). |
+| [Versatile Bomb]({{ "/items/expand_armory_bombs" | absolute_url }}) | | Burst 1 | Piercing or Sharp | No special effects. |
 {: .small-numbers-table }
-
-[eya-bomb]: {{ "/items/expand_armory_bombs" | absolute_url }}
-[inkling]: {{"/races/inkling" | absolute_url }}
 
 ### Master Mode Injuries
 
