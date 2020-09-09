@@ -218,6 +218,7 @@ table.rtw-table {
 
 table.rtw-table td, table.rtw-table th {
     border: 1px solid #AAAAAA;
+    background-color: unset !important;
     padding: 3px 2px;
 }
 table.rtw-table tr:nth-child(even) {
@@ -232,10 +233,6 @@ table.rtw-table thead th {
     font-size: 15px;
     font-weight: bold;
     color: #FFFFFF;
-}
-
-th, td {
-    background-color: unset !important;
 }
 
 /*
