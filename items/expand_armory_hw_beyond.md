@@ -51,7 +51,7 @@ Originally posted on the official website on [May 1st, 2020](https://reclaimthew
 | Slingshot                   | 3   | -1  | 3   | Blunt<sup>4</sup>    | 2     | Ranged |                                                   |
 | Spellbook                   | 3   | -1  | 1   | Sharp                | 1     | Arcana | Wizardly                                          |
 | Summoning Gate              | 3   | 0   | -3  | Varies<sup>2</sup>   | 2     | Arcane | Hands-Free,<br>Summoning<sup>6</sup>,<br>Wizardly |
-| Sword-chucks                | 3   | 0   | 0   | Sharp                | 2     | Melee  | [Extending]{{ "/items/expand_armory_extending" | absolute_url }},<br>Returning,<br>Sweeping              |
+| Sword-chucks                | 3   | 0   | 0   | Sharp                | 2     | Melee  | [Extending]({{ "/items/expand_armory_extending" | absolute_url }}),<br>Returning,<br>Sweeping              |
 | Throwing Glove<sup>1</sup>  | 5   | -2  | -1  | Varies<sup>2,4</sup> | 1     | Ranged | Hands-Free                                        |
 {: .small-numbers-table}
 
