@@ -6,17 +6,15 @@ permalink: /races/bob-omb
 parent: Races
 tags:
     - race
-    - item
     - weapon
-    - terrain
+    - status-effect
     - feat
-    - spell
     - technique
     - crafting-style
     - official-article
     - non-zelda-content
 contributors:
-    - elementalknight
+    - milly
 ---
 
 Originally posted on the official website on [April 1st, 2020](https://reclaimthewild.net/index.php/2020/04/01/new-race-bob-omb/)
@@ -173,7 +171,7 @@ Bob-ombs are often selfless – or perhaps more accurately, fool-hardy – inter
 **Effect**: Select an upgrade for your Bomb ability. You can now use it.  
 **Special**: This feat can be taken multiple times. Each time you take this, you can choose a different upgrade.
 
-# New Feat: Bomb-chu Upgrade
+### New Feat: Bomb-chu Upgrade
 
 *9 tokens*  
 **Trait requirement**: Bob-omb  

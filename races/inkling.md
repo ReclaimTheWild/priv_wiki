@@ -13,6 +13,7 @@ tags:
     - feat
     - spell
     - technique
+    - status-effect
     - crafting-style
     - official-article
     - non-zelda-content
