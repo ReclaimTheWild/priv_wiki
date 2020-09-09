@@ -27,6 +27,7 @@ div.container_floating_right {
   
     & > img {
       max-width: 100%;
+      object-fit: contain;
     }
     & > p {
       text-align: center;
@@ -50,6 +51,7 @@ div.container_floating_left {
   
     & > img {
       max-width: 100%;
+      object-fit: contain;
     }
     & > p {
       text-align: center;
@@ -76,6 +78,7 @@ div.container_floating_center {
   
     & > img {
       max-width: 100%;
+      object-fit: contain;
     }
     & > p {
       text-align: center;

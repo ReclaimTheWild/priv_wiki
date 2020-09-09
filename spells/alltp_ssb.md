@@ -58,7 +58,7 @@ During your turn, you may dismiss the pillar of light as a Free Action, returnin
 
 ### Sakurai’s Lightning Kick
 
-*6 Tokens*
+*6 Tokens*  
 **Cost**: 6 Magic  
 **Range**: Melee  
 **Damage**: Weapon + Willpower, Shock  
@@ -66,7 +66,7 @@ During your turn, you may dismiss the pillar of light as a Free Action, returnin
 
 ### Quake
 
-*9 Tokens*
+*9 Tokens*  
 **Learn Requirement**: One other Spell that deals Earth-type damage  
 **Cost**: 20 Magic  
 **Range**: 4 Targets within 12 Squares  

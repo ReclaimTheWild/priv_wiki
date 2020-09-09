@@ -37,9 +37,9 @@ A hexagon is a shape that has six sides, as opposed to squares that have four. H
 
 The examples below show a Medium creature (marked in blue) moving in 3 hex increments in both cardinal directions.
 
-{% include floating/image_center.html src="https://i.imgur.com/vypbXQV.png" description="Cardinal movement with flat-sided hexes" custom_width="90" %}
+{% include floating/image_center.html src="https://i.imgur.com/vypbXQV.png" description="Cardinal movement with flat-sided hexes" custom_width="98" %}
 
-{% include floating/image_center.html src="https://i.imgur.com/hc0qT4m.png" description="Cardinal movement with flat-topped hexes" custom_width="90" %}
+{% include floating/image_center.html src="https://i.imgur.com/hc0qT4m.png" description="Cardinal movement with flat-topped hexes" custom_width="98" %}
 
 ## Why would anyone use a hexagonal grid?
 
@@ -60,7 +60,7 @@ Likewise, hexes have the following disadvantages:
 
 With square maps, creatures larger than Medium size take up squares commensurate to their size. In contrast, on a hex map creatures take on a form that is more similar to that of a hexagon, or a circle as interpreted through a hex map.
 
-{% include floating/image_center.html src="https://i.imgur.com/bRcfWsz.png" description="Size of foes on hex map" custom_width="90" %}
+{% include floating/image_center.html src="https://i.imgur.com/bRcfWsz.png" description="Size of foes on hex map" custom_width="98" %}
 
 A Large creature takes up three hexes, which should approximate four squares.
 
@@ -76,7 +76,7 @@ Most attack ranges work the same, just with hexes instead of squares. Just start
 
 Below you will see a collection of various attack ranges, with the blue hex being the user of the ability, and red hexes being the range of the ability.
 
-{% include floating/image_center.html src="https://i.imgur.com/JzcXnYZ.png" description="Examples of various Attack Ranges on a hex map" custom_width="90" %}
+{% include floating/image_center.html src="https://i.imgur.com/JzcXnYZ.png" description="Examples of various Attack Ranges on a hex map" custom_width="98" %}
 
 Blast is the first range worth noting, given its explicitly square-like nature that ignores the 1-2-1 diagonal distance counting. At first I thought to make the ranges match up with the equivalent creature size, but ultimately that would make the ranges resemble a circle. Instead, I settled upon a square-like shape, where the length and width of the range are the same.
 
@@ -92,6 +92,6 @@ Below you will see an equivalent map for the “X targets/squares within Y squar
 
 As you can see, the hex system has six enemies be within range of the “3 targets in 8 squares” attack, while the square system has five enemies be within range.
 
-{% include floating/image_center.html src="https://i.imgur.com/6csRsLh.png" description="Example of “3 Targets within 8 Hexes” Attack Range" custom_width="90" %}
+{% include floating/image_center.html src="https://i.imgur.com/6csRsLh.png" description="Example of “3 Targets within 8 Hexes” Attack Range" custom_width="98" %}
 
 This is all the information I currently have for using hexadecimals. Let me know if you have any questions! Just stop on by the *Reclaim the Wild* Discord, or ask me through [my Twitter](https://twitter.com/MilleniaAntares).
