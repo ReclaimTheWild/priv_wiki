@@ -5,7 +5,7 @@ summary: A non-combat bee-themed versatile magical tool.
 permalink: /items/queen_cane
 parent: Items
 tags:
-    - items
+    - item
     - magical-tool
     - official-article
 contributors:
@@ -20,7 +20,9 @@ One of the most fun parts of a Zelda game is finding the cool new Magical Tools 
 
 In posts like these, we want to share Magical Tools made for Reclaim the Wild games. And the first one we want to share is a totally original item, the Queen’s Cane!
 
-### QUEEN'S CANE
+### Queen's Cane
+{: .fs-6 }
+
 **Magical Tool - One-Handed - Wooden**
 
 By tapping the tip of this wooden cane against a surface (including your open hand), you can create fresh beeswax. It was originally used to help build this hive, and was then used to seal individual honeycombs or otherwise perform ceremonial bee-duties.
