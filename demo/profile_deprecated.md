@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Candidate 01
-summary: Testing purposes
-permalink: /profiles/candidate_01
-parent: User Profiles
+title: Profile
+permalink: /demo/profile_deprecated
+nav_exclude: true
 ---
 
 <img width="150" height="150" src="../assets/images/user_pics/mei.png"/>

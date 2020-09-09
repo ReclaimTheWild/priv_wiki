@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Meï
-summary: That one cool kid
-permalink: /profiles/mei
-parent: User Profiles
+title: Emojis Demo
+permalink: /demo/emojis
+nav_exclude: true
 ---
 
-# Meï
+# Emojis Demo
 
 One cool kid. {% em twili %}
 
 {% raw %}
 The structure for emojis is the following :  
 `{% emote emojiname %}`, or `{% em emojiname %}`
+Jumbo variants are available by replacing "em" with "jem".
 {% endraw %}
 
 The Emoji names are the following :  
