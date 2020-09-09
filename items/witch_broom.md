@@ -7,6 +7,8 @@ parent: Items
 tags:
     - item
     - personalized-tool
+    - feat
+    - master-mode
     - official-article
 contributors:
     - elementalknight
@@ -38,7 +40,7 @@ While anyone could attempt to pilot a Witch’s Broom, only true Witches, traine
 
 Whether your Hero begins their career as a Witch, or learns the secrets of witchcraft later in their journey, their ability to ride and craft Brooms is represented with the Broomcraft Feat, below.
 
-### Broomcraft
+### New Feat: Broomcraft
 
 *3 Tokens*  
 **Requirement**: Quest Reward or GM Approval Only  
@@ -145,7 +147,7 @@ While on a Broom:
 
 * If you Sprint (moving twice the Broom’s Movement), you cannot turn more than 45 degrees from your initial heading, give or take. This means Sprinting on a Broom is best used for a direct dash or charge, when you’re already lined up with where you need to be!
 
-### Irreparable Brooms
+### New Master Mode: Irreparable Brooms
 
 As a Master Mode rule, your GM may disallow Broom repair. This brings Brooms into line with Weapons and most other equipment, which cannot be safely repaired unless inhabited by a Weapon Spirit.
 

@@ -7,6 +7,8 @@ parent: Items
 tags:
     - item
     - weapon
+    - feat
+    - technique
     - non-zelda-content
     - official-article
 contributors:

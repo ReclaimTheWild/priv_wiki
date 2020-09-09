@@ -8,6 +8,7 @@ tags:
     - race
     - weapon
     - feat
+    - master-mode
     - official-article
 contributors:
     - avarasheridan

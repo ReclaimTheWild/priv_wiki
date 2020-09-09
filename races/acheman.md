@@ -7,9 +7,7 @@ parent: Races
 tags:
     - race
     - feat
-    - spell
     - technique
-    - crafting-style
     - official-article
 contributors:
     - milly

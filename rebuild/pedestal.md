@@ -7,6 +7,7 @@ parent: Rebuild
 tags:
     - rebuild
     - building
+    - song
     - official-article
 contributors:
     - elementalknight
