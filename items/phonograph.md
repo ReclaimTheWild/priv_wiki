@@ -26,6 +26,14 @@ Below, for use in your own Reclaim the Wild games, we present a new Mundane Tool
 ![](https://i.imgur.com/qJa6VYF.png)
 {: .center}
 Art by [Sweet Clip Art](http://sweetclipart.com/record-player-coloring-page-1729)
+{: .text-center }
+
+<div class="container_floating_right">
+	<div class="image_legend_container">
+		<img src="https://i.imgur.com/qJa6VYF.png">
+		<p>Art by <a href="http://sweetclipart.com/record-player-coloring-page-1729">Sweet Clip Art</a></p>
+	</div>
+</div>
 
 **Phonograph**: (Wood) A device that records and produces sound. A Phonograph might be cranked by hand, powered by a hand-wound spring, or they might be powered by an internal mechanism (such as a magical gem, electricity, or powered by wind or water), depending on the technology level of your game’s world. Phonographs play Discs; without a Disc to play, the Phonograph makes only white noise.
 
