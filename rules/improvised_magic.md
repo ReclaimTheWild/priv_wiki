@@ -13,7 +13,7 @@ contributors:
 
 Originally posted on the official website on [April 15th, 2019](https://reclaimthewild.net/index.php/2019/04/15/improvised-magic/)
 
-# Inkling
+# Improvised Magic
 {: .no_toc }
 
 <details open markdown="block">
@@ -25,120 +25,91 @@ Originally posted on the official website on [April 15th, 2019](https://reclaimt
 {:toc}
 </details>
 
-*Hip, curious, and fashion-conscious,*  
-*inheritors of a flooded future.*
-{: .text-center }
+When designing Reclaim the Wild, we intentionally kept Magic regimented and simple. This is, after all, how it is generally used by Link in various Zelda games – he learns specific Spells with specific functions, but he can’t create new magical effects out of thin air. Further, the versions of Hyrule we’ve seen throughout the Zelda games rarely had wizards and sorcerers who practiced flamboyant magic in the town square; even the few other Heroes we see were typically scholars, knights, or otherwise lacking in magical prowess.
 
-## Overview
+However, players or GMs might want mages to be able to creatively use magic off-the-cuff, free from the shackles of rote, memorized Spells. Heroes in your game may want to craft small illusions to help tell stories by the campfire, douse the whole party in water to clean off after a particularly messy fight, or want to permanently enchant a door against being opened by evil creatures. For cases like these, we present Improvised Magic.
 
-Average Height: 4′ 6″ – 5′ 6″  
-Average Weight: 80 – 125 lbs.  
-Life Span: 120 – 140 years  
-(Mature in 14-16 years)  
-Skin Colors: Alabaster to Umber  
-Eye Colors: Any  
-Tentacle Colors: Any (varying at whim)  
+This system should be considered a Master Mode rule – it adds complexity, expanding what magically-inclined players can do. It also adds complexity to the GM’s life, since wizardly Heroes can now invent all kinds of new solutions to the problems and obstacles they’ve concocted.
 
-**Weakness**: Water
-**Bonuses**:
-* Inklings create their own Ink, and can use it for a variety of purposes. You can change the color of your Ink (and your squidly appendages, to match) during a Short or Extended Rest for free. You may use your Ink like a single use of Chalk by Burning 1 Stamina.  
-* When you use a Basic Attack, Spell, or Technique, you may Spend 2 Stamina. If you do so, after resolving the attack’s other effects, all affected squares become Ink-Daubed, as does the square you currently occupy. Roll To-Hit all targets’ Concentration; on success, targets become Stained.  
-* When you start your turn on Ink-Daubed Terrain created by you or your allies, you gain 2 Ranks of Hasty until the end of your turn. When you end your turn on Ink-Daubed Terrain created by you or your allies, you gain 2 Ranks of Sneaky until the beginning of your next turn.  
-* You take 2 damage when stepping into or starting your turn in water, ignoring Defense. If the water is Foaming, you instead take 4 damage. Further, while Soaked, you are also Sick; this Sickness can only be ended by ending your Soaked condition. (The Waterborne Enchantment grants protection against this damage, reducing damage from being in water or Soaked by (Rank).)  
-* Inklings are mildly bioluminescent. You may control the brightness and size of this light, from a Burst (Fortitude / 2) down to a Burst 0 (illuminating only yourself and nothing around you), or even turn it off entirely. 
+## Limitations
 
-## Description
+While Improvised Magic is a versatile tool, it is not all-powerful. It is limited both by your imagination, and also by a few guidelines, below.
 
-Inklings are short humanoids, whose most notable feature is the tentacles atop their scalp. The length of these tentacles can vary, reaching as far down as an Inkling’s knee. Though these tentacles do not actually serve as useful limbs, and an Inkling can only barely feel anything through them. However, they’re still quite dear to an Inkling as an expression of their personality and style: Inklings will sometimes wrap, curl, bind, or even cut their tentacles in much the same way that other races would style their hair. (Cut Inkling tentacles will regrow, albeit more slowly than hair.) These tentacles can even change color at the Inkling’s whim, influencing the color of Ink they produce.
+* **Improvised Magic cannot directly inflict damage or heal wounds.** However, Improvised Magic can indirectly cause damage – for instance, if you lit a campfire with an Improvised Spell, and someone stepped into that campfire, they would take damage from that fire. Improvised Magic is capable of causing or removing some Status Ailments, though this is typically considered complex magic, carrying with it a real risk of failure.
+* **Improvised Magic cannot create permanent objects.** While an Improvised Spell might be able to conjure a flame, form a snowball, or fill a glass of water, it cannot create a sword or a pencil. Anything created by an Improvised Spell is ephemeral and temporary, and when closely inspected, its results can clearly be seen as magical.
+* **You must know a Spell on which to base your Improvised Magic.** Without this grounding in the fundamentals of magic, you lack the knowledge and skill to use Improvised Magic. For instance, if you were to decide to chill a glass of water, you would need to know at least one Spell that had some kind of icy effect – be it a spell like Kotake’s Ice Beam, which causes Ice-type damage, or a spell like Blizzagia’s Breath, which doesn’t cause damage but does have obviously ice-related effects.
+* **Improvised Magic can’t let you ignore other rules.** For instance, you cannot use Improvised Magic to repair weapons, or to craft weapons without a Forge.
+* **The GM retains final say on what can or cannot be done with Improvised Magic.**
 
-Beyond their tentacles, Inklings have a few other features that immediately distinguish them from Hylians. For one, an Inkling’s eyes are surrounded by black markings, much like a raccoon’s. The teeth in their mouth are pointed and sharp, with two large canines on top and one on the bottom, giving many Inklings a mischievous, toothy grin. Their ears are flat and pointed, like a wider, shorter version of a Hylian’s ears.
+## Cost & Size of Effect
 
-Inklings are capable of producing copious amounts of Ink, much like a common squid. An Inkling’s Ink is a colorful, sticky goop, matching the hue of their tentacles in that moment. Inklings use their Ink to sign their names, paint graffiti on buildings, mark their territory, or most famously, to cause damage and chaos in combat.
+An Improvised spell’s cost and the size of its effect are intertwined. In short: the larger the Improvised Magic’s effect, the more Magic is required to perform it.
 
-Inklings hail from dense, urban cities, founded on small islands or atolls. There, land is scarce, valuable, and often fought over. Inklings have had a number of ‘Turf Wars’ over their history, defending their homes from species that would rise from the sea to claim it as their own.
+| Size (Feet)  | Size Category | Magic Cost |
+|--------------|---------------|------------|
+| Less than 1' | Diminutive    | 4          |
+| 1' - 2'      | Tiny          | 6          |
+| 2' - 4'      | Small         | 8          |
+| 4' - 8'      | Medium        | 12         |
+| 8' - 16'     | Large         | 16         |
+| 16' - 32'    | Huge          | 20         |
+| 32' - 64'    | Gigantic      | 30         |
+| 64' and up   | Colossal      | 40         |
 
-## Playing an Inkling
+Note that these costs are a little bit more expensive than you might expect for a typical Spell. This is intentional! This higher cost is intended to ensure that Improvised Magic is not a panacea, replacing utility Spells purchased with Tokens.
 
-Moreso than most, Inklings like to showcase their own personal stylings: an Inkling’s fashion choices speak to their mood, goals, and identity. In Inkling society, being ‘fresh’ (that is, being both unique and true to oneself) is the highest compliment.
+However, don’t let this higher cost dissuade you from using Improvised Magic for trivial concerns! Remember that Spent Magic returns at the end of the encounter or scene. This means you can Spend your Magic with impunity while in safety, so long as you’re certain that Yiga assassins aren’t going to bust down the door anytime soon.
 
-Inklings are quick to defend territory that they see as ‘theirs’, whether this is actual land, personal property, a philosophical stance, or their fashion choices. Woe betide the fool who decides to encroach on an Inkling’s domain, for they’ll quickly find themselves coated in ink, or worse.
+## Cost Type
 
-In combat, Inklings often prefer to use attacks that hit as much area as they can, to both claim the territory as their own and to inflict pain on their enemies. To that end, two-handed melee weapons, as well as ranged weapons, are often their most preferred kit. To take advantage of their natural evasiveness while in Ink-Daubed territory, many Inkling Heroes prefer to wear Light Armor, or even Civilian gear, prioritizing fresh fashion and speed over defense.
+An Improvised Spell’s cost may be either **Bound**, **Burned**, or **Spent**.
 
-**Characteristics**: Active, Competitive, Fun-Loving, Hip, Playful, Stylish, Territorial
+* If the Spell’s effect is momentary, lasting no more than a minute or two, then it is simply Spent when the Spell is cast.
+* If the Spell’s effect is intended to be permanent, if it has any kind of restorative or reparative effect, or if it performs the duty of a Mundane or Miscellaneous Tool, then the Magic is Burned.
+* Finally, if the Spell is meant to persist for a variable duration – longer than a few minutes, shorter than a day – then its Magic is Bound.
+    * Should the caster dismiss the Spell’s effects of their own volition, then the Magic that was Bound in the Spell is returned to the caster.
+    * Should the Spell be forcibly ended, its Magic is then Burned, rather than returning to the caster.
 
-Inkling Names tend to be taken from the names of sea-faring animals, clothing or fashion terms, or words related to water. They might use puns and homophone words based on these terms, as well.
+## Complexity
 
-**Female Names**: Bobble, Callie, Flow, Headphones, Inky, Kou, Marina, Paruko, Pearl, Straw
+Not all Improvised Spells are simple tasks. Complex or complicated tasks, such as repairing a broken bone, may require additional Magic expenditure – and necessitate a Trait check.
 
-**Male Names**: Aloha, Argyle, Davy, Goggles, Marley, Noiji, Pugette, Slippy, Splashley
+When a Hero wishes to perform an Improvised Spell with a complex effect that has a real risk of failure, the GM should determine a DC for that effect. Then, multiply the Improvised Spell’s cost by (DC / 10), to determine its actual cost.
 
-## New Rules
+The Trait rolled for the Spell depends on how its Magic is utilized, determined previously.
 
-### New Status Effect: Stained
+* If the Magic is Spent, then use Willpower.
+* If the Magic is Bound, use Arcana.
+* If the Magic is Burned, use Enchanting.
 
-**Stained**: While Stained, you are covered in sticky, colorful ink. You leave inky prints wherever you walk, and on whatever you touch, reducing all Agility Checks for stealth purposes by 2. When you take damage from an attack while Stained, after the attack resolves, your attacker may choose to consume your Stained status. If they do, you take (Rank of the Weapon you’re being struck by / 2) additional damage, unmodified by Defense, and your Stained status ends. If an attack consumes your Stained status, it cannot also Stain you.
+**If the Hero fails this check, then the Magic is Spent** (regardless of whether it would’ve been Bound, Burned, or Spent on success) and the Improvised Spell’s effect fails to take hold or occur. (The GM is at liberty to allow the Improvised Spell to cause some partial effect, depending on the spell, the circumstances, and the closeness of the roll.) The Hero may or may not be able to try again, depending on the Spell and on the results of their failure.
 
-You can end your Stained status with a Standard Action. Becoming Soaked cancels out both the Soaked and Stained status, and becoming Stained cancels out both the Soaked and Stained status as well. Stained also ends when you use Soap, or take an Extended Rest.
+Depending on the nature of the Improvised Spell – particularly if it’s being used on a creature – it may instead be better to model the Spell like an attack. In these cases, decide whether Concentration or Vitality is the better defense against the Spell’s effect, and then proceed with rolling To-Hit that defense per normal. Also depending on the nature of the Spell, you might substitute Arcana, Enchanting, or Willpower in place of Accuracy in the To-Hit roll, at the GM’s discretion.
 
-### New Terrain: Ink-Daubed
+As an aside, you may also decide to modify the cost of Improvised Magic based on its complexity, even if you don’t intend to actually roll a Trait Check or roll To-Hit. As with so much else in Improvised Magic, this too is at the GM’s discretion.
 
-**Ink-Daubed**: Ink-Daubed Terrain is Difficult Terrain for its creator’s enemies, but not for its creator or any allies of its creator. (Ink-Daubed Terrain created by a neutral party is Difficult Terrain for everyone.) When you fall Prone in Ink-Daubed Terrain, you become Stained. If an Ink-Daubed square is intentionally struck with a Water attack, exposed to water, cleaned with Soap, or left untouched for an Extended Rest, it ceases to be Ink-Daubed.
+## Range
 
-### New Feat: Crafting Style: Inkling
+Generally, Improvised Magic must be done ‘close up’, with its caster adjacent to the effect – that is, in a Burst, Blast, Cone, Line, Melee, Self, or Sweep range. (Remember that the more squares an Improvised Spell effects, the more it costs!)
 
-*3 Tokens*  
-**Trait Requirement**: Smithing 3  
-**Effect**: You may choose to use this whenever crafting a weapon. The weapon has 1 less Attack Power. This weapon is now considered Messy.
+At GM discretion, an Improvised Spell may be a Ranged Projectile or “X Targets in Y Squares”. We suggest that such Improvised Spells be considered complex enough to fail, to match their usefulness – particularly since these kinds of Spells are more often used in dangerous situations, where a wizard might want to stay behind cover while, say, giving a patrolling guard a hotfoot.
 
-### New Weapon Property: Messy
+## Example Improvised Spells
 
-Once per turn, you may select one foe you have just successfully struck with this weapon, and inflict the Stained status upon them, in addition to the attack’s damage and other effects.
+### Caster’s Cleanup
+{: .no_toc }
+**Size**: Medium; Requires one Spell that deals with Water  
+**Cost**: 12 Magic (Burned)  
+**Effect**: You clean yourself or an adjacent target from tip to toe, scrubbing away all dirt and grime. This removes the Sand-Covered, Soaked, or Oil-Soaked status from you, and counts as using a unit of Soap on yourself.
 
-### New Feat: Thermal Ink
+### Firestarter
+{: .no_toc }
+**Size**: Diminutive; Requires one Spell that deals with Fire  
+**Cost**: 4 Magic (Burned)  
+**Effect**: You ignite one flammable, unattended object adjacent to you. This can be useful for starting campfires, lighting your pipe, or igniting a brushfire.
 
-*6 Tokens*  
-**Trait Requirement**: Perception 6, Inkling  
-**Effect**: You can see objects and foes who are Stained with your Ink, even through solid objects, in darkness, or while they are invisible, up to your normal vision range. This does not allow you to see terrain or creatures around them, nor does it allow you to shoot through walls or otherwise physically bypass obstacles.
-
-### New Spell: Blooper’s Blast
-
-*6 Tokens*  
-**Cost**: 8 Magic  
-**Learn Requirement**: Inkling  
-**Range**: Burst 1 or Blast 3  
-**Damage**: Weapon + Willpower  
-**Effect**: The target squares become Ink-Daubed. Roll To-Hit Target’s Concentration; on success, they become Stained.
-
-### New Technique: Splattershot
-
-*6 Tokens*  
-**Cost**: 5 Stamina  
-**Learn Requirement**: Inkling  
-**Range**: Weapon  
-**Damage**: Weapon + Combat  
-**Effect**: Roll To-Hit Target’s Vitality; on success, the target, and all targets within 1 square of the original target, become Stained.
-
-(In the statblocks below, the effects of Enchantments on the weapons’ Accuracy, Attack, and Durability are already taken into account.)
-
-### New Item: Splat Bomb
-
-**Splat Bomb**: All squares affected become Ink-Daubed terrain. Roll To-Hit target’s Vitality; on success, target is Stained.
-
-To craft Splat Bombs, you must consume two Monster Parts. You transform a number of Bombs into Splat Bombs, based on the Ranks of the Monster Parts used, as per the table in the Core Rulebook (“Crafting Bombs”).
-
-## Additional Resources
-
-[Here’s](http://mebuika.kenkenpa.net/ikamaker.html) a cool browser-based tool to make your own Inkling character portrait.
-
-## Changelog
-
-*27 July 2019:*
-* *Inklings’ benefits in Ink-Daubed Terrain now apply to any Ink-Daubed Terrain made by themselves, or by their allies, rather than just their own. This should better reflect the team-based nature of Splatoon!*
-
-*24 May 2020*:
-* *Created the “Messy” weapon property, for Inkling-style weapons.*
-* *Clarified that no attack that consumes Stained is able to Stain a foe in turn.*
-* *Made the bonus damage from consuming the Stained status scale with the Rank of the Weapon inflicting the attack.*
-* *Now, when an Inkling makes their attack create Ink-Daubed terrain through their racial effect, they make their own square Ink-Daubed in addition to any squares affected by the attack.*
-* *Making an attack create Ink-Daubed terrain now only costs 2 Stamina, regardless of how many squares are affected.*
+### Medeo
+{: .no_toc }
+**Size**: Huge; Requires one Spell that deals with Light  
+**Cost**: 20 Magic  
+**Effect**: A classic bit of stage magic, famously used in traveling productions of *I Want To Be Your Canary*. Medeo appears to be a huge, devastating rain of light and meteors, but is actually harmless.
