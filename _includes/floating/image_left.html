@@ -1,0 +1,23 @@
+{%- assign image_url = include.src -%}
+{%- assign artist = include.artist -%}
+{%- assign artist_url = include.artist_src -%}
+{%- assign description = include.description -%}
+{%- assign custom_width = include.custom_width -%}
+
+{%- if image_url -%}
+<div class="container_floating_left" {{%- if custom_width -%}}style="width={{custom_width}}%;"{{%- endif -%}}>
+	<div class="image_legend_container">
+        <img src="{{ image_url }}">
+        {{%- if artist -%}}
+            {{%- if artist_url -%}}
+            <p>Art by <a href="{{artist_url}}">{{artist}}</a></p>
+            {{%- else -%}}
+            <p>Art by {{artist}}</p>
+            {{%- endif -%}}
+        {{%- endif -%}}
+        {{%- if description -%}}
+        <p>{{description}}</p>
+        {{%- endif -%}}
+	</div>
+</div>
+{%- endif -%}

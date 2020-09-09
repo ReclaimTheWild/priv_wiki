@@ -45,4 +45,7 @@ A Disc only requires 2 Monster Parts to craft. Depending on the Rank of Monster 
 
 Discs go in the Ammunition pouch of your Pack, and are considered Ammunition for Phonographs. Discs do not stack with one another, unless they are of the same recording.
 
+{{% include floating/image_right.html src="https://i.imgur.com/qJa6VYF.png" artist="Sweet Clip Art" artist_src="http://sweetclipart.com/record-player-coloring-page-1729" %}}
+
+
 **Phonographs and Magical Songs**: While Discs can record mundane music with high fidelity, they cannot duplicate the arcane power of Magical Songs. When a Magical Song is played from a Disc, it does not produce any magical effects. However, a skilled Performer may be able to learn a Magical Song by listening to a Disc of it; consult your GM.
