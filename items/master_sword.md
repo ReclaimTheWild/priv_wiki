@@ -14,7 +14,9 @@ contributors:
     - elementalknight
 ---
 
-{::}Official Article{: .label .label-green } Originally posted on the official website on [February 15th, 2019](https://reclaimthewild.net/index.php/2019/02/15/post-idea-master-sword/)
+Official Article
+{: .label .label-green }
+Originally posted on the official website on [February 15th, 2019](https://reclaimthewild.net/index.php/2019/02/15/post-idea-master-sword/)
 
 # The Master Sword
 {: .no_toc }
