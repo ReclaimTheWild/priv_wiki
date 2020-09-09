@@ -1,17 +1,17 @@
 {%- if include.src -%}
-<div class="container_floating_left" {{%- if include.custom_width -%}}style="width={{ include.custom_width }}%;"{{%- endif -%}}>
+<div class="container_floating_left" {%- if include.custom_width -%}style="width={{ include.custom_width }}%;"{%- endif -%}>
 	<div class="image_legend_container">
         <img src="{{ include.src }}">
-        {{%- if include.artist -%}}
-            {{%- if include.artist_src -%}}
+        {%- if include.artist -%}
+            {%- if include.artist_src -%}
             <p>Art by <a href="{{ include.artist_src }}">{{ include.artist }}</a></p>
-            {{%- else -%}}
+            {%- else -%}
             <p>Art by {{ include.artist }}</p>
-            {{%- endif -%}}
-        {{%- endif -%}}
-        {{%- if include.description -%}}
+            {%- endif -%}
+        {%- endif -%}
+        {%- if include.description -%}
         <p>{{ include.description }}</p>
-        {{%- endif -%}}
+        {%- endif -%}
 	</div>
 </div>
 {%- endif -%}

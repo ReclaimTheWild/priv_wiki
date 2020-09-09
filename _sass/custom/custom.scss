@@ -15,6 +15,7 @@ img.center {
 div.container_floating_right {
   float: right;
   width: 40%;
+  margin: 4px 4px 4px 4px;
 
   & > div.image_legend_container {
     border: 2px solid #ebebeb;
@@ -35,6 +36,7 @@ div.container_floating_right {
 div.container_floating_left {
   float: right;
   width: 40%;
+  margin: 4px 4px 4px 4px;
 
   & > div.image_legend_container {
     border: 2px solid #ebebeb;
