@@ -66,11 +66,11 @@ Weapon Spirits look like they’re made of the same material as their Weapon For
 
 Weapon Spirits don’t truly have a native territory or domain--they happen where and when they happen. Likewise, nobody is truly sure of how a Weapon Spirit comes to be born except the Goddesses. While some are spirits who agreed to take on this existence, others have never known any other. Relatedly, Weapon Spirits don’t have actual sexes. While that doesn’t hinder their appearances nor gender identities, whether that might be masculine, feminine, or somewhere inbetween, they lack any biology needed to reproduce on their own.
 
-{% include floating/image_left.html src="https://i.imgur.com/sakU02C.png" artist="GarbageKeeper, on DeviantArt" artist_src="https://www.deviantart.com/garbagekeeper/art/Doublade-Gijinka-403220647" -%}
-
 ## Playing a Weapon Spirit
 
 Weapon Spirits are known for their faithfulness to their chosen allies and wielders. Even after a thousand years, they’ll still be trying to fulfill the goals of those they’ve lost, or to resurrect them entirely; time is no factor in their immortal minds.
+
+{% include floating/image_left.html src="https://i.imgur.com/sakU02C.png" artist="GarbageKeeper, on DeviantArt" artist_src="https://www.deviantart.com/garbagekeeper/art/Doublade-Gijinka-403220647" -%}
 
 Weapon Spirits’ interests in new cultures varies from individual to individual, but for those who face decades or centuries of disuse between outings, it can seem pointless to bother remembering the details. For those that frequently interact with new people, on the other hand, they might find it more worthwhile to put effort into meeting people on their own level--even going so far as to use Impa’s Disguise to facilitate interactions without being seen as frightening, or as ‘merely an object.’
 
