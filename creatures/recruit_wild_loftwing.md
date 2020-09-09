@@ -10,7 +10,7 @@ tags:
     - companion
     - official-article
 contributors:
-    - elementalknight
+    - milly
 ---
 
 Originally posted on the official website on [February 14th, 2020](https://reclaimthewild.net/index.php/2020/02/14/recruit-the-wild-loftwing/)
