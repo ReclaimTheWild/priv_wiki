@@ -49,7 +49,7 @@ Skin Colors: Alabaster to Umber
 Eye Colors: Any  
 Tentacle Colors: Any (varying at whim)  
 
-**Weakness**: Water
+**Weakness**: Water  
 **Bonuses**:
 * Inklings create their own Ink, and can use it for a variety of purposes. You can change the color of your Ink (and your squidly appendages, to match) during a Short or Extended Rest for free. You may use your Ink like a single use of Chalk by Burning 1 Stamina.  
 * When you use a Basic Attack, Spell, or Technique, you may Spend 2 Stamina. If you do so, after resolving the attack’s other effects, all affected squares become Ink-Daubed, as does the square you currently occupy. Roll To-Hit all targets’ Concentration; on success, targets become Stained.  
