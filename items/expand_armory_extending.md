@@ -41,6 +41,7 @@ Below is a list of new weapons and attacks especially favored by those who expec
 | Ball and Chain,<br>Spiked | 2   | +1  | +0  | Piercing  | 2     | Melee | Extending,<br>Returning,<br>Sweeping |
 | Chain Weapon              | 2   | +0  | +0  | Varies*   | 1     | Melee | Extending                            |
 | Whip                      | 3   | -1  | +0  | Sharp     | 1     | Melee | Extending                            |
+{: .small-numbers-table}
 
 *: **Chain Weapons** can either be Blunt, Piercing, or Sharp, determined when the item is first made.
 

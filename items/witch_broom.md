@@ -38,7 +38,7 @@ While anyone could attempt to pilot a Witch’s Broom, only true Witches, traine
 
 Whether your Hero begins their career as a Witch, or learns the secrets of witchcraft later in their journey, their ability to ride and craft Brooms is represented with the Broomcraft Feat, below.
 
-### **Broomcraft**
+### Broomcraft
 
 *3 Tokens*  
 **Requirement**: Quest Reward or GM Approval Only  

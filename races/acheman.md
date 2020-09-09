@@ -113,7 +113,7 @@ When not in a better situation than their enemy, Achemen tend to be more cautiou
 
 ### New Technique: Sonic Scream
 
-*6 tokens*
+*6 tokens*  
 **Learn requirement**: Acheman  
 **Cost**: 15 Stamina  
 **Range**: Cone 3  
