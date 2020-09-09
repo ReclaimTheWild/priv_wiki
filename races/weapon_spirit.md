@@ -104,7 +104,7 @@ Another way being a weapon can affect the spirit is their concept of purpose and
 
 ### Enchanting Spirit
 
-*6 Tokens*
+*6 Tokens*  
 **Requirement**: Quest Reward or GM Approval Only  
 **Trait Requirement**: Any three traits at rank 6; Weapon Spirit  
 **Effect**: Your Weapon Form is able to receive a second enchantment, as per normal for non-player Weapon Spirits. 
