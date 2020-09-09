@@ -12,8 +12,6 @@ contributors:
     - elementalknight
 ---
 
-Official Article
-{: .label .label-green }
 Originally posted on the official website on [January 15th, 2019](https://reclaimthewild.net/index.php/2019/01/15/queens-cane/)
 
 # Queen's Cane
