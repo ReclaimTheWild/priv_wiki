@@ -21,10 +21,11 @@
 
 Uses: {{ tagged_pages.size }}
 
-{%- for tagged_page in tagged_pages %}
-{%- assign is_first_tag = true %}
+{%- for tagged_page in tagged_pages -%}
+{%- assign is_first_tag = true -%}
+{%- assign hash_whitespace = " \#" -%}
 
-- <a href="{{ site.url }}{{ site.baseurl }}{{ tagged_page.url }}">{{ tagged_page.title }}</a>{% if tagged_page.summary %} - {{ tagged_page.summary }}{% endif %} ({%- for tag_3 in tagged_page.tags %}{% if is_first_tag == true %}#{%- assign is_first_contributor = false %}{% else%} #{% endif %}{% include tags/tag_link.html tag=tag_3 %}{%- endfor %})
+- <a href="{{ site.url }}{{ site.baseurl }}{{ tagged_page.url }}">{{ tagged_page.title }}</a>{% if tagged_page.summary %} - {{ tagged_page.summary }}{% endif %} ({%- for tag_3 in tagged_page.tags %}{% if is_first_tag == true %}\#{%- assign is_first_contributor = false %}{% else %}{{ hash_whitespace }}{% endif %}{% include tags/tag_link.html tag=tag_3 %}{%- endfor %})
 {% endfor %}
 
 {%- assign current_page_slug = nil -%}
