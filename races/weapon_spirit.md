@@ -57,7 +57,6 @@ Hair colors: Any, based on weapon form
 * As a Free Action, you may sacrifice one point of Durability during a battle to increase your Weapon Form's Accuracy by 2 or Attack by 3 for the duration of the battle.
 * Your Weapon Form is able to function as a specific type of Harvesting Tool of Rank equal to (Weapon Rank-1) without losing Durability. The type of Harvesting Tool your Weapon Form functions as is chosen at Character Creation, and cannot be changed.
 
-
 ## Description
 
 Souls of weaponry come to life, spiritual beings that agreed to give life to armaments, the grudge of a cursed blade. However it came to be, spirits and weapons unite to become artifacts of legend. For good or for ill, Weapon Spirits are ill-suited for obscurity--and few know better than a weapon’s own soul how to bring out its best performance.

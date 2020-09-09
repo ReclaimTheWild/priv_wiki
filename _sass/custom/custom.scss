@@ -242,6 +242,13 @@ th, td {
 ** RtW Creature Table
 */
 
+.small-numbers-table {
+  th,
+  td {
+      min-width: 30px;
+  }
+}
+
 .creature-table {
   table {
       border-collapse: collapse !important;

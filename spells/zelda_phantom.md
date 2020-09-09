@@ -11,7 +11,7 @@ contributors:
     - elementalknight
 ---
 
-Originally posted on the official website on [September 1st, 2019](https://reclaimthewild.net/index.php/2019/09/01/post-idea-new-spells/)
+Originally posted on the official website on [October 1st, 2019](https://reclaimthewild.net/index.php/2019/10/01/new-spell-summon-phantom/)
 
 # Zelda's Phantom
 {: .no_toc }
