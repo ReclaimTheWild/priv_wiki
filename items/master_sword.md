@@ -14,9 +14,7 @@ contributors:
     - elementalknight
 ---
 
-Official Article
-{: .label .label-green }
-Originally posted on the official website on [February 15th, 2019](https://reclaimthewild.net/index.php/2019/02/15/post-idea-master-sword/)
+{::}Official Article{: .label .label-green } Originally posted on the official website on [February 15th, 2019](https://reclaimthewild.net/index.php/2019/02/15/post-idea-master-sword/)
 
 # The Master Sword
 {: .no_toc }
@@ -47,8 +45,7 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 ### Master Sword (*Neglected*)
 {: .fs-6 }
 
-**Rank 2 Sword, Neglected Style**
-{: .fs-5 }
+**Rank 2 Sword, Neglected Style**  
 *The fact that the Master Sword lost the power to repel evil suggests to me that something has happened to the sages who infused the blade with the gods’ power.*  
 **Accuracy**: 4  
 **Attack**: 11  
@@ -59,9 +56,7 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 ### Master Sword
 {: .fs-6 }
 
-**Rank 3 Sword, no Crafting Style**
-{: .fs-5 }
-
+**Rank 3 Sword, no Crafting Style**  
 *Legends tell of many treasures that the Hylia hid throughout the land… The Master Sword, a mighty blade forged against those with evil hearts, is one of them. People say that now it is sleeping deep in the forest…*  
 **Accuracy**: 4  
 **Attack**: 15  
@@ -73,9 +68,7 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 ### Master Sword (*Reforged*)
 {: .fs-6 }
 
-**Rank 4 Sword, Royal Guard Style**
-{: .fs-5 }
-
+**Rank 4 Sword, Royal Guard Style**  
 *The sacred flames have purified this blade. Well done, Link. That sword holds tremendous power.*  
 **Accuracy**: 5  
 **Attack**: 22  
@@ -87,9 +80,7 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 ### Master Sword (*Blessed*)
 {: .fs-6 }
 
-**Rank 5 Sword, Goddess-Forged Style**
-{: .fs-5 }
-
+**Rank 5 Sword, Goddess-Forged Style**  
 *Along your travels you have found wisdom, power, and courage, and for this I shall bless your sword with the goddess’s power. May it give you and your sword the strength to drive back the abomination that threatens this land!*  
 **Accuracy**: 7  
 **Attack**: 24  
