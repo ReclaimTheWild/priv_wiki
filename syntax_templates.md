@@ -26,7 +26,7 @@ This mirror wiki uses [kramdown](https://kramdown.gettalong.org/) as its Markdow
 * The kramdown [quick reference](https://kramdown.gettalong.org/quickref.html) and [full syntax](https://kramdown.gettalong.org/syntax.html)
 
 To do a quick run of what "simple" Markdown looks like, think about how you would style your text on Discord : It uses the same syntax. Discord uses a simplified version of the Markdown specification. Everything you do there can be done here.  
-One of the things that can be a bit weird first time are the newlines. In original Markdown, doing a newline *won't* do what you wish for it to do. You'd need to do *2* new lines (With an empty line between your two paragraphs) to effectively create a new paragraph. However, ou parser, kramdown, does integrate a way to create line breaks in a single block, by adding 2 empty spaces at the end of your line !
+One of the things that can be a bit weird first time are the newlines. In original Markdown, doing a newline *won't* do what you wish for it to do. You'd need to do *2* new lines (With an empty line between your two paragraphs) to effectively create a new paragraph. However, ou parser, kramdown, does integrate a way to create line breaks in a single block, by adding 2 empty spaces at the end of your line!
 
 In any case, if you're in doubt and/or need anything, feel free to contact Meï, who'll try to answer your questions as quickly as possible.
 
