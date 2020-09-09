@@ -1,5 +1,8 @@
+{%- capture attr -%}
+{%- if include.custom_width %} style="width: {{ include.custom_width }}%"{%- endif -%}
+{%- endcapture -%}
 {%- if include.src -%}
-<div class="container_floating_right" {% if include.custom_width %}style="width={{ include.custom_width }}%;"{% endif %}>
+<div class="container_floating_right" {{ attr }}>
 	<div class="image_legend_container">
         <img src="{{ include.src }}">
         {%- if include.artist -%}
