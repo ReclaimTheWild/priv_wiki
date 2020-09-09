@@ -23,17 +23,7 @@ Appearing in Ocarina of Time, Majora’s Mask, Oracle of Seasons, and The Minish
 
 Below, for use in your own Reclaim the Wild games, we present a new Mundane Tool, the Phonograph, and its Ammunition, Discs.
 
-![](https://i.imgur.com/qJa6VYF.png)
-{: .center}
-Art by [Sweet Clip Art](http://sweetclipart.com/record-player-coloring-page-1729)
-{: .text-center }
-
-<div class="container_floating_right">
-	<div class="image_legend_container">
-		<img src="https://i.imgur.com/qJa6VYF.png">
-		<p>Art by <a href="http://sweetclipart.com/record-player-coloring-page-1729">Sweet Clip Art</a></p>
-	</div>
-</div>
+{% include floating/image_center.html src="https://i.imgur.com/qJa6VYF.png" artist="Sweet Clip Art" artist_src="http://sweetclipart.com/record-player-coloring-page-1729" custom_width="70" %}
 
 **Phonograph**: (Wood) A device that records and produces sound. A Phonograph might be cranked by hand, powered by a hand-wound spring, or they might be powered by an internal mechanism (such as a magical gem, electricity, or powered by wind or water), depending on the technology level of your game’s world. Phonographs play Discs; without a Disc to play, the Phonograph makes only white noise.
 
@@ -44,11 +34,5 @@ A Phonograph’s maximum volume is dependent on its Rank. It can be clearly hear
 A Disc only requires 2 Monster Parts to craft. Depending on the Rank of Monster Parts used, you can create multiple Discs. Treat this like crafting normal Bombs, using the same chart and rules as in the “Crafting Bombs” section of the Core Rulebook. Most Discs have a Market Price of 20 Rupees, whether or not they are blank, but some valuable or rare recordings may be worth more.
 
 Discs go in the Ammunition pouch of your Pack, and are considered Ammunition for Phonographs. Discs do not stack with one another, unless they are of the same recording.
-
-{% include floating/image_center.html src="https://i.imgur.com/qJa6VYF.png" artist="Sweet Clip Art" artist_src="http://sweetclipart.com/record-player-coloring-page-1729" %}
-
-{% include floating/image_right.html src="https://i.imgur.com/qJa6VYF.png" artist="Sweet Clip Art" artist_src="http://sweetclipart.com/record-player-coloring-page-1729" %}
-
-{% include floating/image_left.html src="https://i.imgur.com/qJa6VYF.png" artist="Sweet Clip Art" artist_src="http://sweetclipart.com/record-player-coloring-page-1729" %}
 
 **Phonographs and Magical Songs**: While Discs can record mundane music with high fidelity, they cannot duplicate the arcane power of Magical Songs. When a Magical Song is played from a Disc, it does not produce any magical effects. However, a skilled Performer may be able to learn a Magical Song by listening to a Disc of it; consult your GM.
