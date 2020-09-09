@@ -45,16 +45,23 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 (In the statblocks below, the effects of Enchantments on the weapons’ Accuracy, Attack, and Durability are already taken into account.)
 
 ### Master Sword (*Neglected*)
-**Rank 2 Sword, Neglected Style**  
+{: .fs-6 }
+
+**Rank 2 Sword, Neglected Style**
+{: .fs-5 }
 *The fact that the Master Sword lost the power to repel evil suggests to me that something has happened to the sages who infused the blade with the gods’ power.*  
 **Accuracy**: 4  
-**Attack**: 11
+**Attack**: 11  
 **Durability**: 5  
 **Enchantment**: Perfectly Balanced (Rank 2)  
 **Effect**: Critical Range +1. This weapon cannot rust, and does not conduct electricity. 
 
 ### Master Sword
-**Rank 3 Sword, no Crafting Style**  
+{: .fs-6 }
+
+**Rank 3 Sword, no Crafting Style**
+{: .fs-5 }
+
 *Legends tell of many treasures that the Hylia hid throughout the land… The Master Sword, a mighty blade forged against those with evil hearts, is one of them. People say that now it is sleeping deep in the forest…*  
 **Accuracy**: 4  
 **Attack**: 15  
@@ -64,7 +71,11 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 **Effect**: Critical Range +1.
 
 ### Master Sword (*Reforged*)
-**Rank 4 Sword, Royal Guard Style**  
+{: .fs-6 }
+
+**Rank 4 Sword, Royal Guard Style**
+{: .fs-5 }
+
 *The sacred flames have purified this blade. Well done, Link. That sword holds tremendous power.*  
 **Accuracy**: 5  
 **Attack**: 22  
@@ -74,7 +85,11 @@ Famously, the Master Sword is rarely the most powerful sword Link wields. Someti
 **Effect**: Critical Range +2.
 
 ### Master Sword (*Blessed*)
-**Rank 5 Sword, Goddess-Forged Style**  
+{: .fs-6 }
+
+**Rank 5 Sword, Goddess-Forged Style**
+{: .fs-5 }
+
 *Along your travels you have found wisdom, power, and courage, and for this I shall bless your sword with the goddess’s power. May it give you and your sword the strength to drive back the abomination that threatens this land!*  
 **Accuracy**: 7  
 **Attack**: 24  
