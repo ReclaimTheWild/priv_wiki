@@ -4,7 +4,6 @@ title: Inkling
 summary: The freshest race is now here, originally as an April Fools joke !
 permalink: /races/inkling
 parent: Races
-last_modified_date: 2020-05-04T00:00:00+0000
 tags:
     - race
     - item
@@ -22,7 +21,6 @@ contributors:
 ---
 
 Originally posted on the official website on [April 1st, 2019](https://reclaimthewild.net/index.php/2019/04/01/post-idea-squidlings-race/)  
-Last updated on May 24th, 2020
 
 # Inkling
 {: .no_toc }

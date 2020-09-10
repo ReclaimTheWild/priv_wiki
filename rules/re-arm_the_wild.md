@@ -56,17 +56,17 @@ This is a decision ultimately up to the GM, but here are some ideas:
 
 **Only those from the ARMS world**: in a game where the various Nintendo settings are separate and meet together – such as in Super Smash Brothers – it may seem best to only allow those from the ARMS world to get the ability. This may be accompanied with various other differences that may provide advantages and disadvantages to each setting. For instance, those from ARMS, Metroid, F-Zero, and Star Fox worlds may know how to drive cars and use computers, while those from a Zelda world may not. Though, unique people from non-ARMS worlds, such as [Lanky Kong](https://www.mariowiki.com/Lanky_Kong), may also be able to take the technique.
 
-**Some people**: Though the [lore behind the ARMS phenomena]("https://armswiki.org/wiki/ARMS_(extendable)") is scant, it does provide some basis for selectively allowing certain races to take the technique. Animals and plants gain the gifts, while machines can simply have springlike equipment. In addition, there is [Helix](https://armswiki.org/wiki/Helix), an artificial person that seems to resemble the ooze/slime types of creature that show up in Zelda as [chuchus](https://zelda.gamepedia.com/Chuchu), [gels](https://zelda.gamepedia.com/Gel), and [zols](https://zelda.gamepedia.com/Zol).
+**Some people**: Though the [lore behind the ARMS phenomena](https://armswiki.org/wiki/ARMS_(extendable)) is scant, it does provide some basis for selectively allowing certain races to take the technique. Animals and plants gain the gifts, while machines can simply have springlike equipment. In addition, there is [Helix](https://armswiki.org/wiki/Helix), an artificial person that seems to resemble the ooze/slime types of creature that show up in Zelda as [chuchus](https://zelda.gamepedia.com/Chuchu), [gels](https://zelda.gamepedia.com/Gel), and [zols](https://zelda.gamepedia.com/Zol).
 
 The following races may be eligible to receive ARMS on the basis of being an animal, machine, plant, or otherwise thematically appropriate: Acheman, Bob-omb, Deku Scrub, Gerudo, Hylian, Inkling, Keaton, Rito, Sheikah, Talking Animal, Twili, Weapon Spirits that inhabit an Extending weapon (such an ARMS), Zora.
 
-The following races would likely not have ARMS, on the basis of being magic or mineral: Demons, Fairies, Gorons, most other [Weapon Spirits](https://reclaimthewild.net/index.php/2019/05/01/new-race-weapon-spirits/).
+The following races would likely not have ARMS, on the basis of being magic or mineral: Demons, Fairies, Gorons, most other [Weapon Spirits]({{ "/races/weapon_spirit" | absolute_url }}).
 
 The one race that may potentially fit in any of these categories are the Subrosians, due to the mystery of their true nature. A GM is well within their rights to declare them animals, minerals, or magic, and thus (dis)allow the technique as appropriate.
 
 ## Enchantments
 
-The various weapons (“ARMS”) in ARMS can have one of eight [attributes]("https://armswiki.org/wiki/ARMS_(equipment)#Attributes"), which have some overlap with the Elements in *Reclaim the Wild*, and with enchantments. While the attributes and elements are not perfectly equivalent, the Elemental Weapon enchantment can serve as a good substitute. As such, the Elemental Blow technique – shown below – approximates the charging of a weapon attribute and attack, with the potential for a secondary effect appropriate to that Element.
+The various weapons (“ARMS”) in ARMS can have one of eight [attributes](https://armswiki.org/wiki/ARMS_(equipment)#Attributes), which have some overlap with the Elements in *Reclaim the Wild*, and with enchantments. While the attributes and elements are not perfectly equivalent, the Elemental Weapon enchantment can serve as a good substitute. As such, the Elemental Blow technique – shown below – approximates the charging of a weapon attribute and attack, with the potential for a secondary effect appropriate to that Element.
 
 ### New Benefit: Elemental Weapon
 

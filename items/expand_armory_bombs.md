@@ -57,7 +57,7 @@ The rank of Materials used for crafting the other bombs in this chart is capped 
 
 ### New Status Effect: Deafened
 
-While Deafened, you cannot hear. You automatically fail any Trait Rolls that rely upon hearing, and cannot hear anything that anyone is saying. In addition, abilities that require hearing (such as an [acheman]({{ "/races/acheman" | absolute_url }})’s echolocation) no longer work.
+While Deafened, you cannot hear. You automatically fail any Trait Rolls that rely upon hearing, and cannot hear anything that anyone is saying. In addition, abilities that require hearing (such as an [Acheman]({{ "/races/acheman" | absolute_url }})’s echolocation) no longer work.
 
 ### New Status Effect: Earthbound
 
