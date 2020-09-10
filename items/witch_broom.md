@@ -147,7 +147,7 @@ While on a Broom:
 
 * If you Sprint (moving twice the Broom’s Movement), you cannot turn more than 45 degrees from your initial heading, give or take. This means Sprinting on a Broom is best used for a direct dash or charge, when you’re already lined up with where you need to be!
 
-### New Master Mode: Irreparable Brooms
+### Irreparable Brooms
 
 As a Master Mode rule, your GM may disallow Broom repair. This brings Brooms into line with Weapons and most other equipment, which cannot be safely repaired unless inhabited by a Weapon Spirit.
 
