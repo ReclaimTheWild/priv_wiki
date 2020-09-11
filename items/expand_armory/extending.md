@@ -4,6 +4,7 @@ title: "EYA: Extending Weapons"
 summary:
 permalink: /items/expand_armory/extending
 parent: Expand Your Armory
+grand_parent: Items
 tags:
     - item
     - weapon

@@ -4,6 +4,7 @@ title: "EYA: Bombs"
 summary:
 permalink: /items/expand_armory/bombs
 parent: Expand Your Armory
+grand_parent: Items
 tags:
     - item
     - bomb
