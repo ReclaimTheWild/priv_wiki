@@ -76,6 +76,6 @@ Check ’em out below!
 
 ## Additional Notes
 
-To mimic Sheik’s throwing needles attack, you can use the Throwing Glove weapon from the “[Expand your Armory]({{ "items/expand_armory_hw_beyond" | absolute_url }})” article. Since this weapon also has the Hands-Free property, you can still use that hand to grab enemies or use items, just as Sheik does.
+To mimic Sheik’s throwing needles attack, you can use the Throwing Glove weapon from the “[Expand your Armory]({{ "items/expand_armory/hw_beyond" | absolute_url }})” article. Since this weapon also has the Hands-Free property, you can still use that hand to grab enemies or use items, just as Sheik does.
 
 This article doesn’t contain any of the magical attacks Sheik uses in *Hyrule Warriors*. While we considered including those effects as Spells that make use of the Perform trait, we wanted to focus on the physical, Stamina-based ninjutsu angle of Sheik’s abilities. If you’d like to see some of those other, more magical ideas, though, let us know in the comments or on our Discord server!

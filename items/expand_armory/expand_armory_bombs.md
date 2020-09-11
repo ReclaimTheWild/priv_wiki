@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Expand Your Armory: Bombs"
+title: "EYA: Bombs"
 summary:
-permalink: /items/expand_armory_bombs
-parent: Items
+permalink: /items/expand_armory/bombs
+parent: Expand Your Armory
 tags:
     - item
     - bomb
@@ -16,7 +16,7 @@ contributors:
 
 Originally posted on the official website on [November 15th, 2019](https://reclaimthewild.net/index.php/2019/11/15/expanding-your-armory-bombs/)
 
-# Expanding Your Armory: Bombs
+# Expand Your Armory: Bombs
 {: .no_toc }
 
 <details open markdown="block">
@@ -27,8 +27,6 @@ Originally posted on the official website on [November 15th, 2019](https://recla
 - TOC
 {:toc}
 </details>
-
-{% include floating/image_center.html src="https://i.imgur.com/BwLgTkc.png" artist="Nintendo" %}
 
 Bombs are a wonderful and, some would say, core part of the *Zelda* franchise. Here are more bombs for those bombardiers itching to expand their collection!
 

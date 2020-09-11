@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Expand Your Armory: Extending Weapons"
+title: "EYA: Extending Weapons"
 summary:
-permalink: /items/expand_armory_extending
-parent: Items
+permalink: /items/expand_armory/extending
+parent: Expand Your Armory
 tags:
     - item
     - weapon
@@ -17,7 +17,7 @@ contributors:
 
 Originally posted on the official website on [October 22nd, 2019](https://reclaimthewild.net/index.php/2019/10/22/expand-your-armory-extending-weapons/)
 
-# Expanding Your Armory: Extending Weapons
+# Expand Your Armory: Extending Weapons
 {: .no_toc }
 
 <details open markdown="block">

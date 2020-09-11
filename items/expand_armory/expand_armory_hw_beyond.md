@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Expand Your Armory: Hyrule Warriors and Beyond"
+title: "EYA: Hyrule Warriors and Beyond"
 summary:
-permalink: /items/expand_armory_hw_beyond
-parent: Items
+permalink: /items/expand_armory/hw_beyond
+parent: Expand Your Armory
 tags:
     - item
     - weapon
@@ -18,7 +18,7 @@ contributors:
 
 Originally posted on the official website on [May 1st, 2020](https://reclaimthewild.net/index.php/2020/05/01/expand-your-armory-hyrule-warriors-and-beyond/)
 
-# Expanding Your Armory: Hyrule Warriors and Beyond
+# Expandi Your Armory: Hyrule Warriors and Beyond
 {: .no_toc }
 
 <details open markdown="block">
@@ -51,7 +51,7 @@ Originally posted on the official website on [May 1st, 2020](https://reclaimthew
 | Slingshot                   | 3   | -1  | 3   | Blunt<sup>4</sup>    | 2     | Ranged |                                                   |
 | Spellbook                   | 3   | -1  | 1   | Sharp                | 1     | Arcana | Wizardly                                          |
 | Summoning Gate              | 3   | 0   | -3  | Varies<sup>2</sup>   | 2     | Arcane | Hands-Free,<br>Summoning<sup>6</sup>,<br>Wizardly |
-| Sword-chucks                | 3   | 0   | 0   | Sharp                | 2     | Melee  | [Extending]({{ "/items/expand_armory_extending" | absolute_url }}),<br>Returning,<br>Sweeping              |
+| Sword-chucks                | 3   | 0   | 0   | Sharp                | 2     | Melee  | [Extending]({{ "/items/expand_armory/extending" | absolute_url }}),<br>Returning,<br>Sweeping              |
 | Throwing Glove<sup>1</sup>  | 5   | -2  | -1  | Varies<sup>2,4</sup> | 1     | Ranged | Hands-Free                                        |
 {: .small-numbers-table}
 
@@ -87,7 +87,7 @@ If your Ranged weapon only gains the Wizardly keyword through feats such as this
 * 2H Extending weapons have a length equal to (Throw Weapon’s range).
 
 The weapon can only take damage when used as a Rope. If the weapon’s HP becomes 0, then it loses 1 additional point of Durability and cannot be used as Rope again until after the end of battle or the scene.
-If your Empty Hand (or a similar rankless weapon) [becomes an Extending weapon]{{ "/items/expand_armory_extending" | absolute_url }}, treat it as a Rope with a rank according to the following graph:
+If your Empty Hand (or a similar rankless weapon) [becomes an Extending weapon]{{ "/items/expand_armory/extending" | absolute_url }}, treat it as a Rope with a rank according to the following graph:
 
 | ROPE RANK | REQUIRES FORTITUDE |
 |-----------|--------------------|

@@ -42,7 +42,7 @@ Most people suddenly develop spring-like anatomy and the accompanying spiral eye
 **Learn requirement**: GM Approval  
 **Cost**: 3 Stamina (Bind)  
 *Minor action*  
-**Effect**: All Melee Weapons gain the [Extending]({{ "/items/expand_armory_extending" | absolute_url }}) quality, including your Bare Hand. Weapons that are Extending by default deal 1 Extra Damage.
+**Effect**: All Melee Weapons gain the [Extending]({{ "/items/expand_armory/extending" | absolute_url }}) quality, including your Bare Hand. Weapons that are Extending by default deal 1 Extra Damage.
 
 This technique forms the core of the fighting style in the sport of ARMS. With it you can make melee attacks and Combat Maneuvers like Grapple at a range, using any weapon you like. Activating ARMed and Dangerous may involve putting on the [mask required to properly control the ARMS in spiral form](https://twitter.com/NintendoEurope/status/877103769200336897/).
 
@@ -104,7 +104,7 @@ If you want the [Blind attribute](https://armswiki.org/wiki/Blind), try getting 
 
 ## Feats
 
-### New errata: [Chain Rope]({{ "/items/expand_armory_hw_beyond" | absolute_url }})
+### New errata: [Chain Rope]({{ "/items/expand_armory/hw_beyond" | absolute_url }})
 
 The Chain Rope feat has been updated to include information for using your Bare Hand as a Rope, with Rank determined by your Fortitude. Check it out!
 
@@ -197,7 +197,7 @@ If you’re looking to replicate a favorite ARM, this table will help you determ
 | Curve      | Boomerang               |
 | Glove      | Fist                    |
 | Hammer     | Hammer or Sledge        |
-| Heavy      | [(Spiked) Ball and Chain]({{ "items/expand_armory_extending" | absolute_url }}) |
+| Heavy      | [(Spiked) Ball and Chain]({{ "items/expand_armory/extending" | absolute_url }}) |
 | Missile    | Crossbow or Hand Gun    |
 | Multi-Shot | Crossbow or Hand Gun    |
 | Nunchuck   | N/A                     |

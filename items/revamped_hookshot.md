@@ -148,7 +148,7 @@ As a Master Mode rule, your GM may disallow Hookshot repair and upgrades. This b
 
 ## Feats and Spells
 
-### New Errata: [Tether Recovery]({{ "items/expand_armory_extending" | absolute_url }})
+### New Errata: [Tether Recovery]({{ "items/expand_armory/extending" | absolute_url }})
 
 Tether Recovery can now be used with two-handed Extending weapons. This better aligns Tether Recovery as the equivalent of the Hookshot Save Spell.
 
